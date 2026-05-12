@@ -95,6 +95,8 @@ def head(title, desc, canonical, page_config=None, jsonld=None, extra_meta=""):
         ld = "".join('<script type="application/ld+json">' + json.dumps(b) + "</script>" for b in jsonld)
     return ('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1">'
+            '<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">'
+            '<link rel="apple-touch-icon" href="/assets/favicon.svg">'
             f'<title>{esc(title)}</title>'
             f'<meta name="description" content="{esc(desc)}">'
             f'<link rel="canonical" href="{esc(canonical)}">'
