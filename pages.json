@@ -1,0 +1,876 @@
+{
+  "site": {
+    "name": "FontGen",
+    "tagline": "Fancy text generators that aren't buried in popups.",
+    "baseUrl": "https://example.com",
+    "contactEmail": "",
+    "adsenseClient": "",
+    "defaultLocale": "en",
+    "author": "the FontGen team",
+    "lastReviewed": "2026-05-12",
+    "footerNote": "Built clean on purpose. One ad, below the fold. No newsletter modal, no notification prompt, no 'continue reading' wall.",
+    "compatNoteShared": "All of these are real Unicode characters, not images or font files, so the styling travels with the text wherever you paste it. The catch: a few apps with locked-down fonts will draw some glyphs as empty boxes — that's the receiving app, not the text, and switching styles fixes it. Bold (sans), Small Caps and Full-width render the widest. Checked May 2026; platforms change their font handling constantly, so treat the table below as a strong guide, not a guarantee."
+  },
+  "categories": {
+    "bold": "Weight", "callig": "Calligraphic", "outline": "Outline",
+    "deco": "Decorative", "fx": "Effect", "fun": "Misc"
+  },
+  "pages": [
+    {
+      "slug": "/",
+      "kw": "fancy text generator",
+      "secondaryKw": ["font generator", "text generator"],
+      "title": "Fancy Text Generator — 80+ Copy-Paste Styles, No Popups",
+      "metaDescription": "Turn plain text into bold, italic, cursive, small caps, bubble, strikethrough and 80+ more copy-paste Unicode styles. Updates as you type. No sign-up, no popups.",
+      "h1": "Fancy Text Generator",
+      "lede": "Type on the left. Pick a style on the right. Copy. That's the whole thing.",
+      "focusStyles": [],
+      "intro": "This is a fancy text generator that does the one thing you came here to do, then gets out of the way. You type on the left, it converts your letters into Unicode characters that look like other fonts — script, bold, double-struck, small caps, circled, and around eighty more — and you copy whichever one you like. That's it. No account, no \"allow notifications\", no four ad blocks stacked on a 40-pixel tool. It's all real text, so the result pastes anywhere: Instagram and TikTok bios, Discord, X, WhatsApp, game tags, your Notion headers, wherever. If a glyph shows up as a box in some app, that's the app's font being stingy — pick another style and move on. Pin the ones you use a lot; they'll sit at the top next time you visit.",
+      "where": {
+        "intro": "A quick orientation before you dig into a specific style. These statuses are the general case across the whole style set; each style's own page has the exceptions.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions, comments", "status": "ok", "note": "Reliable. The @username field is the strict one — it rejects combining-mark styles and some decorative ones."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Same as Instagram — bio and captions fine, username field stricter."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me, status", "status": "ok", "note": "The most permissive. Only extreme zalgo gets truncated. Markdown bold/strikethrough works in messages but not nicknames — that's where Unicode versions help."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "All fine. The @handle can't be changed to fancy characters at all — handles are plain letters/numbers/underscores only."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works; combining-mark styles render slightly differently on Android vs iOS. Telegram usernames are restricted."},
+          {"app": "Games (Roblox, Fortnite, Free Fire, PUBG…)", "fields": "in-game names", "status": "partial", "note": "Clean styles (Bold, Full-width, Small Caps) usually pass name filters. Glitch and stacked-mark styles usually don't. They change filters often."},
+          {"app": "LinkedIn / Facebook / YouTube", "fields": "posts, comments, descriptions", "status": "ok", "note": "Posts and comments fine everywhere. LinkedIn strips fancy text from some profile fields; check after pasting."}
+        ]
+      },
+      "examples": {
+        "intro": "What people actually do with this, and which style tends to fit best:",
+        "items": [
+          {"label": "Instagram bio that stands out", "text": "A line in <em>𝒮𝒸𝓇𝒾𝓅𝓉</em> or ꜱᴍᴀʟʟ ᴄᴀᴘꜱ reads as deliberate against the standard sans-serif everything else uses. One styled line beats five."},
+          {"label": "Game tag / Discord handle", "text": "Bold (sans) or Full-width — they stay legible at small sizes and pass most name filters. Save the glitch styles for messages, not the name field."},
+          {"label": "Bold or italic where there's no button", "text": "An X bio, an Instagram caption, a Discord channel name — paste 𝗯𝗼𝗹𝗱 or 𝘪𝘵𝘢𝘭𝘪𝘤 Unicode and it just works."},
+          {"label": "Notion / docs headers", "text": "A short 𝗯𝗼𝗹𝗱 or 𝙼𝙾𝙽𝙾 string makes a section heading pop in tools that flatten formatting in certain views."},
+          {"label": "A laugh in chat", "text": "Upside-down text, circled bubble letters, or mild zalgo get the most reactions. Keep zalgo light — heavy versions get truncated or auto-removed."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't run a whole paragraph through it", "text": "Beyond a line or two it gets hard to read, and many screen readers announce these characters one at a time (\"mathematical bold small a, mathematical bold small b…\"). Short and intentional only."},
+        {"title": "Don't use it in real web content", "text": "Search engines and assistive tech see a string of math symbols, not styled text. For a web page, use actual HTML/CSS. For a bio with zero formatting options, this is the workaround."},
+        {"title": "Don't expect the @username to take it", "text": "Username fields are the strictest. If a username won't accept a style, the bio almost always will — and Bold (sans) is the universal fallback."},
+        {"title": "Don't panic when you see empty boxes", "text": "That's the receiving app missing a glyph, not corruption. Pick a more widely-supported style; Bold, Small Caps and Full-width box out the least."}
+      ],
+      "faqs": [
+        {"q": "Is this actually free?", "a": "Yes. There's one ad unit further down the page and that's the entire business model. No paywall, no \"pro\" tier, no email gate. Type, copy, leave."},
+        {"q": "What's the difference between this and a real font?", "a": "A real font is a file that changes how text is drawn. This swaps your letters for different Unicode characters that happen to look fancy — so the styling travels with the text wherever you paste it, even somewhere that has no idea what font you used."},
+        {"q": "Why do some styles break on certain apps?", "a": "Some apps restrict which Unicode ranges they'll display in fields like usernames or bios, and some fonts simply don't include a glyph for a given character — you'll see empty rectangles either way. Bold, Small Caps and Full-width are the most widely supported; start there if an app is being difficult."},
+        {"q": "Do you store what I type?", "a": "No. Everything runs in your browser. The text never leaves your device, and the only thing saved locally is which styles you've pinned and your light/dark choice."},
+        {"q": "Can I get those symbols ✦彡 around my name?", "a": "Those are separate symbol characters, not a restyling of your letters. Style your name with one of the rows here, then add a symbol on each side. One clean letter style plus one or two symbols looks far better than stacking effects."},
+        {"q": "Which style should I pick if I just want it to look good and work everywhere?", "a": "Bold (sans). It's the most reliably rendered of all of them, it stays legible, and it gets past more username filters than anything else. Small Caps is a solid second choice for a calmer look."}
+      ],
+      "related": ["/cursive-text-generator", "/bold-text-generator", "/small-text-generator", "/zalgo-text-generator", "/cool-text-generator", "/italic-text-generator", "/bubble-text-generator", "/upside-down-text-generator"]
+    },
+    {
+      "slug": "/cursive-text-generator",
+      "kw": "cursive text generator",
+      "secondaryKw": ["cursive generator", "cursive font generator", "script text generator", "calligraphy text generator"],
+      "title": "Cursive Text Generator — Copy-Paste Script & Calligraphy Fonts",
+      "metaDescription": "Generate cursive, script and calligraphy-style text you can copy and paste anywhere. Bold script too. Updates as you type, no sign-up, no popups.",
+      "h1": "Cursive Text Generator",
+      "lede": "Type and the cursive version is right there on the right. Bold script and a couple of related looks in the dropdown.",
+      "focusStyles": ["script-cursive", "bold-script", "fraktur"],
+      "intro": "If you want your name in flowing 𝓼𝓬𝓻𝓲𝓹𝓽 on an Instagram bio or a wedding-ish caption, this is the page. It maps your letters onto the Unicode \"mathematical script\" characters — the loopy ones — plus the bolder calligraphy variant for when the thin version disappears against a busy background, and the heavier blackletter option in the same dropdown if you want something more dramatic. A few honest notes from testing: Instagram and TikTok bios handle cursive fine; Discord renders it perfectly; X is fine in posts but trims it in display names sometimes; and a handful of keyboards on Android won't show the script glyphs at all, which isn't something this tool can fix — it's the device font. Cursive Unicode has no real numbers or symbols, so digits and punctuation stay plain.",
+      "where": {
+        "intro": "Cursive is one of the better-supported decorative styles, but it has two specific weak points: the @username field on social apps, and a few Android keyboards.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions", "status": "ok", "note": "Reliable in the bio and captions. The @username field rejects it on a lot of accounts — that's the strictest field Instagram has."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine. Username field is stricter, like Instagram."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "Renders everywhere, including nicknames. One of the most reliable platforms for script."},
+          {"app": "X (Twitter)", "fields": "posts, bio", "status": "partial", "note": "Posts and bio fine. Display names can be trimmed; the @handle won't accept it at all."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. Rendering of the swashier letters varies a little by device font."},
+          {"app": "Some Android keyboards / older devices", "fields": "anywhere", "status": "partial", "note": "A few stock keyboards and older Androids draw the script glyphs as boxes. Nothing the tool can do — it's the system font. Bold script sometimes fares slightly better."},
+          {"app": "Games (Roblox, PUBG, Free Fire…)", "fields": "in-game names", "status": "partial", "note": "Many game name filters reject script characters. If it bounces, try Bold (sans) or Small Caps instead."}
+        ]
+      },
+      "examples": {
+        "intro": "Where cursive earns its keep:",
+        "items": [
+          {"label": "Instagram / TikTok bio name", "text": "A first name in <em>𝒿𝑜𝓇𝒹𝒶𝓃</em> reads as personal and intentional; pair it with a single symbol on each side rather than piling on more effects."},
+          {"label": "Caption flourish", "text": "One word — <em>𝓪𝓮𝓼𝓽𝓱𝓮𝓽𝓲𝓬</em>, <em>𝓭𝓻𝓮𝓪𝓶𝔂</em>, <em>𝓼𝓸𝓯𝓽</em> — at the start of a caption sets a tone without rewriting anything."},
+          {"label": "Display name on Discord", "text": "Discord renders script in nicknames cleanly, so a server name in cursive actually sticks (unlike on Instagram, where the username field fights you)."},
+          {"label": "Group chat name", "text": "A short cursive title for a group reads softer than the default. Numbers will stay plain, so skip dates in the name."},
+          {"label": "Bold script for busy backgrounds", "text": "On a photo or a colorful banner, thin script can vanish. Switch to <em>𝓫𝓸𝓵𝓭 𝓼𝓬𝓻𝓲𝓹𝓽</em> in the dropdown — same flavor, more weight."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't try to put numbers in script", "text": "There's no script version of 0–9 in Unicode, so digits stay normal and the effect looks half-finished. Keep numbers out of cursive text, or accept that they'll be plain."},
+        {"title": "Don't expect it to work in your Instagram @username", "text": "That field rejects cursive on most accounts. Style the bio instead — it almost always takes it."},
+        {"title": "Don't use it for a logo or anything that gets printed", "text": "These are display characters meant for text fields, not a licensed typeface. For a logo or a tattoo stencil, get an actual script font file. As a mockup, fine."},
+        {"title": "Don't assume \"calligraphy\" means something different", "text": "\"Calligraphy font generator\" and \"handwriting font generator\" point to the same characters — there's the regular script set and the bold script set, that's it. The heavier blackletter look is the Old English page."}
+      ],
+      "faqs": [
+        {"q": "Will cursive text work in my Instagram bio?", "a": "Yes, in the bio and in captions. It can fail inside the @username field on some accounts — that field is the strictest one Instagram has. If the username won't take it, the bio almost always will."},
+        {"q": "Why do my numbers stay normal?", "a": "The Unicode script range only covers A–Z and a–z. There aren't script versions of 0–9 or most punctuation, so this tool leaves them as-is rather than faking it badly."},
+        {"q": "Cursive vs. calligraphy vs. handwriting font — what's the difference here?", "a": "For copy-paste purposes they're the same trick: there's the regular script set and the bold script set. \"Calligraphy\" and \"handwriting\" land on the same characters. The Old English page covers the heavier blackletter look."},
+        {"q": "Can I use this for a logo or print?", "a": "Not really — these are display characters meant for web text fields, not a licensed typeface. For a logo you want an actual font file. For a bio, caption, or username, this is exactly the right tool."},
+        {"q": "Why does cursive show as boxes on my friend's phone?", "a": "Their device's font is missing those glyphs — usually an older Android or a third-party keyboard. It's not broken on your end; their phone just can't draw those characters. Bold script or Small Caps sometimes render where thin script doesn't."},
+        {"q": "What's the difference between regular script and bold script?", "a": "Bold script (𝓫𝓸𝓵𝓭) has heavier strokes, so it holds up against busy backgrounds, colored banners and photos where the thin version (𝓈𝒸𝓇𝒾𝓅𝓉) gets lost. Pick it from the dropdown when the regular one looks faint."}
+      ],
+      "related": ["/", "/bold-text-generator", "/old-english-text-generator", "/italic-text-generator", "/stylish-text-generator", "/aesthetic-text-generator"]
+    },
+    {
+      "slug": "/bold-text-generator",
+      "kw": "bold text generator",
+      "secondaryKw": ["bold text", "bold font generator", "bold letters generator"],
+      "title": "Bold Text Generator — Copy-Paste 𝗕𝗼𝗹𝗱 Letters Anywhere",
+      "metaDescription": "Make bold text you can copy and paste — into Instagram, Discord, X, LinkedIn, anywhere that won't normally let you bold things. Sans and serif bold. No popups.",
+      "h1": "Bold Text Generator",
+      "lede": "Bold version on the right — sans and serif. Bold italic and bold script in the dropdown.",
+      "focusStyles": ["bold-sans", "bold-serif", "bold-italic", "bold-script"],
+      "intro": "Most places that won't let you bold text — Instagram captions, your X bio, a LinkedIn post, a Discord message that doesn't take markdown — will happily display 𝗯𝗼𝗹𝗱 𝗨𝗻𝗶𝗰𝗼𝗱𝗲. That's what this does: it swaps your letters for the bold mathematical alphanumerics, in the clean sans flavor (𝗹𝗶𝗸𝗲 𝘁𝗵𝗶𝘀) and the chunkier serif one (𝐥𝐢𝐤𝐞 𝐭𝐡𝐢𝐬), with bold italic and bold script also in the dropdown. Bold sans is the safest of all the styles on this site — if any fancy text is going to render in an app, it's this one — which is why it's the first one to reach for when something is being picky. It does have numbers and basic digits, unlike most decorative styles. Worth knowing: this is for short bits, not paragraphs.",
+      "where": {
+        "intro": "Bold is the workhorse. It renders in more places than any other style here, but a couple of profile fields still strip it.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions, comments, username (often)", "status": "ok", "note": "Bold sans frequently survives even in the @username field — rare for a fancy style. Bio and captions always work."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine. Username field is stricter but bold sans is your best shot at it."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me, status", "status": "ok", "note": "Works everywhere. Use Discord's own **markdown** inside messages; use this for nicknames, statuses and bots that ignore markdown."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "All fine. The @handle is still plain-only."},
+          {"app": "LinkedIn", "fields": "posts, headline", "status": "partial", "note": "Posts and the headline usually keep bold (sans more often than serif). Some other profile fields strip it — check after pasting."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. WhatsApp also has its own *bold* with asterisks in messages; this is for the places that one doesn't reach."},
+          {"app": "Games (Roblox, Fortnite, Free Fire…)", "fields": "in-game names", "status": "ok", "note": "Bold sans is the style most likely to pass a game's name filter. If even bold bounces, the filter is rejecting non-ASCII entirely."}
+        ]
+      },
+      "examples": {
+        "intro": "Bold is for emphasis, not body text. Where it does the job:",
+        "items": [
+          {"label": "Section headers in a flat editor", "text": "<em>𝗦𝗲𝗰𝘁𝗶𝗼𝗻 𝗼𝗻𝗲</em> stands out in tools that don't show real headings in certain views — task lists, simple notes, some wikis."},
+          {"label": "The one word that matters in a post", "text": "Bolding a single key word — <em>𝗳𝗿𝗲𝗲</em>, <em>𝗻𝗼𝘄</em>, <em>𝗿𝗲𝗮𝗱 𝘁𝗵𝗶𝘀</em> — pulls the eye without rewriting the whole sentence."},
+          {"label": "Instagram username (yes, really)", "text": "Bold sans is the rare fancy style that often passes Instagram's @username filter. Worth a try before settling for plain."},
+          {"label": "Game / Discord name", "text": "Clean, legible at small sizes, and the most filter-friendly. <em>𝗽𝗹𝗮𝘆𝗲𝗿_𝟬𝟭</em> — digits work too."},
+          {"label": "Bold + italic together", "text": "Pick Bold italic from the dropdown for <em>𝙗𝙤𝙩𝙝 𝙖𝙩 𝙤𝙣𝙘𝙚</em>, or bold script if you want bold and cursive in one."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't bold a whole paragraph", "text": "It's tiring to read and some screen readers announce each character individually. Bold a header, a name, or a word — not a block of text."},
+        {"title": "Don't confuse sans bold with serif bold", "text": "Sans bold (𝗯𝗼𝗹𝗱) is cleaner and renders more reliably across apps; serif bold (𝐛𝐨𝐥𝐝) is heavier and more old-fashioned. When in doubt, pick sans — it boxes out the least."},
+        {"title": "Don't use it on your website for emphasis", "text": "Search engines and screen readers see math characters, not bold text. Use real HTML <code>&lt;strong&gt;</code> there. This is for apps that give you no formatting at all."},
+        {"title": "Don't expect Discord markdown to work in a nickname", "text": "<code>**this**</code> works in messages, not in nicknames, statuses or many bots. That's exactly where a Unicode bold is useful — paste it in."}
+      ],
+      "faqs": [
+        {"q": "Does bold text work on LinkedIn?", "a": "In posts and the headline, usually yes. LinkedIn occasionally strips it from certain profile fields, so check after pasting. Bold sans survives more often than bold serif."},
+        {"q": "Sans-serif bold or serif bold — which should I pick?", "a": "Sans bold (𝗯𝗼𝗹𝗱) is cleaner and renders more reliably across apps. Serif bold (𝐛𝐨𝐥𝐝) is heavier and a bit more old-fashioned. When in doubt, sans."},
+        {"q": "Is this bad for accessibility?", "a": "For a word or a name, it's fine. For long passages it's a real problem — some screen readers announce each character individually, e.g. \"mathematical bold small a, mathematical bold small b...\". Keep it to short, intentional bits."},
+        {"q": "Can I bold and italicize at once?", "a": "Yes — the Bold italic style in the dropdown does both. There's also a bold script option if you want bold and cursive together."},
+        {"q": "Do numbers work in bold text?", "a": "Yes — bold has a full set of digits (𝟬–𝟵 for sans, 𝟎–𝟗 for serif), unlike script, italic and most decorative styles. So a bold username with numbers in it works."},
+        {"q": "Why is bold the \"safest\" style?", "a": "The bold mathematical alphanumerics are some of the most widely-implemented characters outside plain ASCII — almost every modern font includes them. If any fancy style is going to render in a given app, bold sans is the one. It's the fallback to try when everything else boxes out."}
+      ],
+      "related": ["/", "/italic-text-generator", "/cursive-text-generator", "/underline-text-generator", "/cool-text-generator", "/big-text-generator"]
+    },
+    {
+      "slug": "/small-text-generator",
+      "kw": "small text generator",
+      "secondaryKw": ["tiny text generator", "small caps generator", "subscript text", "small text copy paste"],
+      "title": "Small Text Generator — Tiny & Small Caps Text to Copy-Paste",
+      "metaDescription": "Generate small text: tiny superscript letters, small caps, and subscript — all copy-paste Unicode. Works in bios, captions and usernames. No sign-up, no popups.",
+      "h1": "Small Text Generator",
+      "lede": "Pick the small look you want on the right: tiny (superscript), small caps, or subscript.",
+      "focusStyles": ["superscript", "small-caps", "subscript"],
+      "intro": "\"Small text\" usually means one of three things, and they're genuinely different, so all three sit in the dropdown. There's tiny text — the superscript characters, ⁻ ˡⁱᵏᵉ ᵗʰⁱˢ — which is the closest to actual mini-letters but has gaps (a few letters like q look off, and uppercase mostly doesn't exist). There's ꜱᴍᴀʟʟ ᴄᴀᴘꜱ, which are small uppercase shapes at lowercase height — much more readable, complete A–Z, and the one most people actually want for an aesthetic bio. And there's subscript, the little dropped characters, mainly useful for chemistry-ish or footnote vibes. None of these are an actual smaller font size — they're separate Unicode characters drawn small. If you wanted to literally shrink text, that's a CSS thing, and no copy-paste tool can do it.",
+      "where": {
+        "intro": "Small caps is the reliable member of the family — full alphabet, widely supported. The tiny superscript option looks great in theory but has missing letters that pop back to full size, which is its own weak spot regardless of platform.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions", "status": "ok", "note": "Small caps displays cleanly in bios and captions. Superscript works too but any unsupported letter jumps to normal size."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Same — small caps reads well, superscript is patchy by design."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "All three render, including in nicknames. Small caps is the most legible at nickname size."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "Fine. Display names accept small caps; the @handle stays plain."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. Subscript digits in formulas render well; subscript letters are very limited."},
+          {"app": "Games / usernames generally", "fields": "in-game names", "status": "partial", "note": "Small caps often passes name filters; superscript and subscript are hit-or-miss because of the missing-letter fallbacks."}
+        ]
+      },
+      "examples": {
+        "intro": "Which 'small' for which job:",
+        "items": [
+          {"label": "Aesthetic Instagram bio", "text": "ꜱᴍᴀʟʟ ᴄᴀᴘꜱ — full alphabet, stays readable, no letters jumping to full size. This is the one most \"small text bio\" searches actually want."},
+          {"label": "Footnote marker in a comment", "text": "Superscript digits — ¹ ² ³ — work perfectly, so a comment with a footnote reference reads cleanly even where there's no real superscript option."},
+          {"label": "Chemistry-style notation", "text": "Subscript shines here: H₂O, CO₂, x₁. The digits all have subscript forms, so formulas come out right."},
+          {"label": "A quiet username", "text": "Small caps as a username reads understated rather than shouty, and it passes more name filters than the tiny-text option."},
+          {"label": "A whole word in tiny letters", "text": "You can run a word through superscript, but expect a letter or two (and any capitals) to stay full-size. For a clean small word, switch to small caps."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't assume tiny text has a full alphabet", "text": "Unicode never finished the superscript letters — several lowercase letters and most capitals don't exist, so they fall back to full size and ruin the effect. Small caps has the complete set; use it when consistency matters."},
+        {"title": "Don't expect it to actually shrink the font", "text": "These are separate characters that happen to be drawn small — not a font-size change. Nothing pasted as text can resize text; that's controlled by the app."},
+        {"title": "Don't mix superscript letters and numbers expecting both to look small", "text": "The digits all have superscript forms, but the letters don't. A mixed string can come out with tiny numbers and full-size letters. Small caps avoids the mismatch."},
+        {"title": "Don't use subscript for general 'small text'", "text": "Subscript only covers a handful of letters — it's built for chemical formulas and footnotes, not for styling a whole bio. Reach for small caps for that."}
+      ],
+      "faqs": [
+        {"q": "Which 'small text' should I use for an Instagram bio?", "a": "Small Caps. It's the only one with a full alphabet, it stays readable, and Instagram displays it reliably in bios and captions. The superscript tiny-text option has missing letters that fall back to normal size and break the effect."},
+        {"q": "Why are some letters in tiny text the wrong size?", "a": "Unicode never finished the superscript alphabet. Letters like q, and most capitals, simply don't have a superscript form, so they stay full-size. Small Caps doesn't have this problem."},
+        {"q": "Can I make my whole comment tiny?", "a": "You can run a sentence through it, yes — just expect it to be harder to read and for the odd character to pop back to normal size. For more than a few words, Small Caps is the comfortable choice."},
+        {"q": "Is this the same as a 'subscript generator'?", "a": "Subscript is one of the three options in the dropdown. If you specifically need ₐ ₑ ₒ-style dropped characters — H₂O, x₁ — pick Subscript."},
+        {"q": "Does small caps count as uppercase or lowercase?", "a": "Visually it's small uppercase letterforms sitting at lowercase height. Apps treat the characters as their own thing, so it usually passes fields that allow letters. It reads as a calmer, more typeset version of all-caps."},
+        {"q": "Why do superscript numbers work but superscript letters don't?", "a": "Unicode defined a complete set of superscript digits (used in math notation) but only a partial set of superscript letters. So ¹²³ is fine; a word may have gaps. Same story, worse, for subscript letters."}
+      ],
+      "related": ["/", "/superscript-generator", "/cursive-text-generator", "/aesthetic-text-generator", "/cool-text-generator", "/bold-text-generator"]
+    },
+    {
+      "slug": "/zalgo-text-generator",
+      "kw": "zalgo text generator",
+      "secondaryKw": ["glitch text generator", "cursed text generator", "creepy text generator", "corrupted text generator"],
+      "title": "Zalgo Text Generator — Glitchy, Cursed, Creepy Text to Copy",
+      "metaDescription": "Generate zalgo / glitch / cursed text — the corrupted-looking style with stacked marks. Adjustable intensity, copy-paste ready. No sign-up, no popups.",
+      "h1": "Zalgo Text Generator",
+      "lede": "Glitch text on the right — mild by default so it actually survives. Crank the input and watch it fall apart.",
+      "focusStyles": ["zalgo"],
+      "intro": "Zalgo text — also called glitch text, cursed text or corrupted text — is the look where letters seem to be falling apart, bleeding marks above and below themselves. The trick is real Unicode: every character gets a random pile of \"combining diacritical marks\" stacked on top, which the browser dutifully renders all at once. This page keeps it on the milder side because the heavy version is borderline unreadable and a lot of apps will either reject it or chew up other people's screens with it — there's a reason Discord truncates the worst of it. Two practical warnings up front: zalgo is sometimes flagged or auto-removed by moderation bots (it's a classic way to break chat layouts), and it genuinely hurts accessibility, so it's a \"profile name for fun\" thing, not a \"send this in a support ticket\" thing.",
+      "where": {
+        "intro": "Zalgo is the least portable style on the site by design — the whole point is overloading the renderer. Treat anything past \"mild\" as unreliable.",
+        "rows": [
+          {"app": "Discord", "fields": "messages, nicknames, status", "status": "partial", "note": "Discord caps the number of combining marks per message to stop layout abuse. Mild zalgo comes through; heavy zalgo gets truncated or stripped."},
+          {"app": "Instagram", "fields": "bio, captions", "status": "partial", "note": "Light zalgo usually shows; heavier versions render inconsistently and can get visually clipped. The @username field rejects it."},
+          {"app": "X (Twitter)", "fields": "posts, bio", "status": "partial", "note": "Light works in posts. Display name field tends to reject or flatten stacked marks."},
+          {"app": "WhatsApp / Telegram", "fields": "messages", "status": "partial", "note": "Renders, but heavy zalgo can break line spacing differently on Android vs iOS."},
+          {"app": "Games (Roblox, Fortnite, Free Fire…)", "fields": "in-game names", "status": "no", "note": "Almost universally rejected by name filters — combining-mark spam is exactly what those filters block. Use Bold or Full-width for a game name."},
+          {"app": "Email / support forms / professional contexts", "fields": "anywhere", "status": "no", "note": "Don't. It's unreadable to screen readers and looks broken. Plain text only."}
+        ]
+      },
+      "examples": {
+        "intro": "Where mild zalgo fits — and it really is just \"for the bit\":",
+        "items": [
+          {"label": "A spooky Discord nickname", "text": "A name with a light dusting of marks reads as \"glitched\" without breaking the member list. Keep the intensity low or Discord truncates it."},
+          {"label": "Halloween / horror-theme caption", "text": "One word of mild zalgo at the start of a caption sets the tone. Don't zalgo the whole sentence — nobody can read it."},
+          {"label": "\"Glitched\" stream overlay text", "text": "If you're pasting into overlay software, mild zalgo gives a corrupted-data vibe. Test it renders in your tool first; some text engines flatten the marks."},
+          {"label": "An edgy username (where allowed)", "text": "Some platforms tolerate light zalgo in names; most games don't. If a name keeps getting rejected, that's why — tone it down or switch styles."},
+          {"label": "A joke about something being \"cursed\"", "text": "Run the word \"cursed\" through it. It's a small, self-aware gag — not a vibe you want spread across a paragraph."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't go max intensity and expect it to survive", "text": "Discord truncates it, many fields reject it, and on a phone it can overlap the line above. The milder it is, the more places it actually works."},
+        {"title": "Don't use it where people need to read you", "text": "Screen readers can't parse it, and moderation bots may auto-remove it as spam. Profile name for fun, yes. Anything that matters, no."},
+        {"title": "Don't try to \"de-zalgo\" pasted text", "text": "Once it's pasted, the marks are part of the text and the original spacing is gone. The fix is to regenerate from your plain text at a lower intensity, or just retype it."},
+        {"title": "Don't expect a game to accept it", "text": "Name filters block combining-mark stacks specifically. If you want a glitchy-looking game name, that's not zalgo — try Full-width or a Bold style instead."}
+      ],
+      "faqs": [
+        {"q": "Why does Discord cut off my zalgo text?", "a": "Discord caps the number of combining marks it'll render per message to stop people breaking the chat. Heavy zalgo gets truncated or stripped. Use a lower intensity and it'll usually come through intact."},
+        {"q": "Will zalgo text get me banned somewhere?", "a": "Not normally, but some servers and games auto-remove it or treat it as spam because it can mess with layouts. If a name keeps getting rejected, that's why — tone it down."},
+        {"q": "Is 'glitch text' the same thing?", "a": "Mostly, yes — \"glitch text\", \"cursed text\" and \"corrupted text\" all describe the same combining-marks technique. Some sites also call upside-down or strikethrough \"glitchy\"; here zalgo is the one with stacked marks."},
+        {"q": "Can I undo it / clean it up?", "a": "Once it's pasted, the marks are part of the text. Easiest fix: regenerate from the original plain text at a lower intensity, or just retype it. There's no reliable one-click \"de-zalgo\" because the original spacing is gone."},
+        {"q": "Why does it look different on my friend's phone?", "a": "Combining marks are positioned by each device's font, so the same zalgo string overlaps the line above on some phones and looks tidy on others. Heavier zalgo amplifies that difference. There's no fix beyond using less of it."},
+        {"q": "Is there a 'safe' amount of zalgo?", "a": "Light zalgo — a mark or two per letter — is the most portable. It still won't pass game name filters and it's still bad for accessibility, but it renders in most chat apps and bios without breaking layouts. Past that, all bets are off."}
+      ],
+      "related": ["/", "/strikethrough-text-generator", "/upside-down-text-generator", "/cool-text-generator", "/mirror-text-generator", "/old-english-text-generator"]
+    },
+    {
+      "slug": "/upside-down-text-generator",
+      "kw": "upside down text generator",
+      "secondaryKw": ["flip text generator", "upside down letters", "text flipper", "flip text"],
+      "title": "Upside Down Text Generator — Flip Your Text ʇxǝ┴ ɹnoʎ dı˥Ⅎ",
+      "metaDescription": "Flip text upside down and reversed — copy-paste ready. Great for jokes, captions, and confusing your friends. No sign-up, no popups.",
+      "h1": "Upside Down Text Generator",
+      "lede": "Flipped version on the right. Plain reversed (mirror) text is also in the dropdown if that's what you actually meant.",
+      "focusStyles": ["upside-down", "reversed"],
+      "intro": "This flips your text so it reads ʇɥƃıɹ oʇ ʇɟǝ˥ puɐ uʍop ǝpısdn — by swapping each letter for a Unicode character that looks like its rotated twin (an 'e' becomes 'ǝ', a 'p' becomes 'd', and so on) and then reversing the order so it lines up when you turn your head. It's a gag tool, mostly: funny bio lines, captions that make people tilt their phone, that one friend's birthday post. A few honest caveats — the alphabet isn't perfect, so a handful of letters fall back to themselves (l, o, s, x, z look the same flipped), and capital letters are hit-or-miss because Unicode never made rotated versions of all of them. Numbers flip okay-ish. If you actually wanted the letters in reverse order but still right-side-up, that's the \"reversed\" option in the dropdown — different thing, also handy.",
+      "where": {
+        "intro": "Upside-down text is mostly just regular Unicode characters as far as an app is concerned, so it travels well. The weak spot isn't platforms — it's the incomplete flipped alphabet.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions", "status": "ok", "note": "Works in bios and captions. The @username field is stricter; the bio is the safe spot."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine — it's just characters to TikTok."},
+          {"app": "Discord", "fields": "messages, nicknames, status", "status": "ok", "note": "Renders everywhere, including nicknames. Great for a joke server name."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "Posts and bio fine. Display name usually takes it; the @handle won't."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. The flipped-letter shapes can look slightly different depending on the device font."},
+          {"app": "Games / usernames generally", "fields": "in-game names", "status": "partial", "note": "Some name filters accept it, some don't — the flipped characters are an unusual mix of code points. If it bounces, it's the filter, not the tool."}
+        ]
+      },
+      "examples": {
+        "intro": "It's a joke tool. Use it like one:",
+        "items": [
+          {"label": "A bio line that makes people tilt their phone", "text": "ʎʞ ɟlᴉd ɹnoʎ pɐǝH — a one-liner in your Instagram bio that's funnier because it's mildly annoying to read."},
+          {"label": "Birthday post for the friend who'd find it funny", "text": "Flip the message. They turn their head, they get it, everyone moves on. Don't flip a whole paragraph though."},
+          {"label": "A puzzle in a group chat", "text": "Post a flipped clue. People either rotate their phone or paste it into a flipper to read it back."},
+          {"label": "\"Everything's upside down today\" caption", "text": "One flipped word, plain rest of the sentence — it's a small visual gag, not the whole post."},
+          {"label": "Reversed instead of flipped", "text": "If you wanted txet sdrawkcab (same letters, right way up, just last-to-first), pick Reversed from the dropdown — that's the mirror-text effect, different from upside down."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't expect every letter to flip", "text": "Letters like l, o, s, x and z are nearly symmetric, so their flipped form looks identical — and Unicode has no rotated version of some capitals, which stay normal. It's not broken; it's the limit of the character set."},
+        {"title": "Don't mix up upside down with mirrored/reversed", "text": "Upside down is rotated 180° and reads inverted. Reversed (in the dropdown) keeps the letters upright and just puts them in backwards order. People want one and pick the other constantly — try both."},
+        {"title": "Don't flip a whole paragraph", "text": "Nobody reads more than a line of it comfortably. This style is for one-liners and jokes, not for actual content."},
+        {"title": "Don't use it where it matters", "text": "A flipped support message or a flipped form field is just an unreadable form field. Keep it to places where the gag is the point."}
+      ],
+      "faqs": [
+        {"q": "Will upside down text work on Instagram and TikTok?", "a": "Yes, in bios and captions on both. It's just regular Unicode characters as far as the app is concerned. Usernames are stricter — the bio is the safer spot."},
+        {"q": "Why do a few letters look the same upside down?", "a": "Some letters are nearly symmetric (l, o, s, x, z) so their flipped form is basically identical. And Unicode doesn't have a rotated version of every capital letter, so those stay normal. It's not broken — that's just the character set."},
+        {"q": "Upside down vs. mirrored vs. reversed — what's the difference?", "a": "Upside down: rotated 180°, so it reads backwards and inverted. Mirrored/reversed (in the dropdown): same letters, just in reverse order, still the right way up. People mix these up constantly — try both and you'll see which one you wanted."},
+        {"q": "Can I flip a whole paragraph?", "a": "Sure, paste away — just don't expect anyone to read it comfortably. This style is built for one-liners and jokes, not for actual content."},
+        {"q": "How do people read flipped text back?", "a": "They turn their phone or screen, or paste it into a flipper again to flip it the other way. It's not encryption — it's a visual gag that's trivial to reverse."},
+        {"q": "Do numbers and punctuation flip?", "a": "Numbers flip reasonably well — Unicode has rotated-ish forms for digits. Punctuation is partial: a period becomes a raised dot, a question mark becomes ¿, an exclamation becomes ¡. Anything without a flipped form stays as it is."}
+      ],
+      "related": ["/", "/mirror-text-generator", "/zalgo-text-generator", "/cool-text-generator", "/strikethrough-text-generator"]
+    },
+    {
+      "slug": "/cool-text-generator",
+      "kw": "cool text generator",
+      "secondaryKw": ["cool fonts generator", "cool text", "stylish letters generator", "cool text copy paste"],
+      "title": "Cool Text Generator — 80+ Cool Fonts to Copy and Paste",
+      "metaDescription": "Generate cool text in dozens of styles — bold, script, glitch, bubble, full-width, small caps and more. Copy-paste ready. No sign-up, no popups.",
+      "h1": "Cool Text Generator",
+      "lede": "Open the dropdown on the right — every style's in there. Browse the full list below and click any row to load it.",
+      "focusStyles": [],
+      "intro": "\"Cool text\" is a broad ask, so this page is the full buffet rather than one style: bold, script, glitch/zalgo, bubble, full-width \"aesthetic\" letters, small caps, strikethrough, upside down, the lot. Type once and skim — different things read as \"cool\" depending on where you're putting them. For a gaming tag, the bold and full-width styles tend to look the sharpest and survive name fields best. For a bio, small caps and script feel more deliberate than slapping every effect on at once, which mostly just reads as cluttered. For a chat flex, the glitchy and circled styles get the most reactions. It's all real Unicode, so it pastes into Instagram, TikTok, Discord, X, game clients, Roblox, whatever — with the usual caveat that the strictest username fields reject the more exotic glyphs. Pin the two or three you keep coming back to.",
+      "where": {
+        "intro": "Since this page covers everything, here's the rough portability ranking — useful when an app is being picky and you need a style that'll definitely render.",
+        "rows": [
+          {"app": "Most reliable everywhere", "fields": "Bold (sans), Small Caps, Full-width", "status": "ok", "note": "These render in nearly every app and pass the most username/name filters. Reach for Bold sans first when something boxes out."},
+          {"app": "Reliable in bios & messages", "fields": "Script, bold script, fraktur, double-struck, monospace, circled", "status": "ok", "note": "Great in bios, captions and chat. Username fields are hit-or-miss; games often reject the fancier ones."},
+          {"app": "Combining-mark styles", "fields": "Strikethrough, underline, slashed, zalgo", "status": "partial", "note": "Render in most chat apps and bios; rendering position varies by device; heavy zalgo gets truncated; games reject them."},
+          {"app": "Joke styles", "fields": "Upside down, reversed, spaced, dotted", "status": "ok", "note": "Just characters to most apps, so they travel fine — they're just not for serious use or long text."},
+          {"app": "Username / @handle fields", "fields": "all platforms", "status": "partial", "note": "The strictest field anywhere. Bold sans is your best shot; many styles won't take. The X @handle won't accept any of them."},
+          {"app": "Games (Roblox, Fortnite, Free Fire, PUBG…)", "fields": "in-game names", "status": "partial", "note": "Bold, Full-width and Small Caps usually pass; glitch and stacked-mark styles don't. Filters change often — if it bounces, switch to Bold."}
+        ]
+      },
+      "examples": {
+        "intro": "What \"cool\" means depends on where it's going:",
+        "items": [
+          {"label": "Gaming tag", "text": "Full-width (ｐｌａｙｅｒ) or Bold sans — sharp at small sizes, filter-friendly. Avoid stacking effects; one strong style reads cooler than a mess of three."},
+          {"label": "Instagram / TikTok bio", "text": "Small caps or script feel deliberate. A line of ꜱᴍᴀʟʟ ᴄᴀᴘꜱ plus one symbol beats a bio drowning in glitch marks."},
+          {"label": "Discord flex", "text": "Glitch (mild) and circled bubble letters get the most reactions in chat. Keep zalgo light so it doesn't get truncated."},
+          {"label": "Roblox / Fortnite name", "text": "Stick to Bold, Full-width or Small Caps — those pass most game name filters. The decorative stuff usually bounces in the actual username field."},
+          {"label": "Notion / docs heading", "text": "𝗕𝗼𝗹𝗱 𝘀𝗮𝗻𝘀 or 𝙼𝙾𝙽𝙾 makes a heading pop in editors that flatten formatting in some views."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't stack every effect at once", "text": "A name with bold + glitch + circled + spacing reads as a mess, not as \"cool\". Pick one strong style and, if you want, add a single symbol on each side."},
+        {"title": "Don't use the fancy styles for a game username", "text": "Most game name filters reject anything beyond a handful of common characters. Bold sans, Full-width and Small Caps are the styles that actually pass."},
+        {"title": "Don't assume what works in your bio works in your @handle", "text": "Bios are permissive; username/@handle fields are the strictest fields on any platform. Test in the bio first; expect the handle to reject most of it."},
+        {"title": "Don't paste glitch text into long messages", "text": "It gets truncated, breaks layouts, and bots may remove it. A mild glitch on one word is a flex; a glitched paragraph is just annoying."}
+      ],
+      "faqs": [
+        {"q": "Which 'cool font' works best for a gaming name?", "a": "Full-width and bold sans are the most reliable in name fields, and they read cleanly at small sizes. The heavily decorated styles look great in a bio but a lot of games refuse them in the actual username."},
+        {"q": "How many styles are there?", "a": "Around eighty on the site, and they all show up the moment you type — no \"unlock\" or page limit. Open the dropdown on the right to switch, or click any row in the list below to load it into the panel. Pin your favorites so you don't have to hunt for them."},
+        {"q": "Can I combine two cool styles?", "a": "A few combos exist as their own options — bold italic, bold script — but stacking effects manually usually makes things worse, not cooler. Pick one strong style and let it do the work."},
+        {"q": "Does this work on Roblox / Fortnite / Discord names?", "a": "Discord: almost everything. Roblox and Fortnite: the cleaner styles (bold, full-width, small caps) generally pass their name filters; the glitch and stacked-mark styles often don't. Try it — if it bounces, switch to bold."},
+        {"q": "What's the safest 'cool' style if I just want it to definitely show up?", "a": "Bold (sans). It's the most widely-rendered style here and the most likely to pass a username or game-name filter. It's the one to fall back to when anything fancier shows as empty boxes."},
+        {"q": "Why does the same style look different on different devices?", "a": "These characters are drawn by the device's font, not the text — so script swashes, combining-mark positions and a few glyph shapes vary between phones, OS versions and browsers. The widely-implemented styles (bold, small caps, full-width) vary the least."}
+      ],
+      "related": ["/", "/bold-text-generator", "/cursive-text-generator", "/zalgo-text-generator", "/bubble-text-generator", "/aesthetic-text-generator", "/stylish-text-generator"]
+    },
+    {
+      "slug": "/italic-text-generator",
+      "kw": "italic text generator",
+      "secondaryKw": ["italic font generator", "italic letters", "slanted text generator", "italic text copy paste"],
+      "title": "Italic Text Generator — Copy-Paste 𝘐𝘵𝘢𝘭𝘪𝘤 & Bold Italic Text",
+      "metaDescription": "Make italic text you can copy and paste — italic, bold italic, and slanted styles. Works where the app won't normally italicize. No sign-up, no popups.",
+      "h1": "Italic Text Generator",
+      "lede": "Italic on the right, plus bold italic and the sans-italic variant in the dropdown.",
+      "focusStyles": ["italic", "bold-italic", "sans-italic"],
+      "intro": "When an app won't let you italicize — an Instagram caption, an X bio, a Discord channel name — you can fake it with the italic Unicode characters, 𝘭𝘪𝘬𝘦 𝘵𝘩𝘪𝘴. This page gives you plain italic, bold italic for when you need both, and the sans-serif italic flavor which slants a little less aggressively. Same rule as the bold page: it's for short bits. A title, a quoted line, a word you want to lean on — fine. A whole paragraph in italic Unicode is hard to read and screen readers will often spell it out character by character, so don't. Also worth knowing: italic Unicode only covers letters, so numbers and punctuation stay upright, and a few apps that are picky about fonts will show the italic glyphs as boxes — bold sans is the fallback that always renders if you hit that wall.",
+      "where": {
+        "intro": "Italic is in the same family as bold and renders almost as widely. The two things to remember: no italic digits, and a few picky apps box it out.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions, comments", "status": "ok", "note": "Reliable in bio and captions. The @username field is stricter; bold sans is more likely to pass there than italic."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine. Username field stricter, like Instagram."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "Works everywhere. Use Discord's own *italic* in messages; use this for nicknames and bots that ignore markdown."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "All fine. The @handle stays plain."},
+          {"app": "LinkedIn", "fields": "posts, headline", "status": "partial", "note": "Posts and headline usually keep it; some profile fields strip it. Check after pasting."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. WhatsApp also has its own _italic_ with underscores in messages; this covers the places that doesn't reach."},
+          {"app": "A few apps with limited fonts", "fields": "anywhere", "status": "partial", "note": "Some older or locked-down fonts draw the italic math characters as boxes. If that happens, fall back to bold sans, which renders everywhere."}
+        ]
+      },
+      "examples": {
+        "intro": "Italic is a subtle tool — a lean, not a shout:",
+        "items": [
+          {"label": "A quoted line in a caption", "text": "Wrapping a quote in <em>𝘪𝘵𝘢𝘭𝘪𝘤</em> sets it apart from your own words without a big visual jump."},
+          {"label": "Soft emphasis on one word", "text": "<em>𝘢𝘤𝘵𝘶𝘢𝘭𝘭𝘺</em>, <em>𝘳𝘦𝘢𝘭𝘭𝘺</em>, <em>𝘱𝘭𝘦𝘢𝘴𝘦</em> — a gentle stress that bold would overdo."},
+          {"label": "A title or section name", "text": "An italic heading in an editor with no styling options reads as deliberate rather than plain."},
+          {"label": "Bold + italic for something that needs to stand out and lean", "text": "Pick Bold italic from the dropdown — <em>𝙗𝙤𝙡𝙙 𝙞𝙩𝙖𝙡𝙞𝙘</em> — for a heading or callout that needs both."},
+          {"label": "Sans italic if the regular one slants too hard", "text": "The serif italic (<em>𝘵𝘩𝘪𝘴</em>) is quite slanted; the sans italic (<em>𝘵𝘩𝘪𝘴</em>) leans less. Pick whichever looks right at the size you're using."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't italicize a whole bio", "text": "A short bio is fine; a long one gets tiring to read and accessibility takes a hit. One italic line for flavor beats five."},
+        {"title": "Don't expect numbers to slant", "text": "Italic Unicode is letters only — there's no italic 0–9, so digits stay upright. A mixed string can look odd; keep numbers out of italic runs if it bothers you."},
+        {"title": "Don't use it on a real web page", "text": "Search engines and screen readers see math characters, not styled text. Use real HTML <code>&lt;em&gt;</code>/<code>&lt;i&gt;</code> there. This is for apps with zero formatting options."},
+        {"title": "Don't assume it'll pass a username filter", "text": "Italic is less filter-friendly than bold sans. If you want a stylable username, bold sans is the one to try first."}
+      ],
+      "faqs": [
+        {"q": "Why won't my numbers go italic?", "a": "The italic Unicode range is letters only. There's no italic 0–9, so this tool leaves digits as they are instead of substituting something that looks wrong."},
+        {"q": "Italic vs. bold italic — when do I use which?", "a": "Plain italic for a subtle lean — a quote, a title, a soft emphasis. Bold italic when it needs to actually stand out. Sans italic if the regular italic looks too slanted for your taste."},
+        {"q": "Does italic Unicode hurt SEO if I use it on a web page?", "a": "Yes, avoid it in real web content. Search engines and screen readers see a string of math characters, not styled text. For a web page, use actual HTML/CSS italics. For an Instagram bio with no styling options, this is the workaround."},
+        {"q": "Can I italicize my whole bio?", "a": "Technically, sure. Practically, a short bio is fine; anything longer gets tiring to read and accessibility takes a hit. One italic line for flavor beats five."},
+        {"q": "Why does my italic text show as boxes in one app?", "a": "That app's font doesn't include the italic mathematical alphanumerics. It's the app, not your text. Bold sans is the most widely-supported style — switch to it if italic boxes out."},
+        {"q": "Serif italic vs. sans italic — what's the visible difference?", "a": "Serif italic (𝘵𝘩𝘪𝘴) has the little feet and a stronger slant — classic, bookish. Sans italic (𝘵𝘩𝘪𝘴) is cleaner and leans less. At small sizes the sans one usually stays more legible."}
+      ],
+      "related": ["/", "/bold-text-generator", "/cursive-text-generator", "/underline-text-generator", "/cool-text-generator"]
+    },
+    {
+      "slug": "/big-text-generator",
+      "kw": "big text generator",
+      "secondaryKw": ["big font generator", "large text generator", "big letters generator", "big text copy paste"],
+      "title": "Big Text Generator — Large Letters & Full-Width Text to Copy",
+      "metaDescription": "Make text look bigger: full-width letters and wide-spaced text you can copy and paste. Plus a heavier bold option. No sign-up, no popups.",
+      "h1": "Big Text Generator",
+      "lede": "Full-width letters on the right — the closest thing to 'bigger' you can paste anywhere. Wide-spaced and bold are in the dropdown.",
+      "focusStyles": ["full-width", "spaced", "bold-sans"],
+      "intro": "Here's the honest truth about \"big text\": you can't actually change font size by pasting characters — size is a property of the app, not the text. What you can do is make text take up more space, and that's what this page is for. The full-width characters (Ｂｉｇ Ｔｅｘｔ) are real Unicode letters drawn at double width — they genuinely look larger in a bio, a tweet, a Discord name. There's also wide-spaced text (B i g  T e x t) which spreads things out, and bold sans for when you want weight rather than width. If you specifically meant those giant multi-line block letters made of symbols — the ASCII-art kind — that's a different beast that only works in monospace places like a terminal or a code block, and it breaks everywhere else, which is why it's not here. For Instagram, X, Discord and the like, full-width is the one that actually delivers.",
+      "where": {
+        "intro": "Full-width is well-supported in bios and captions; the catch is the @username field and apps that normalize the full-width space back to a regular one.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions", "status": "ok", "note": "Full-width reads as \"bigger\" in bios and captions. The @username field usually rejects it; bold sans is more likely to pass there."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine. Username field stricter, like Instagram."},
+          {"app": "Discord", "fields": "messages, nicknames, status", "status": "ok", "note": "Renders everywhere, including nicknames — full-width is a popular Discord name look."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "All fine. The @handle stays plain."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. Some clients normalize the full-width space (the wide one) back to a regular space, tightening it up."},
+          {"app": "Games / usernames generally", "fields": "in-game names", "status": "partial", "note": "Some games accept full-width, some don't. If it bounces, bold sans is the filter-friendly fallback that still reads bold."}
+        ]
+      },
+      "examples": {
+        "intro": "Where \"big\" actually means full-width:",
+        "items": [
+          {"label": "Instagram bio header line", "text": "Ｂ Ｉ Ｏ as a full-width line reads larger than the body text around it — the closest you'll get to a \"bigger\" bio without the app's help."},
+          {"label": "Discord channel or category name", "text": "Full-width makes a channel name visually dominant in the sidebar. Discord renders it cleanly in names."},
+          {"label": "Tweet that needs to shout (a little)", "text": "A full-width word in a post stands out without all-caps energy."},
+          {"label": "Wide-spaced for an airy look", "text": "B I G  T E X T — pick Wide spaced from the dropdown. It doesn't read as \"bigger\" so much as \"open\". Good for a calm, spread-out bio."},
+          {"label": "Bold instead of wide", "text": "If you want weight rather than width, switch to Bold sans — 𝗕𝗜𝗚 — which also passes more name filters than full-width."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't expect to literally enlarge the font", "text": "No tool can — the app controls font size. Full-width characters are the workaround: they're drawn wide so they read as larger. That's as \"big\" as copy-paste gets."},
+        {"title": "Don't paste ASCII block letters into a normal bio", "text": "Those giant letters made of # and █ only line up in fixed-width contexts — a terminal, a Discord code block, a plain-text editor. In a normal bio they collapse into garbage."},
+        {"title": "Don't be surprised if the wide spaces shrink", "text": "Some apps normalize the full-width space back to a regular space, tightening everything. Use the Wide spaced option (which uses regular spaces) or accept the tighter look."},
+        {"title": "Don't rely on full-width in a username field", "text": "It usually gets rejected there. Bold sans renders almost everywhere and still reads bold — that's the fallback for names."}
+      ],
+      "faqs": [
+        {"q": "Can I make my Instagram bio text literally bigger?", "a": "No tool can — Instagram controls the font size. Full-width characters are the workaround: they're drawn wide so they read as larger, and they paste cleanly into bios and captions."},
+        {"q": "What about those big block letters made of # and █?", "a": "That's ASCII art. It only lines up in fixed-width contexts — a terminal, a Discord code block, a plain-text editor. Paste it into a normal bio and it collapses. Useful, but a different tool."},
+        {"q": "Full-width vs. wide-spaced — what's the difference?", "a": "Full-width swaps each letter for a double-width version, so the letters themselves look bigger. Wide-spaced keeps normal letters but adds gaps between them. Full-width reads as \"bigger\"; wide-spaced reads as \"airy\"."},
+        {"q": "Will full-width text break my username?", "a": "Often — the strictest username fields reject it. Bios and captions are reliable. If a username won't take full-width, fall back to bold sans, which renders almost everywhere."},
+        {"q": "Do numbers work in full-width?", "a": "Yes — there's a full set of full-width digits (０–９), so a full-width string with numbers in it comes out consistent. The bold sans option also has digits; wide-spaced just spaces out whatever you typed."},
+        {"q": "Why did my full-width text lose its spacing in one app?", "a": "That app normalized the full-width space character (the extra-wide one) into a regular space. The letters stay wide; the gaps tighten. If you want guaranteed spacing, use the Wide spaced option, which relies on regular spaces."}
+      ],
+      "related": ["/", "/bold-text-generator", "/aesthetic-text-generator", "/cool-text-generator", "/small-text-generator"]
+    },
+    {
+      "slug": "/stylish-text-generator",
+      "kw": "stylish text generator",
+      "secondaryKw": ["stylish fonts generator", "stylish name generator", "stylish letters", "stylish text copy paste"],
+      "title": "Stylish Text Generator — Stylish Fonts & Names to Copy-Paste",
+      "metaDescription": "Generate stylish text and stylish names — script, bold, small caps, decorative and more. Copy-paste ready for bios, captions and game tags. No sign-up, no popups.",
+      "h1": "Stylish Text Generator",
+      "lede": "Open the dropdown — script, bold, small caps, decorative, they're all there. Browse the full list below too.",
+      "focusStyles": [],
+      "intro": "\"Stylish text\" mostly means \"make my name or bio look a bit special\", so this page is the full set rather than one look — script, bold, small caps, full-width, circled, the works. A few opinions from using these a lot: for a name (Instagram, Free Fire, PUBG, a Discord handle), the cleaner styles win — bold, full-width, small caps — because they stay legible and they pass most name filters. For a bio, script and small caps feel intentional; loading every effect onto one line just looks busy. If you're after symbols around your name (the ✦彡 kind of decoration), that's a separate trick from changing the letterforms — combine a clean letter style here with a symbol or two and you've got it. Everything's real Unicode, so it pastes into the usual places, with the usual asterisk that the pickiest username fields reject the fancier glyphs.",
+      "where": {
+        "intro": "Same as the cool-text page: here's the portability picture so you can pick a style that'll actually show up where you're putting it.",
+        "rows": [
+          {"app": "Instagram / TikTok bio", "fields": "bio, captions", "status": "ok", "note": "Almost any style works here. Script and small caps read the most \"deliberate\"; circled and full-width also fine."},
+          {"app": "Instagram / TikTok @username", "fields": "username field", "status": "partial", "note": "The strict field. Bold sans is your best shot; many styles get rejected. Don't count on the fancy ones here."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "Most permissive. Nicknames take nearly everything; only extreme zalgo gets cut."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "Posts, bio and display name fine. The @handle won't take any styled characters."},
+          {"app": "Mobile games (Free Fire, PUBG, Mobile Legends, COD…)", "fields": "in-game names", "status": "partial", "note": "Clean styles (bold, full-width, small caps) usually pass; glitch and stacked-mark styles usually don't. Filters change with updates."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. Telegram usernames are restricted to plain characters."}
+        ]
+      },
+      "examples": {
+        "intro": "Stylish where it counts:",
+        "items": [
+          {"label": "Free Fire / PUBG / Mobile Legends name", "text": "Bold sans or Full-width — legible at small sizes, passes most game filters. Add one symbol on each side if you want decoration; don't stack effects."},
+          {"label": "Instagram bio name", "text": "<em>𝓪𝓵𝓮𝔁</em> in script reads personal; ᴀʟᴇx in small caps reads clean and typeset. Either beats a bio crammed with glitch marks."},
+          {"label": "Discord display name", "text": "Discord renders almost anything in nicknames, so this is the one place the decorative styles really shine."},
+          {"label": "Symbols around your name", "text": "Those ✦ ⟡ ☆ symbols are separate characters — style your name with a clean letter set here, then add a symbol on each side. One style + one or two symbols looks far better than five effects."},
+          {"label": "A username that needs to actually save", "text": "If a name keeps bouncing, the filter is rejecting non-ASCII. Switch to Bold sans — it's the style most likely to go through."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't pile on effects", "text": "Bold + glitch + circled + spacing on one name reads as cluttered, not stylish. One strong style, optionally one symbol on each side. That's the look people actually like."},
+        {"title": "Don't use decorative styles in a game username", "text": "Most game name filters reject anything beyond common characters. Bold sans, Full-width and Small Caps are the ones that pass — start there."},
+        {"title": "Don't assume the bio style works in the @username", "text": "Bios are permissive; the username/@handle field is the strictest field on any platform. Test in the bio; the handle will likely reject most of it."},
+        {"title": "Don't confuse 'stylish text' with 'stylish symbols'", "text": "Changing letterforms (this page) and adding decorative symbols around your name are two different things. You usually want both — but apply them separately."}
+      ],
+      "faqs": [
+        {"q": "What's the best stylish font for a game name?", "a": "Bold sans or full-width — they read clearly at small sizes and they get past most game name filters. Small caps is a good third option. The heavily decorated styles often get rejected in the actual username field even when they look great in a profile."},
+        {"q": "How do I get those symbols around my name?", "a": "Those come from symbol/emoji characters, not from restyling the letters. Style your name with one of the rows here, then add a symbol on each side. Mixing one clean letter style with one or two symbols looks far better than piling on effects."},
+        {"q": "Stylish text vs. fancy text — is there a difference?", "a": "Not really — they're the same idea and largely the same character sets. \"Stylish name generator\", \"fancy text generator\", \"cool fonts\" all land in the same place."},
+        {"q": "Will it work on Free Fire / PUBG / Mobile Legends?", "a": "The clean styles usually pass — bold, full-width, small caps. The glitch and stacked-mark styles often don't make it through those games' name filters. If a name bounces, switch to bold and try again."},
+        {"q": "Why does my stylish name show as boxes for some teammates?", "a": "Their device or game client is missing those glyphs. It's not broken on your end. Bold sans and Small Caps box out the least — pick those if you want the widest compatibility."},
+        {"q": "Can I save a stylish name and reuse it?", "a": "Yes — copy it once and it's just text; paste it wherever, whenever. On this site you can also pin your favorite styles so they sit at the top of the list next visit."}
+      ],
+      "related": ["/", "/cursive-text-generator", "/bold-text-generator", "/cool-text-generator", "/small-text-generator", "/aesthetic-text-generator"]
+    },
+    {
+      "slug": "/underline-text-generator",
+      "kw": "underline text generator",
+      "secondaryKw": ["underline text", "underlined letters generator", "strikethrough and underline", "underline text copy paste"],
+      "title": "Underline Text Generator — Underlined Text to Copy and Paste",
+      "metaDescription": "Add an underline to text you can copy and paste — single underline, double underline, plus strikethrough. Works where the app won't let you underline. No popups.",
+      "h1": "Underline Text Generator",
+      "lede": "Underlined version on the right — single and double. Strikethrough's in the dropdown too.",
+      "focusStyles": ["underline", "double-underline", "strikethrough"],
+      "intro": "Want u̲n̲d̲e̲r̲l̲i̲n̲e̲d̲ text somewhere that doesn't have an underline button — an Instagram caption, an X post, a Discord message that ignores markdown? This adds a combining underline mark to each character, so the line travels with the text wherever you paste it. There's a single underline, a double underline (u̳s̳e̳f̳u̳l̳ for a heavier rule), and strikethrough sitting right there in the dropdown since people who want one often want the other. A heads-up that applies to all the combining-mark styles: rendering varies a little by device and font — on some Androids the line sits slightly off, and a few apps collapse spaces oddly — so eyeball the result before you post it. And keep it short: an underlined word is fine; an underlined paragraph is hard to read. For a real web page, use HTML, not this.",
+      "where": {
+        "intro": "Combining-mark styles like underline are the ones where the device's font matters most — the line gets positioned by whatever font is rendering it, so it can look slightly different from phone to phone.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions, comments", "status": "ok", "note": "Bios and captions display it fine. The @username field rejects combining marks; the bio is the reliable spot."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine. Username field rejects it."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "Renders well, including in nicknames. Discord has no markdown underline in messages, so this is genuinely useful there."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "Posts, bio and display name fine. The @handle stays plain."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. The underline can sit a touch high or low depending on Android vs iOS font."},
+          {"app": "Some Android keyboards / older fonts", "fields": "anywhere", "status": "partial", "note": "A few fonts position the underline awkwardly, especially around letters with descenders (g, y, p). Cosmetic, varies by device, no fix from the tool side."},
+          {"app": "Games / usernames generally", "fields": "in-game names", "status": "no", "note": "Name filters block combining marks. Use a non-combining style (bold, full-width) for a game name."}
+        ]
+      },
+      "examples": {
+        "intro": "Underline where there's no underline button:",
+        "items": [
+          {"label": "A key term in a caption", "text": "Underlining one word — <em>read this</em> style — flags it without the loudness of bold or all-caps, where the app gives you no formatting."},
+          {"label": "A 'heading' in a Discord message", "text": "Discord has bold and italic markdown but no underline. A double-underlined line stands in for a heading nicely."},
+          {"label": "Emphasis in an X bio", "text": "A single underlined phrase in a bio reads as deliberate. Keep it to a phrase — an underlined bio is rough to read."},
+          {"label": "Strikethrough instead", "text": "If you wanted c̶r̶o̶s̶s̶e̶d̶ ̶o̶u̶t̶ rather than underlined, switch to Strikethrough in the dropdown — same combining-mark trick, horizontal line instead of low line."},
+          {"label": "Underline + bold", "text": "Generate the bold version first, then run that through underline. Don't stack three or four effects though — long mark stacks render badly and some apps choke on them."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't worry about the underline looking uneven on one phone", "text": "Combining marks are positioned by the device's font, so a few fonts place the line a hair high or low around descenders. It's cosmetic and device-dependent — there's no fix from the tool side."},
+        {"title": "Don't underline a paragraph", "text": "An underlined word or phrase is fine; an underlined paragraph is hard to read and screen readers don't love it. Short, intentional bits only."},
+        {"title": "Don't stack lots of combining effects", "text": "Underline + strikethrough + something else means many marks per character — long stacks can render badly and get truncated in some apps. One effect, maybe two."},
+        {"title": "Don't use it on your website", "text": "For web content use real HTML underlining — or better, don't, since underlines usually mean links online. This is for places like social bios that have zero formatting options."}
+      ],
+      "faqs": [
+        {"q": "Why does the underline look uneven on my phone?", "a": "Combining marks are positioned by your device's font, not the text, so a few fonts place the underline a hair high or low, especially around letters with descenders. It's cosmetic and varies by device — there's no fix from the tool side."},
+        {"q": "Single underline or double — what's the use case?", "a": "Single for normal emphasis. Double when you want it to read as a stronger rule — a heading, a key term. Double is also a bit more eye-catching in a bio."},
+        {"q": "Can I underline and bold at the same time?", "a": "Yes — generate the bold version first, then run that through the underline. Just don't combine three or four effects; it gets messy fast and some apps choke on long stacks of marks."},
+        {"q": "Should I use this on my website?", "a": "No. For web content use actual HTML underlining (or better, don't — underlines usually mean links online). This tool is for places like social bios that have zero formatting options."},
+        {"q": "Will an underlined username work?", "a": "Almost never — username fields block combining marks. Use a non-combining style like bold sans or full-width for a name. Underline is for bios, captions and messages."},
+        {"q": "Underline vs. strikethrough — they look like the same kind of effect?", "a": "They are — both bolt a combining line onto each character. Underline puts a low line under the text; strikethrough puts a line through the middle. Both are in the dropdown; pick whichever you actually meant."}
+      ],
+      "related": ["/", "/strikethrough-text-generator", "/bold-text-generator", "/italic-text-generator", "/cool-text-generator"]
+    },
+    {
+      "slug": "/strikethrough-text-generator",
+      "kw": "strikethrough text generator",
+      "secondaryKw": ["strikethrough text", "crossed out text generator", "cross out text", "strikethrough text copy paste"],
+      "title": "Strikethrough Text Generator — C̶r̶o̶s̶s̶e̶d̶-̶O̶u̶t̶ Text to Copy",
+      "metaDescription": "Cross out text — strikethrough you can copy and paste into Instagram, Discord, X, anywhere. Single strikethrough plus slashed and underline variants. No popups.",
+      "h1": "Strikethrough Text Generator",
+      "lede": "Crossed-out version on the right, with the slashed and underline variants in the dropdown.",
+      "focusStyles": ["strikethrough", "slashed", "underline"],
+      "intro": "Strikethrough is the \"I said it, but, like, ironically\" move — c̶r̶o̶s̶s̶e̶d̶ ̶o̶u̶t̶ but still readable. Plenty of apps don't give you the option (Instagram bios, most of X, lots of Discord contexts), so this slips a combining strike mark onto each character and the line comes along for the ride when you paste. There's also a slashed variant (a diagonal line instead of a horizontal one) for a slightly different look, and underline since the two often go together. The usual fine print for combining-mark styles: it renders a touch differently per device — on some phones the line sits a little high — and a couple of apps handle spaces between struck words oddly, so glance at the output first. Best for short stuff: a word, a phrase, a fake \"correction\" joke. A whole struck-through paragraph is a pain to read.",
+      "where": {
+        "intro": "Strikethrough is a combining-mark style, so the line's exact position depends on the rendering font. It travels well in bios and messages; it does not survive username fields or game name filters.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions, comments", "status": "ok", "note": "Bios and captions display it fine. The @username field rejects combining marks; the bio is the reliable spot."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine. Username field rejects it."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "Works everywhere. Discord's ~~markdown~~ strikethrough works in messages but not in nicknames, statuses or many bots — that's where this version helps."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "Posts, bio and display name fine. The @handle stays plain."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. WhatsApp also has its own ~strikethrough~ with tildes in messages; this covers the places that doesn't reach."},
+          {"app": "Some Android fonts / older devices", "fields": "anywhere", "status": "partial", "note": "The strike line can sit slightly high or low. Cosmetic and device-dependent."},
+          {"app": "Games / usernames generally", "fields": "in-game names", "status": "no", "note": "Name filters block combining marks. Use bold or full-width for a game name."}
+        ]
+      },
+      "examples": {
+        "intro": "The crossed-out move, where it works:",
+        "items": [
+          {"label": "The ironic 'correction' joke", "text": "n̶o̶t̶ ̶m̶a̶d̶ totally fine — strike the first version, follow it with the \"real\" one. Reads as a bit ironic, a bit self-aware."},
+          {"label": "A bio that's a little tongue-in-cheek", "text": "p̶r̶o̶f̶e̶s̶s̶i̶o̶n̶a̶l̶ chaos coordinator — a struck word in a bio sets a casual tone. Keep it to a word or two."},
+          {"label": "Marking something as 'done' in a list", "text": "In editors with no strikethrough button, a struck line reads as completed/cancelled — handy in a flat notes app."},
+          {"label": "Slashed instead of struck", "text": "If you want a diagonal line rather than a horizontal one, pick Slashed from the dropdown — d̸i̸f̸f̸e̸r̸e̸n̸t̸ vibe, same combining-mark trick."},
+          {"label": "Strikethrough on bold text", "text": "Make it bold first, then strike that. Keep the stacking shallow — long mark chains render badly and get truncated in some apps."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't worry about the line sitting slightly high on one phone", "text": "Combining marks are placed by the device font, so the strike line's exact position varies. Cosmetic, device-dependent, nothing the tool can change."},
+        {"title": "Don't strike through a whole paragraph", "text": "It's a pain to read and bad for screen readers. A word, a phrase, a fake correction — that's the right scale for this."},
+        {"title": "Don't use it in a username", "text": "Username fields reject combining marks. For a name, use a non-combining style — bold sans or full-width."},
+        {"title": "Don't reach for this inside a Discord message", "text": "Use Discord's own <code>~~strikethrough~~</code> there — it's cleaner. This Unicode version is for the places Discord's markdown doesn't reach: nicknames, statuses, bots, custom fields."}
+      ],
+      "faqs": [
+        {"q": "Will strikethrough text work in an Instagram bio?", "a": "Yes — bios and captions display it fine. The @username field is the one that rejects combining marks; the bio is the reliable spot."},
+        {"q": "Strikethrough vs. slashed — what's the difference?", "a": "Strikethrough is a horizontal line through the middle (the classic crossed-out look). Slashed is a diagonal line. Strikethrough reads as \"deleted\"; slashed reads as more of a stylistic mark. Both are in the dropdown."},
+        {"q": "Discord already has strikethrough — why use this?", "a": "Discord's ~~markdown~~ works in messages, but not everywhere — not in nicknames, not in some bots, not in custom statuses. This version is plain Unicode, so it works in those spots too. In a regular message, just use the markdown."},
+        {"q": "Can I strike through bold text?", "a": "Yes — make it bold first, then strike that. Keep the stacking shallow though; long chains of combining marks can render badly or get truncated in some apps."},
+        {"q": "Why does strikethrough show oddly on some words with spaces?", "a": "A few apps handle the combining mark on spaces between words inconsistently — you might see the line skip or stretch over a gap. It's a rendering quirk, varies by app; usually harmless on short text."},
+        {"q": "Is this the same as 'cross out text'?", "a": "Yes — \"cross out text\", \"crossed-out text\" and \"strikethrough\" all mean the same thing here: a line through the middle of each character. Pick Strikethrough; or Slashed if you want the diagonal version."}
+      ],
+      "related": ["/", "/underline-text-generator", "/zalgo-text-generator", "/bold-text-generator", "/cool-text-generator"]
+    },
+    {
+      "slug": "/bubble-text-generator",
+      "kw": "bubble text generator",
+      "secondaryKw": ["bubble letters generator", "circle text generator", "circled letters", "bubble text copy paste"],
+      "title": "Bubble Text Generator — Ⓒⓘⓡⓒⓛⓔⓓ Bubble Letters to Copy",
+      "metaDescription": "Turn text into bubble letters — circled letters you can copy and paste, plus the filled (negative) version and a squared style. No sign-up, no popups.",
+      "h1": "Bubble Text Generator",
+      "lede": "Bubble (circled) letters on the right — outline, filled, and a squared variant in the dropdown.",
+      "focusStyles": ["circled", "circled-negative", "squared"],
+      "intro": "Bubble text is the round, ⓑⓤⓑⓑⓛⓔ-ⓛⓞⓞⓚⓘⓝⓖ one — each letter sitting inside a little circle. This page gives you the standard outline circles, the filled \"negative\" version (🅑🅛🅐🅒🅚 circles with the letter knocked out), and a squared option for when you want corners instead. Two things to know going in. First, the circled set has both uppercase and lowercase, but the filled version is uppercase-only — lowercase letters in that style just fall back to the uppercase circle. Second, numbers behave: there's a circled 1–9 and a separate circled 0 (⓪), so digits work, unlike most fancy styles. It pastes wherever — Instagram, TikTok, Discord, X — and it's a popular one for usernames because the circled glyphs are common enough that a lot of name fields accept them.",
+      "where": {
+        "intro": "Circled letters are some of the more widely-implemented decorative characters, so bubble text shows up in more name fields than most styles. The catch is the filled version being uppercase-only.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions, username (often)", "status": "ok", "note": "Bio and captions always fine. The @username field accepts circled letters more often than it accepts most fancy styles — worth trying."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine. Username field is stricter than Instagram's but circled is still one of the better bets."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "Renders everywhere, including nicknames."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "All fine. The @handle stays plain."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. Telegram usernames are plain-only."},
+          {"app": "Games (Roblox, Free Fire, PUBG…)", "fields": "in-game names", "status": "partial", "note": "Circled letters pass some game filters and not others. Better odds than glitch styles; worse than bold sans. If it bounces, switch to bold."}
+        ]
+      },
+      "examples": {
+        "intro": "Where bubble letters land well:",
+        "items": [
+          {"label": "Instagram username", "text": "ⓙⓞⓡⓓⓐⓝ — circled letters are one of the few fancy styles that often survive the @username field. Try it before settling for plain."},
+          {"label": "A round, friendly bio name", "text": "Outline bubble letters read playful without being hard to read. Pair with one symbol on each side if you want."},
+          {"label": "A standout Discord nickname", "text": "Circled letters render cleanly in Discord nicknames and read clearly in the member list."},
+          {"label": "A number that needs to match the style", "text": "Unlike script or italic, circled has digits — ⓪①②③ — so a username like ⓟⓛⓐⓨⓔⓡ① comes out consistent."},
+          {"label": "Squared instead of circled", "text": "Want corners? Pick Squared from the dropdown — 🄹🄾🄱 — same boxed idea, sharper shape. Note it's letters only, no squared digits."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't expect lowercase in the filled bubble style", "text": "Unicode only defined the filled (negative) circled letters for A–Z uppercase. Lowercase letters fall back to the uppercase circle. Use the outline bubble style if you need real lowercase."},
+        {"title": "Don't assume the squared style has numbers", "text": "The squared letter set is A–Z only — no squared digits. If you need numbers, use the circled style instead, which has the full 0–9."},
+        {"title": "Don't stack bubble letters with combining effects", "text": "Circled characters plus underline/strikethrough marks can render awkwardly because the mark gets positioned relative to the circle. Pick one or the other."},
+        {"title": "Don't count on it for every game", "text": "Circled letters pass some name filters and not others, and games change filters with updates. If a name keeps bouncing, bold sans is the safe fallback."}
+      ],
+      "faqs": [
+        {"q": "Why don't lowercase letters work in the filled bubble style?", "a": "Unicode only defined the filled (negative) circled letters for A–Z uppercase. There's no lowercase set, so this tool uses the uppercase circle for both. The outline bubble style does have lowercase, so use that if you need it."},
+        {"q": "Do numbers work in bubble text?", "a": "Yes — circled 1 through 9 exist, and there's a separate circled zero (⓪). So unlike script or italic, you can bubble a number too. The squared style is letters only, though."},
+        {"q": "Is bubble text good for a username?", "a": "Often, yes — circled letters are widely supported, so a lot of platforms accept them in name fields, including Instagram's @username field more often than not. If one doesn't, the bio will, and bold sans is the universal fallback."},
+        {"q": "Bubble letters vs. squared letters?", "a": "Bubble = each letter in a circle (Ⓐ). Squared = each letter in a box (🄰). Same idea, different shape. Both are in the dropdown — pick whichever fits the vibe. Circled has numbers; squared doesn't."},
+        {"q": "Why do some bubble letters look filled-in on my friend's phone?", "a": "Different fonts draw the circled characters differently — some render them as thin outlines, others a bit heavier. The filled (negative) style is a separate set entirely. If you specifically want the knocked-out look, pick the filled option (uppercase only)."},
+        {"q": "Can I make a whole sentence in bubble letters?", "a": "Sure — it's just characters, so it pastes fine. It reads a little slower than plain text, so it's better for a name or a short line than a paragraph. Numbers and basic letters all have circled forms; most punctuation stays plain."}
+      ],
+      "related": ["/", "/cool-text-generator", "/aesthetic-text-generator", "/bold-text-generator", "/stylish-text-generator"]
+    },
+    {
+      "slug": "/mirror-text-generator",
+      "kw": "mirror text generator",
+      "secondaryKw": ["reverse text generator", "backwards text generator", "reversed letters", "mirror text copy paste"],
+      "title": "Mirror Text Generator — Reversed & Backwards Text to Copy",
+      "metaDescription": "Reverse text or mirror it — backwards text you can copy and paste. Plus the upside-down flip. Great for puzzles, jokes and reflections. No sign-up, no popups.",
+      "h1": "Mirror Text Generator",
+      "lede": "Reversed (backwards) version on the right — and the upside-down flip in the dropdown if that's what you wanted.",
+      "focusStyles": ["reversed", "upside-down"],
+      "intro": "There are two things people mean by \"mirror text\" and they're genuinely different, so both are in the dropdown. \"Reversed\" simply puts your characters in backwards order — txet sdrawkcab — same letters, right way up, just last-to-first. That's what you want for a puzzle, a hidden message, or text that reads correctly in a mirror's reflection. \"Upside down\" actually rotates the letters 180° (ǝ for e, d for p, and so on) and reverses them too, so it reads inverted — that's the gag-bio one. Reversed text is dead simple and works literally everywhere because it's just your normal characters reordered. Upside down is a bit more fragile since not every letter has a flipped Unicode form, so a few fall back to themselves. If you tried one and it wasn't the effect you pictured, switch to the other — nine times out of ten that's the fix.",
+      "where": {
+        "intro": "Reversed text is the single most portable thing on the whole site — it uses no special characters at all, just your own letters in a different order. Upside down is mostly portable too, with the usual caveat about its incomplete alphabet.",
+        "rows": [
+          {"app": "Everywhere — reversed", "fields": "any text field, any app", "status": "ok", "note": "Reversed is just your normal characters reordered, so anything that accepts text accepts it. No glyph can box out because there are no special glyphs."},
+          {"app": "Instagram", "fields": "bio, captions — upside down", "status": "ok", "note": "Upside-down text works in bios and captions. The @username field is stricter; the bio is the safe spot."},
+          {"app": "TikTok", "fields": "bio, captions — upside down", "status": "ok", "note": "Fine."},
+          {"app": "Discord", "fields": "messages, nicknames — upside down", "status": "ok", "note": "Renders everywhere, including nicknames."},
+          {"app": "X (Twitter)", "fields": "posts, bio — upside down", "status": "ok", "note": "Posts and bio fine; display name usually takes it; the @handle won't."},
+          {"app": "Games / usernames — upside down", "fields": "in-game names", "status": "partial", "note": "Some name filters accept the flipped characters, some don't. Reversed text always works (it's plain characters), so use that if the flipped version bounces."}
+        ]
+      },
+      "examples": {
+        "intro": "Two effects, two jobs:",
+        "items": [
+          {"label": "Text that reads right in a mirror", "text": "Reversed: write it backwards, hold it up to a mirror, it reads forward. Classic for a sign, a car decal mockup, or a kids' activity."},
+          {"label": "A hidden-ish message", "text": "Reversed text is readable if you know to read right-to-left or paste it into another reverser — so it's a light puzzle, not a real secret. Good for a riddle."},
+          {"label": "A bio line that makes people tilt their phone", "text": "Upside down (in the dropdown): ʇɥƃᴉɹ spɐǝɹ llᴉʇs ʇnq — annoying-on-purpose, which is the joke."},
+          {"label": "A reversed username", "text": "Since reversed is plain characters, it usually passes name filters that block fancier styles. nadroJ instead of Jordan, that kind of thing."},
+          {"label": "Reversed AND flipped", "text": "If you want it both backwards and upside down, that's the Upside down option — it does the rotation and the reordering together so it lines up when you turn your head."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't confuse reversed with upside down", "text": "Reversed = same letters, backwards order, right way up. Upside down = rotated 180° and reordered, reads inverted. People want one and grab the other constantly. Try both — the difference is obvious once you see it."},
+        {"title": "Don't treat reversed text as a real secret", "text": "It's trivially easy to read back — read right to left, or paste it into a reverser. Fun for a puzzle; useless for anything you actually need hidden."},
+        {"title": "Don't expect upside down to be a complete alphabet", "text": "Some letters (especially capitals) have no rotated Unicode form, so they stay normal — that's why upside-down text can look half-flipped. Reversed has no such problem because it doesn't substitute anything."},
+        {"title": "Don't paste a reversed paragraph and expect it to be read", "text": "A line is a fun puzzle; a paragraph is just a chore. Keep it short."}
+      ],
+      "faqs": [
+        {"q": "Reversed vs. mirrored vs. upside down — which is which?", "a": "Reversed: characters in backwards order, still upright (olleh). Upside down: rotated 180° and reversed, so it reads inverted. \"Mirrored\" usually means reversed — text that looks right in a mirror. Both are in the dropdown; try both."},
+        {"q": "Does reversed text work everywhere?", "a": "Yes — it's just your normal letters in a different order, so any app that accepts text accepts this. There are no special characters to box out. Upside down is the one that occasionally has letters fall back to normal because Unicode lacks a rotated form for them."},
+        {"q": "Can I use this to write a secret message?", "a": "Sort of — reversed text is trivially easy to read back (read right-to-left, or paste it into another reverser), so it's more 'fun puzzle' than 'real secret'. Good for a riddle, not for anything you actually need hidden."},
+        {"q": "Why does upside down text look half-broken?", "a": "Because the rotated alphabet isn't complete — some letters, especially capitals, don't have an upside-down Unicode character, so they stay as they are. It's a known limit, not a bug."},
+        {"q": "Will a reversed username get rejected?", "a": "Less often than fancier styles — reversed text is made of plain characters, so it usually passes name filters that block special glyphs. If the upside-down version bounces, switch to plain reversed."},
+        {"q": "Can I reverse text and keep it readable?", "a": "Reversed text is readable if you read it backwards or run it through a reverser — that's the point. If you want it to read normally but look styled, you don't want this page; you want one of the font-style pages like cursive or bold."}
+      ],
+      "related": ["/", "/upside-down-text-generator", "/zalgo-text-generator", "/cool-text-generator"]
+    },
+    {
+      "slug": "/aesthetic-text-generator",
+      "kw": "aesthetic text generator",
+      "secondaryKw": ["vaporwave text generator", "wide text generator", "spaced out text", "aesthetic text copy paste"],
+      "title": "Aesthetic Text Generator — Ｖａｐｏｒｗａｖｅ & Wide Text to Copy",
+      "metaDescription": "Make aesthetic / vaporwave text — full-width letters and wide-spaced text you can copy and paste into bios and captions. Plus small caps. No sign-up, no popups.",
+      "h1": "Aesthetic Text Generator",
+      "lede": "The aesthetic look on the right — full-width (ａ ｅ ｓ ｔ ｈ ｅ ｔ ｉ ｃ). Wide-spaced and small caps are in the dropdown.",
+      "focusStyles": ["full-width", "spaced", "small-caps"],
+      "intro": "The \"aesthetic\" / vaporwave look is mostly one trick: full-width characters, the kind originally meant for Japanese typesetting, which are drawn extra wide so Latin text spreads out into that ｄｒｅａｍｙ, ｓｐａｃｅｄ vibe. This page puts that front and center, plus a wide-spaced variant (a e s t h e t i c) that uses regular letters with gaps between them — slightly different feel, sometimes renders better in apps that don't love full-width glyphs — and small caps, which pairs well with the aesthetic style for a calmer, more typeset look. It's a bio and caption favorite: Instagram, TikTok, Tumblr, Pinterest all display full-width text fine. The catch: full-width spaces sometimes get squished back to normal width by an app, and the strictest username fields reject full-width letters.",
+      "where": {
+        "intro": "Full-width text is well-supported in bios and captions across the apps where the \"aesthetic\" look actually matters. The two soft spots: username fields, and apps that normalize the wide space character.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions", "status": "ok", "note": "Full-width and wide-spaced both display fine in bios and captions. The @username field rejects full-width letters."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine — same story as Instagram."},
+          {"app": "Tumblr / Pinterest", "fields": "posts, descriptions, bio", "status": "ok", "note": "The aesthetic look is at home here; both display full-width text without issue."},
+          {"app": "Discord", "fields": "messages, nicknames, status", "status": "ok", "note": "Renders everywhere, including nicknames. Full-width is a common Discord name look."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "All fine. The @handle stays plain."},
+          {"app": "Apps that normalize the wide space", "fields": "anywhere", "status": "partial", "note": "Some clients turn the full-width space back into a regular space, tightening the look. The letters stay wide; the gaps shrink. Use Wide spaced (regular spaces) if you need guaranteed spacing."},
+          {"app": "Username / @handle fields generally", "fields": "username fields", "status": "no", "note": "Full-width letters get rejected here. Bold sans is the fallback that often passes and still reads bold."}
+        ]
+      },
+      "examples": {
+        "intro": "The aesthetic look, applied:",
+        "items": [
+          {"label": "Aesthetic Instagram bio", "text": "ｓｏｆｔ ｇｉｒｌ ｓｕｍｍｅｒ — full-width letters give the spaced-out, slightly nostalgic feel that \"aesthetic bio\" searches are after. One line of it, not the whole bio."},
+          {"label": "Tumblr / Pinterest caption", "text": "A full-width header line at the top of a caption sets the vibe. These platforms display it cleanly."},
+          {"label": "Vaporwave-theme post", "text": "ＡＥＳＴＨＥＴＩＣ in full-width is half the look right there. Pair with the era's color palette and you're done."},
+          {"label": "Wide-spaced for a calmer version", "text": "a e s t h e t i c — pick Wide spaced from the dropdown. It reads as \"open\" rather than \"wide\", and it survives apps that squish full-width spaces."},
+          {"label": "Small caps to pair with it", "text": "ꜱᴍᴀʟʟ ᴄᴀᴘꜱ next to a full-width line reads typeset and intentional — a cleaner aesthetic than stacking effects."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't be surprised if the spacing collapses", "text": "Some apps normalize the full-width space character into a regular space, so the wide gaps tighten up. The letters stay wide. If you need the spacing, use the Wide spaced option, which uses regular spaces."},
+        {"title": "Don't put full-width letters in a username", "text": "That field rejects them. Bold sans renders almost everywhere and still reads bold — that's the fallback for names."},
+        {"title": "Don't aesthetic your whole bio", "text": "A full-width or wide-spaced line at the top is the look. A whole bio of it is slow to read and the effect wears off. One line carries it."},
+        {"title": "Don't confuse full-width with 'big text'", "text": "Full-width letters are drawn wide, which reads as larger — but it's not a font-size change. If you literally wanted bigger text, no copy-paste tool can do that; full-width is as close as it gets."}
+      ],
+      "faqs": [
+        {"q": "What font do aesthetic Instagram bios use?", "a": "Usually full-width characters — the wide Latin letters borrowed from CJK typesetting. They're not a font you install; they're Unicode characters you paste, which is why they survive in a bio that has no font options. Small caps is the other common one."},
+        {"q": "Full-width vs. wide-spaced — which looks better?", "a": "Full-width makes each letter physically wider, which gives the strongest vaporwave effect. Wide-spaced keeps normal letters and just adds gaps — subtler, and a touch more reliable in apps that handle full-width awkwardly. Try both side by side."},
+        {"q": "Why did my wide spaces disappear?", "a": "Some apps normalize the full-width space character back to a regular space, which tightens everything up. If that happens, use the Wide spaced option (it uses regular spaces) or accept the slightly tighter look."},
+        {"q": "Does aesthetic text work on TikTok captions?", "a": "Yes — full-width and wide-spaced both display fine in TikTok captions and bios, same as on Instagram. As ever, the @username field is the strict one; the bio is safe."},
+        {"q": "Can I use the aesthetic look in my game name?", "a": "Sometimes — some games accept full-width, many don't, and they change filters with updates. If it bounces, bold sans is the fallback that passes most filters and still looks bold."},
+        {"q": "Is 'vaporwave text' the same as 'aesthetic text'?", "a": "Effectively yes — both point to the full-width Latin characters (and sometimes wide-spaced text and small caps). \"Vaporwave font\", \"aesthetic font\", \"wide text\" all land here."}
+      ],
+      "related": ["/", "/small-text-generator", "/cursive-text-generator", "/big-text-generator", "/cool-text-generator", "/stylish-text-generator"]
+    },
+    {
+      "slug": "/old-english-text-generator",
+      "kw": "old english text generator",
+      "secondaryKw": ["gothic text generator", "blackletter text generator", "fraktur generator", "old english font copy paste"],
+      "title": "Old English Text Generator — 𝔊𝔬𝔱𝔥𝔦𝔠 Blackletter Text to Copy",
+      "metaDescription": "Generate Old English / gothic / blackletter (fraktur) text you can copy and paste. Regular and bold weights. Great for tattoos, logos and dramatic bios. No popups.",
+      "h1": "Old English Text Generator",
+      "lede": "The blackletter look on the right — regular fraktur. Bold fraktur and bold script are in the dropdown.",
+      "focusStyles": ["fraktur", "bold-fraktur", "bold-script"],
+      "intro": "This is the heavy, dramatic, 𝔬𝔩𝔡-𝔪𝔞𝔫𝔲𝔰𝔠𝔯𝔦𝔭𝔱 look — what people variously call Old English, gothic, blackletter, or by its proper name, fraktur. It maps your letters onto the Unicode fraktur set, in a regular weight and a bolder one for when the thin version gets lost on a busy background. It's a popular choice for tattoo mockups, band-ish logos, sports-team-style names, and bios that want to feel old and weighty. Real talk on the limits: fraktur is letters only — no numbers, no special punctuation — so digits stay plain, and a couple of the uppercase fraktur letters (the C and the I especially) look unusual enough that some people mistake them for other letters, which is just how that historic alphabet was drawn. It pastes into the usual places, though, like most decorative styles, the pickiest username fields will turn it down.",
+      "where": {
+        "intro": "Fraktur is moderately well-supported — bios, captions and messages handle it fine. The quirks are the missing digits and a couple of capital letters that look like other letters.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions", "status": "ok", "note": "Reliable in bios and captions. The @username field usually rejects it; the bio is the safe spot."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine. Username field stricter, like Instagram."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "Renders everywhere, including nicknames — fraktur is a common dramatic Discord name look."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "All fine. The @handle stays plain."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. The ornate letterforms can look slightly different depending on the device font."},
+          {"app": "Some Android keyboards / older fonts", "fields": "anywhere", "status": "partial", "note": "A few fonts don't include the fraktur glyphs and draw boxes. Bold fraktur sometimes renders where the thin one doesn't."},
+          {"app": "Games / usernames generally", "fields": "in-game names", "status": "partial", "note": "Many game filters reject fraktur. If a name bounces, try Bold (sans)."}
+        ]
+      },
+      "examples": {
+        "intro": "The old, weighty look — where it fits:",
+        "items": [
+          {"label": "Tattoo design mockup", "text": "Run a name or phrase through fraktur to show your artist the vibe — <em>𝔉𝔞𝔪𝔦𝔩𝔶</em>, <em>𝔖𝔱𝔯𝔢𝔫𝔤𝔱𝔥</em>. For the actual stencil, they'll use a real blackletter font; this is the reference."},
+          {"label": "Band-ish or team-ish name", "text": "Fraktur reads heavy and old, which is exactly the energy for a metal-band aesthetic or a sports-team-style handle. Bold fraktur if the thin one looks faint."},
+          {"label": "A dramatic bio line", "text": "<em>𝔠𝔥𝔞𝔬𝔰 𝔯𝔢𝔦𝔤𝔫𝔰</em> or similar — fraktur gives a bio gravitas (or melodrama, depending on taste). One line, not the whole bio."},
+          {"label": "Discord server / channel name", "text": "Discord renders fraktur cleanly in names, so a dramatic server name actually sticks here, unlike on Instagram where the username field fights you."},
+          {"label": "Bold fraktur for visibility", "text": "Against a photo or a colored banner, thin fraktur can disappear. Switch to 𝖇𝖔𝖑𝖉 𝖋𝖗𝖆𝖐𝖙𝖚𝖗 in the dropdown — same flavor, more weight."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't put numbers in fraktur", "text": "There's no fraktur version of 0–9 in Unicode, so digits stay plain and the effect looks unfinished. Keep numbers out, or accept they'll be plain."},
+        {"title": "Don't be alarmed if a capital looks like the wrong letter", "text": "Historic blackletter drew certain capitals — notably C and I — in shapes that look strange to modern eyes. That's faithful to the original alphabet, not a glitch. If a reader might get confused, bold fraktur is a bit clearer."},
+        {"title": "Don't use this for an actual tattoo or print job", "text": "These are Unicode display characters, not a real typeface — they won't scale or print like a font file. As a mockup to show the look, fine. For the real thing, get a licensed blackletter font."},
+        {"title": "Don't expect it in a username", "text": "Fraktur usually gets rejected in username fields. For a name, bold sans is the fallback that passes most filters."}
+      ],
+      "faqs": [
+        {"q": "Old English, gothic, blackletter, fraktur — are these all the same?", "a": "For copy-paste purposes, yes — they all point to the Unicode fraktur characters. \"Old English font\" is the search term most people use; \"blackletter\" and \"fraktur\" are the typographically correct names. Same letters either way."},
+        {"q": "Why don't numbers work in Old English text?", "a": "The Unicode fraktur range covers A–Z and a–z only. There's no fraktur set for 0–9 or most punctuation, so this tool leaves them as normal characters rather than substituting something that doesn't match."},
+        {"q": "Can I use this for a tattoo design?", "a": "As a mockup or to show your artist the vibe, sure. For the actual stencil you (or they) should use a proper blackletter font file — these Unicode characters aren't a real typeface and won't scale or print the way a font will."},
+        {"q": "Some capital letters look like the wrong letter — why?", "a": "Historic blackletter drew certain capitals — notably C, I, and a few others — in shapes that look strange to modern eyes. That's faithful to the original alphabet, not a glitch. If a reader might get confused, the bold fraktur version is a bit clearer."},
+        {"q": "Fraktur vs. bold fraktur — when do I switch?", "a": "Use bold fraktur (𝖋𝖗𝖆𝖐𝖙𝖚𝖗) when the thin version (𝔣𝔯𝔞𝔨𝔱𝔲𝔯) gets lost — against a photo, a colored banner, at small sizes. It's the same letterforms with more weight, so it stays legible where the regular one fades."},
+        {"q": "Will Old English text show up on everyone's phone?", "a": "Mostly. A few older Androids and stock keyboards don't include the fraktur glyphs and show boxes — that's their font, not your text. Bold fraktur renders in some places the thin one doesn't; bold sans is the universal fallback."}
+      ],
+      "related": ["/", "/cursive-text-generator", "/bold-text-generator", "/cool-text-generator", "/zalgo-text-generator"]
+    },
+    {
+      "slug": "/japanese-font-generator",
+      "kw": "japanese font generator",
+      "secondaryKw": ["japanese style text generator", "japanese letters generator", "kawaii text generator", "japanese font copy paste"],
+      "title": "Japanese-Style Font Generator — ｱｲｳ-Style Text to Copy and Paste",
+      "metaDescription": "Generate Japanese-style text — full-width letters, wide-spaced text, and small caps you can copy and paste. Not real Japanese — a styling effect. No sign-up, no popups.",
+      "h1": "Japanese-Style Font Generator",
+      "lede": "The Japanese-style look on the right: full-width letters. Wide-spaced and small caps in the dropdown.",
+      "focusStyles": ["full-width", "spaced", "small-caps"],
+      "intro": "Quick honesty up front: this is a Japanese-style font generator, not a translator and not a way to write actual Japanese. What people usually want here is the visual flavor — the wide, evenly-spaced, slightly-retro look you get from full-width Latin characters, which exist in Unicode precisely because Japanese text mixes Latin letters at the same width as kana. So this page leans on the full-width style (Ｊａｐａｎｅｓｅ-ｓｔｙｌｅ) and a wide-spaced variant, plus small caps for a calmer typeset feel. It's used for aesthetic bios, vaporwave-adjacent posts, anime-fan profiles, that kind of thing. If you actually need Japanese script — hiragana, katakana, kanji — that's a keyboard or translation job, not this tool. And the usual caveat: full-width letters render fine in bios and captions; the strictest username fields reject them.",
+      "where": {
+        "intro": "It's the same full-width characters as the aesthetic page, so the compatibility is the same: solid in bios and captions, weak in username fields, and watch for apps that squish the wide space.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions", "status": "ok", "note": "Full-width displays cleanly in bios and captions. The @username field rejects it."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Fine — same as Instagram."},
+          {"app": "Discord", "fields": "messages, nicknames, status", "status": "ok", "note": "Renders everywhere, including nicknames."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "All fine. The @handle stays plain."},
+          {"app": "Tumblr / Pinterest", "fields": "posts, descriptions, bio", "status": "ok", "note": "The aesthetic-adjacent look is at home here; full-width displays without issue."},
+          {"app": "Apps that normalize the wide space", "fields": "anywhere", "status": "partial", "note": "Some clients turn the full-width space into a regular one, tightening the spacing. Letters stay wide. Use Wide spaced if you need guaranteed gaps."},
+          {"app": "Username / @handle fields generally", "fields": "username fields", "status": "no", "note": "Full-width letters get rejected. Bold sans is the fallback that often passes."}
+        ]
+      },
+      "examples": {
+        "intro": "The Japanese-style flavor, used as the styling effect it is:",
+        "items": [
+          {"label": "Anime-fan Instagram bio", "text": "ｗｅｅｂ ｔｒａｓｈ ｆｏｒｅｖｅｒ in full-width gives the spaced-out, slightly-nostalgic look people associate with Japanese typesetting — without claiming to be Japanese."},
+          {"label": "Vaporwave / retro post", "text": "Ｊ Ａ Ｐ Ａ Ｎ as a full-width header line is half the aesthetic right there."},
+          {"label": "Profile name with a Japanese vibe", "text": "Full-width letters in a display name read \"styled\" in that specific way. Discord renders it cleanly in nicknames."},
+          {"label": "Real kana around styled Latin text", "text": "Want actual katakana? Type it from a Japanese keyboard or copy it from a translator, then paste it around text styled here. The two work together fine — this tool just doesn't generate the kana."},
+          {"label": "Wide-spaced or small caps as alternatives", "text": "If full-width looks too much, Wide spaced (regular letters, big gaps) or ꜱᴍᴀʟʟ ᴄᴀᴘꜱ both give a calmer typeset feel — both in the dropdown."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't expect this to translate anything", "text": "It restyles your Latin letters into the wide look associated with Japanese typesetting — the words stay in whatever language you typed. For real translation, use a translator. For the aesthetic, this is it."},
+        {"title": "Don't expect to write kana or kanji here", "text": "This tool doesn't generate Japanese script. Type hiragana/katakana/kanji from a Japanese keyboard or copy them from a translator, then paste them in alongside text styled here."},
+        {"title": "Don't put full-width letters in a username", "text": "That field rejects them. Bold sans is the fallback that usually passes and still reads bold."},
+        {"title": "Don't be surprised if the spacing collapses", "text": "Some apps normalize the full-width space back to a regular space, tightening the look. Use Wide spaced (regular spaces) for guaranteed gaps."}
+      ],
+      "faqs": [
+        {"q": "Does this translate my text into Japanese?", "a": "No — it restyles your Latin letters into the wide, evenly-spaced look associated with Japanese typesetting. The words stay in whatever language you typed. For real translation you want a translator; for the aesthetic, this is it."},
+        {"q": "What makes text look 'Japanese-style' if it's still English letters?", "a": "Full-width characters. In Japanese text, Latin letters are often drawn at the same width as kana, which is wider than usual. Pasting that effect onto English gives the recognizable spaced-out, slightly nostalgic look."},
+        {"q": "Can I mix in actual katakana or kanji?", "a": "Not from this tool — it doesn't generate Japanese script. You'd type those from a Japanese keyboard or copy them from a translator. You can absolutely paste real kana around text styled here, though."},
+        {"q": "Where does Japanese-style text work?", "a": "Bios and captions on Instagram, TikTok, Discord and X all handle full-width text fine. Username fields are the strict ones — if a name won't take it, fall back to bold sans, which renders almost everywhere."},
+        {"q": "Is this the same as the aesthetic / vaporwave text generator?", "a": "Largely, yes — it uses the same full-width characters. The framing is different (Japanese-style vs. vaporwave), but the underlying trick and the compatibility are identical. Wide-spaced and small caps are also in the dropdown on both."},
+        {"q": "Why does my full-width text look tighter on one app?", "a": "That app normalized the extra-wide full-width space into a regular space. The letters stay wide; the gaps shrink. If you need the spacing, use the Wide spaced option, which uses ordinary spaces between regular letters."}
+      ],
+      "related": ["/", "/aesthetic-text-generator", "/cool-text-generator", "/cursive-text-generator", "/small-text-generator"]
+    },
+    {
+      "slug": "/superscript-generator",
+      "kw": "superscript generator",
+      "secondaryKw": ["subscript generator", "superscript text generator", "small letters above the line", "superscript copy paste"],
+      "title": "Superscript Generator — ˢᵘᵖᵉʳˢᶜʳⁱᵖᵗ & Subscript Text to Copy",
+      "metaDescription": "Generate superscript and subscript text you can copy and paste — tiny raised or lowered characters for footnotes, math-ish notation, and aesthetic bios. No popups.",
+      "h1": "Superscript & Subscript Generator",
+      "lede": "Superscript on the right, subscript and small caps in the dropdown — small caps being the readable fallback when letters go missing.",
+      "focusStyles": ["superscript", "subscript", "small-caps"],
+      "intro": "Superscript is the tiny raised text — ˡⁱᵏᵉ ᵗʰⁱˢ — and subscript is the tiny dropped version, ₗᵢₖₑ ₜₕᵢₛ. Both come from real Unicode characters, so they paste anywhere: a footnote marker in a comment, math-ish or chemistry-ish notation (H₂O, x², that sort of thing), or just a small-text aesthetic on a bio. The thing nobody tells you: Unicode never finished either alphabet. Superscript is missing a few lowercase letters (and most capitals) — they fall back to full size — and subscript is even patchier, covering only a handful of letters. So a word that's all lowercase letters Unicode happens to have will look great; one with the wrong letters or any capitals will look half-broken. If you want consistent small-looking text with a complete alphabet, small caps (also in the dropdown) is the better tool — it just doesn't sit above or below the line.",
+      "where": {
+        "intro": "Where superscript and subscript render isn't really the issue — they're just characters, and they show up almost everywhere. The catch is internal: the alphabets have holes, so whether your specific word looks right depends on which letters it uses.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, captions, comments", "status": "ok", "note": "Displays fine — but any letter Unicode doesn't have a superscript form for will pop back to full size, which can ruin a word. Numbers always work."},
+          {"app": "TikTok", "fields": "bio, captions, comments", "status": "ok", "note": "Same — fine to display, patchy by design for letters."},
+          {"app": "Discord", "fields": "messages, nicknames, About Me", "status": "ok", "note": "Renders everywhere. Small caps reads more cleanly than superscript at nickname size."},
+          {"app": "X (Twitter)", "fields": "posts, bio, display name", "status": "ok", "note": "Fine. The @handle stays plain."},
+          {"app": "WhatsApp / Telegram", "fields": "messages, status, About", "status": "ok", "note": "Works. Subscript digits in formulas render well; subscript letters are very limited."},
+          {"app": "Math / chemistry notation anywhere", "fields": "any text field", "status": "ok", "note": "Superscript and subscript digits are complete — x², H₂O, 10⁶ all come out right. This is the one use where there are no missing-character problems."},
+          {"app": "Games / usernames generally", "fields": "in-game names", "status": "partial", "note": "Hit-or-miss — partly the filters, partly the missing-letter fallbacks making a name look broken. Small caps is the more reliable small-looking option for names."}
+        ]
+      },
+      "examples": {
+        "intro": "What superscript and subscript are actually good for:",
+        "items": [
+          {"label": "Footnote markers in a comment", "text": "A claim followed by ¹ and the source — the superscript digits are complete, so this always looks right, even where there's no real footnote feature."},
+          {"label": "Math notation", "text": "x², n³, 10⁶, E=mc² — superscript digits handle exponents cleanly in any plain text field."},
+          {"label": "Chemical formulas", "text": "H₂O, CO₂, C₆H₁₂O₆ — subscript digits are complete, so formulas come out correct. (Subscript letters are the limited part.)"},
+          {"label": "A small-text bio (with a caveat)", "text": "ˡⁱᵗᵗˡᵉ ᵗᵉˣᵗ looks neat — until a word hits a missing letter and that letter jumps to full size. For a whole word or line, small caps (in the dropdown) stays consistent."},
+          {"label": "Small caps when superscript breaks", "text": "If a word comes out with full-size gaps, switch to ꜱᴍᴀʟʟ ᴄᴀᴘꜱ — complete alphabet, reads small and clean, just sits on the baseline instead of above it."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "Don't assume superscript has a full alphabet", "text": "It doesn't — several lowercase letters and most capitals have no superscript form, so they stay full size. Subscript is even more limited. For consistent small text, use small caps."},
+        {"title": "Don't expect it to actually shrink the font size", "text": "These are separate characters drawn small — not a size change. Nothing pasted as text can resize text; the app controls that."},
+        {"title": "Don't put capital letters in superscript and expect them small", "text": "Almost no capitals have superscript forms — they'll stay full size. If you need a small-looking capital, that's what small caps is for."},
+        {"title": "Don't use subscript for general 'small text'", "text": "Subscript covers only a handful of letters — it's built for chemical formulas and footnotes, not for styling a bio. Reach for small caps for that."}
+      ],
+      "faqs": [
+        {"q": "Why are some of my letters full-size in superscript?", "a": "Because Unicode doesn't have a superscript version of every letter — several lowercase letters and most capitals just don't exist in that range, so they stay normal size. Subscript is even more limited. There's no fix; it's the character set's gap."},
+        {"q": "Superscript vs. subscript vs. small caps — what should I use?", "a": "Superscript for raised tiny text (footnotes, exponents). Subscript for lowered tiny text (chemical formulas). Small caps when you want a full word to read small and clean with no missing letters — it's the most reliable of the three for general 'small text'."},
+        {"q": "Can I write H₂O or x² with this?", "a": "Yes — the digits all have superscript and subscript forms, so numbers in formulas work well. It's letters where the gaps appear, not numbers."},
+        {"q": "Does this work in an Instagram bio?", "a": "Yes, in bios and captions. Just expect any unsupported letters to pop back to full size, which can ruin the effect — for a clean look across a whole word, small caps is the safer pick."},
+        {"q": "Why do superscript digits work but superscript letters don't?", "a": "Unicode defined a complete set of superscript (and subscript) digits because they're needed for math and chemistry notation, but only a partial set of letters. So numbers in formulas are fine; a word may have gaps."},
+        {"q": "Is there a superscript capital A, B, C…?", "a": "Mostly no. A handful of capital-ish superscript letters exist, but the set is far from complete, so most uppercase letters fall back to full size. If you need small-looking capitals, small caps gives you the whole alphabet."}
+      ],
+      "related": ["/", "/small-text-generator", "/cool-text-generator", "/aesthetic-text-generator"]
+    }
+  ]
+}
