@@ -1,12 +1,12 @@
 {
   "site": {
-    "name": "FontGen",
+    "name": "Fontletr",
     "tagline": "Fancy text generators that aren't buried in popups.",
-    "baseUrl": "https://example.com",
+    "baseUrl": "https://fontletr.com",
     "contactEmail": "",
     "adsenseClient": "",
     "defaultLocale": "en",
-    "author": "the FontGen team",
+    "author": "the Fontletr team",
     "lastReviewed": "2026-05-12",
     "footerNote": "Built clean on purpose. One ad, below the fold. No newsletter modal, no notification prompt, no 'continue reading' wall.",
     "compatNoteShared": "All of these are real Unicode characters, not images or font files, so the styling travels with the text wherever you paste it. The catch: a few apps with locked-down fonts will draw some glyphs as empty boxes — that's the receiving app, not the text, and switching styles fixes it. Bold (sans), Small Caps and Full-width render the widest. Checked May 2026; platforms change their font handling constantly, so treat the table below as a strong guide, not a guarantee."

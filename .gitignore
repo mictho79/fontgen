@@ -1,0 +1,9 @@
+# Build output (régénéré par build.py)
+dist/
+
+# Datas SERP
+*.csv
+
+# Python
+__pycache__/
+*.pyc

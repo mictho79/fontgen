@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""FontGen static site builder. Reads pages.json + support-pages.json, emits dist/."""
+"""Fontletr static site builder. Reads pages.json + support-pages.json, emits dist/."""
 import json, os, shutil, re, html, hashlib
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -55,7 +55,7 @@ def esc(s): return html.escape(str(s), quote=True)
 # ---- shared chunks ----
 def topbar():
     return ('<div class="topbar">'
-            '<span class="logo"><a href="/">FontGen</a></span>'
+            '<span class="logo"><a href="/">Fontletr</a></span>'
             '<nav><a href="/">Generator</a><a href="/all-tools">All tools</a>'
             '<a href="/how-unicode-text-works">How it works</a></nav>'
             '<span class="spacer"></span>'
@@ -245,11 +245,11 @@ def write(slug, htmlstr):
 def build_generator(page):
     slug = page["slug"]
     url = BASE + ("/" if slug == "/" else slug + "/")
-    trail = [("/", "FontGen")]
+    trail = [("/", "Fontletr")]
     if slug != "/":
         trail += [("/all-tools", "Tools"), (None, page["h1"])]
     else:
-        trail = [(None, "FontGen")]
+        trail = [(None, "Fontletr")]
     jsonld = [webapp_jsonld(page["h1"], url, page["metaDescription"])]
     fld = faq_jsonld(page.get("faqs"), url)
     if fld: jsonld.append(fld)
@@ -278,7 +278,7 @@ def build_generator(page):
 def build_support(page):
     slug = page["slug"]
     url = BASE + slug + "/"
-    trail = [("/", "FontGen"), (None, page.get("crumb", page["h1"]))]
+    trail = [("/", "Fontletr"), (None, page.get("crumb", page["h1"]))]
     body_html = page["bodyHtml"].replace("{CONTACT_EMAIL}", esc(CONTACT_EMAIL))
     if page.get("renderToolsList"):
         cells = "".join(
@@ -303,7 +303,7 @@ def build_support(page):
 # ---- 404 ----
 def build_404():
     url = BASE + "/404"
-    body = (head("Page not found — FontGen", "That page doesn't exist. Here are the generators that do.", url, page_config=None)
+    body = (head("Page not found — Fontletr", "That page doesn't exist. Here are the generators that do.", url, page_config=None)
             + topbar()
             + '<div class="wrap"><div class="pagehead"><h1>Page not found</h1>'
             '<p class="lede">That URL doesn’t exist (or doesn’t exist yet). The tools that do are below.</p></div>'

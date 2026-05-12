@@ -1,4 +1,4 @@
-/* FontGen — shared Unicode style engine + app. Reads window.PAGE_CONFIG = {focusStyles:[ids], ...} */
+/* Fontletr — shared Unicode style engine + app. Reads window.PAGE_CONFIG = {focusStyles:[ids], ...} */
 (function(){
 'use strict';
 var A='ABCDEFGHIJKLMNOPQRSTUVWXYZ',a='abcdefghijklmnopqrstuvwxyz',D='0123456789';
