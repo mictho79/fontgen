@@ -2,7 +2,12 @@
 (function(){
 'use strict';
 var A='ABCDEFGHIJKLMNOPQRSTUVWXYZ',a='abcdefghijklmnopqrstuvwxyz',D='0123456789';
-function offsetMap(uS,lS,dS){var m={},i;for(i=0;i<26;i++){if(uS!=null)m[A[i]]=String.fromCodePoint(uS+i);if(lS!=null)m[a[i]]=String.fromCodePoint(lS+i);}if(dS!=null)for(i=0;i<10;i++)m[D[i]]=String.fromCodePoint(dS+i);return m;}
+function offsetMap(uS,lS,dS,exc){var m={},i,k;for(i=0;i<26;i++){if(uS!=null)m[A[i]]=String.fromCodePoint(uS+i);if(lS!=null)m[a[i]]=String.fromCodePoint(lS+i);}if(dS!=null)for(i=0;i<10;i++)m[D[i]]=String.fromCodePoint(dS+i);if(exc)for(k in exc)m[k]=exc[k];return m;}
+/* Mathematical Alphanumeric Symbols has reserved holes — Unicode placed those letters in the Letterlike Symbols block instead. Patch them in or browsers render □. */
+var EXC_ITALIC={h:'ℎ'};
+var EXC_SCRIPT={B:'ℬ',E:'ℰ',F:'ℱ',H:'ℋ',I:'ℐ',L:'ℒ',M:'ℳ',R:'ℛ',e:'ℯ',g:'ℊ',o:'ℴ'};
+var EXC_FRAKTUR={C:'ℭ',H:'ℌ',I:'ℑ',R:'ℜ',Z:'ℨ'};
+var EXC_DSTRUCK={C:'ℂ',H:'ℍ',N:'ℕ',P:'ℙ',Q:'ℚ',R:'ℝ',Z:'ℤ'};
 function pairMap(f,t){var tt=Array.from(t),m={},i;for(i=0;i<f.length;i++)m[f[i]]=tt[i];return m;}
 function applyMap(s,m,c){var o='',ch,arr=Array.from(s),i;for(i=0;i<arr.length;i++){ch=arr[i];o+=(m[ch]!=null?m[ch]:ch);if(c)o+=c;}return o;}
 function buildSimple(base){return (function(){var m={},i;for(i=0;i<26;i++){m[A[i]]=String.fromCodePoint(base+i);m[a[i]]=String.fromCodePoint(base+i);}return m;})();}
@@ -13,16 +18,16 @@ var subscript=pairMap('aehijklmnoprstuvx','ₐₑₕᵢⱼₖₗₘₙₒₚᵣ�
 var STYLES=[
   {id:'bold-sans',name:'Bold (sans)',cat:'bold',fn:function(s){return applyMap(s,offsetMap(0x1D5D4,0x1D5EE,0x1D7EC));}},
   {id:'bold-serif',name:'Bold (serif)',cat:'bold',fn:function(s){return applyMap(s,offsetMap(0x1D400,0x1D41A,0x1D7CE));}},
-  {id:'italic',name:'Italic',cat:'bold',fn:function(s){return applyMap(s,offsetMap(0x1D434,0x1D44E,null));}},
+  {id:'italic',name:'Italic',cat:'bold',fn:function(s){return applyMap(s,offsetMap(0x1D434,0x1D44E,null,EXC_ITALIC));}},
   {id:'bold-italic',name:'Bold italic',cat:'bold',fn:function(s){return applyMap(s,offsetMap(0x1D468,0x1D482,null));}},
   {id:'sans-italic',name:'Sans italic',cat:'bold',fn:function(s){return applyMap(s,offsetMap(0x1D608,0x1D622,null));}},
   {id:'sans-serif',name:'Sans-serif',cat:'bold',fn:function(s){return applyMap(s,offsetMap(0x1D5A0,0x1D5BA,0x1D7E2));}},
-  {id:'script-cursive',name:'Script · cursive',cat:'callig',fn:function(s){return applyMap(s,offsetMap(0x1D49C,0x1D4B6,null));}},
+  {id:'script-cursive',name:'Script · cursive',cat:'callig',fn:function(s){return applyMap(s,offsetMap(0x1D49C,0x1D4B6,null,EXC_SCRIPT));}},
   {id:'bold-script',name:'Bold script',cat:'callig',fn:function(s){return applyMap(s,offsetMap(0x1D4D0,0x1D4EA,null));}},
-  {id:'fraktur',name:'Fraktur (Old English)',cat:'callig',fn:function(s){return applyMap(s,offsetMap(0x1D504,0x1D51E,null));}},
+  {id:'fraktur',name:'Fraktur (Old English)',cat:'callig',fn:function(s){return applyMap(s,offsetMap(0x1D504,0x1D51E,null,EXC_FRAKTUR));}},
   {id:'bold-fraktur',name:'Bold fraktur',cat:'callig',fn:function(s){return applyMap(s,offsetMap(0x1D56C,0x1D586,null));}},
   {id:'small-caps',name:'Small caps',cat:'callig',fn:function(s){return applyMap(s.toLowerCase(),smallCaps);}},
-  {id:'double-struck',name:'Double-struck',cat:'outline',fn:function(s){return applyMap(s,offsetMap(0x1D538,0x1D552,0x1D7D8));}},
+  {id:'double-struck',name:'Double-struck',cat:'outline',fn:function(s){return applyMap(s,offsetMap(0x1D538,0x1D552,0x1D7D8,EXC_DSTRUCK));}},
   {id:'monospace',name:'Monospace',cat:'outline',fn:function(s){return applyMap(s,offsetMap(0x1D670,0x1D68A,0x1D7F6));}},
   {id:'full-width',name:'Full-width',cat:'deco',fn:function(s){return applyMap(s,(function(){var m={},i;for(i=0;i<26;i++){m[A[i]]=String.fromCodePoint(0xFF21+i);m[a[i]]=String.fromCodePoint(0xFF41+i);}for(i=0;i<10;i++)m[D[i]]=String.fromCodePoint(0xFF10+i);m[' ']='　';return m;})());}},
   {id:'circled',name:'Circled (bubble)',cat:'deco',fn:function(s){return applyMap(s,(function(){var m={},i;for(i=0;i<26;i++){m[A[i]]=String.fromCodePoint(0x24B6+i);m[a[i]]=String.fromCodePoint(0x24D0+i);}m['0']='⓪';for(i=1;i<=9;i++)m[D[i]]=String.fromCodePoint(0x2460+i-1);return m;})());}},
@@ -30,8 +35,8 @@ var STYLES=[
   {id:'squared',name:'Squared',cat:'deco',fn:function(s){return applyMap(s,(function(){var m={},i;for(i=0;i<26;i++){m[A[i]]=String.fromCodePoint(0x1F130+i);m[a[i]]=String.fromCodePoint(0x1F130+i);}return m;})());}},
   {id:'parenthesized',name:'Parenthesized',cat:'deco',fn:function(s){return applyMap(s,(function(){var m={},i;for(i=0;i<26;i++){m[a[i]]=String.fromCodePoint(0x249C+i);m[A[i]]=String.fromCodePoint(0x249C+i);}return m;})());}},
   {id:'bracketed',name:'Bracketed ⟦x⟧',cat:'deco',fn:function(s){return Array.from(s).map(function(c){return c===' '?' ':'⟦'+c+'⟧';}).join('');}},
-  {id:'superscript',name:'Superscript',cat:'fun',fn:function(s){return applyMap(s.toLowerCase(),superscript);}},
-  {id:'subscript',name:'Subscript',cat:'fun',fn:function(s){return applyMap(s.toLowerCase(),subscript);}},
+  {id:'superscript',name:'Superscript',cat:'fun',fn:function(s){return applyMap(applyMap(s.toLowerCase(),superscript),smallCaps);}},
+  {id:'subscript',name:'Subscript',cat:'fun',fn:function(s){return applyMap(applyMap(s.toLowerCase(),subscript),smallCaps);}},
   {id:'spaced',name:'Wide spaced',cat:'fun',fn:function(s){return Array.from(s).join(' ');}},
   {id:'dotted',name:'Dotted',cat:'fun',fn:function(s){return Array.from(s).join('·');}},
   {id:'upside-down',name:'Upside down',cat:'fun',fn:function(s){var f={'a':'ɐ','b':'q','c':'ɔ','d':'p','e':'ǝ','f':'ɟ','g':'ƃ','h':'ɥ','i':'ᴉ','j':'ɾ','k':'ʞ','l':'l','m':'ɯ','n':'u','o':'o','p':'d','q':'b','r':'ɹ','s':'s','t':'ʇ','u':'n','v':'ʌ','w':'ʍ','x':'x','y':'ʎ','z':'z','.':'˙',',':"'",'?':'¿','!':'¡',"'":',','"':',,','(':')',')':'('};return Array.from(s.toLowerCase()).reverse().map(function(c){return f[c]||c;}).join('');}},
