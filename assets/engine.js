@@ -52,6 +52,11 @@ var byId={};STYLES.forEach(function(s){byId[s.id]=s;});
 
 /* ---- app: two-panel "translator" — type left, see chosen style right ---- */
 var cfg=window.PAGE_CONFIG||{focusStyles:[]};
+var L=cfg.labels||{}, G=cfg.groups||{}, U=cfg.ui||{};
+function styleName(st){return L[st.id]||st.name;}
+function groupLabel(c){return G[c]||CAT_LABEL[c];}
+function ui(k,d){return (U[k]!=null)?U[k]:d;}
+var SAMPLE=ui('sample',SAMPLE);
 var focus=(cfg.focusStyles||[]).map(function(id){return byId[id];}).filter(Boolean);
 var selectable=focus.length?focus:STYLES;
 var current=focus[0]||byId['script-cursive']||STYLES[0];
@@ -76,13 +81,13 @@ function populateSelect(){
   if(!styleSelect)return;
   var html='';
   if(selectable.length<=6){
-    selectable.forEach(function(st){html+='<option value="'+escA(st.id)+'">'+esc(st.name)+'</option>';});
+    selectable.forEach(function(st){html+='<option value="'+escA(st.id)+'">'+esc(styleName(st))+'</option>';});
   }else{
     var byCat={};STYLES.forEach(function(st){(byCat[st.cat]=byCat[st.cat]||[]).push(st);});
     ['callig','bold','outline','deco','fx','fun'].forEach(function(c){
       if(!byCat[c])return;
-      html+='<optgroup label="'+esc(CAT_LABEL[c])+'">';
-      byCat[c].forEach(function(st){html+='<option value="'+escA(st.id)+'">'+esc(st.name)+'</option>';});
+      html+='<optgroup label="'+esc(groupLabel(c))+'">';
+      byCat[c].forEach(function(st){html+='<option value="'+escA(st.id)+'">'+esc(styleName(st))+'</option>';});
       html+='</optgroup>';
     });
   }
@@ -91,8 +96,8 @@ function populateSelect(){
 }
 
 function render(){
-  var raw=input.value, isPh=raw.length===0, text=isPh?'fancy text':raw;
-  if(counter)counter.textContent=raw.length+' character'+(raw.length===1?'':'s');
+  var raw=input.value, isPh=raw.length===0, text=isPh?SAMPLE:raw;
+  if(counter)counter.textContent=raw.length+' '+(raw.length===1?ui('charOne','character'):ui('charMany','characters'));
 
   /* right panel: the currently chosen style */
   if(bigOut){
@@ -104,32 +109,32 @@ function render(){
   if(!results)return;
   var ordered=STYLES.slice().sort(function(x,y){return (favs.has(x.id)?0:1)-(favs.has(y.id)?0:1);});
   var list=favOnly?ordered.filter(function(s){return favs.has(s.id);}):ordered;
-  if(styleCount)styleCount.textContent=list.length+' styles';
-  if(list.length===0){results.innerHTML='<p class="empty">No favorites yet — tap a star next to any style to pin it here.</p>';return;}
+  if(styleCount)styleCount.textContent=list.length+' '+ui('styles','styles');
+  if(list.length===0){results.innerHTML=ui('noFavs','No favorites yet — tap a star next to any style to pin it here.');return;}
   var html='',favHeaderDone=false,allHeaderDone=(favs.size===0||favOnly);
   list.forEach(function(st){
-    if(favs.has(st.id)&&!favHeaderDone){html+='<div class="grouphead">★ Pinned</div>';favHeaderDone=true;}
-    if(!favs.has(st.id)&&!allHeaderDone){html+='<div class="grouphead">All styles</div>';allHeaderDone=true;}
+    if(favs.has(st.id)&&!favHeaderDone){html+='<div class="grouphead">'+ui('pinned','★ Pinned')+'</div>';favHeaderDone=true;}
+    if(!favs.has(st.id)&&!allHeaderDone){html+='<div class="grouphead">'+ui('allStyles','All styles')+'</div>';allHeaderDone=true;}
     var o=output(st,text);
     var pv=isPh?'<span class="ph">'+esc(o)+'</span>':esc(o);
     html+='<div class="row'+(st.id===current.id?' active':'')+'" data-id="'+escA(st.id)+'">'
-      +'<span class="name"><span class="dot d-'+st.cat+'"></span>'+esc(st.name)+'</span>'
+      +'<span class="name"><span class="dot d-'+st.cat+'"></span>'+esc(styleName(st))+'</span>'
       +'<span class="preview">'+pv+'</span>'
-      +'<button class="star '+(favs.has(st.id)?'on':'')+'" data-act="star" title="Pin to top">'+(favs.has(st.id)?'★':'☆')+'</button>'
-      +'<button class="copy" data-act="copy">Copy</button></div>';
+      +'<button class="star '+(favs.has(st.id)?'on':'')+'" data-act="star" title="'+escA(ui('pinTitle','Pin to top'))+'">'+(favs.has(st.id)?'★':'☆')+'</button>'
+      +'<button class="copy" data-act="copy">'+esc(ui('copy','Copy'))+'</button></div>';
   });
   results.innerHTML=html;
 }
 
 function findStyle(el){var w=el.closest('[data-id]');return w?byId[w.dataset.id]:null;}
-function flashBtn(btn){btn.textContent='✓ Copied';btn.classList.add('done');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('done');},1400);}
+function flashBtn(btn){btn.textContent=ui('copied','✓ Copied');btn.classList.add('done');setTimeout(function(){btn.textContent=ui('copy','Copy');btn.classList.remove('done');},1400);}
 function copyText(txt,btn,row){
   function ok(){if(btn)flashBtn(btn);if(row){row.classList.add('flash');setTimeout(function(){row.classList.remove('flash');},1400);}}
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok,function(){fallbackCopy(txt);ok();});}
   else{fallbackCopy(txt);ok();}
 }
 function fallbackCopy(txt){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);}
-function curText(){return input.value.length?input.value:'fancy text';}
+function curText(){return input.value.length?input.value:SAMPLE;}
 function setCurrent(st){if(!st)return;current=st;if(styleSelect)styleSelect.value=st.id;render();}
 
 /* right-panel copy */
@@ -154,11 +159,11 @@ if(results)results.addEventListener('click',function(e){
 function debounce(fn,ms){var t;return function(){var args=arguments;clearTimeout(t);t=setTimeout(function(){fn.apply(null,args);},ms);};}
 input.addEventListener('input',debounce(render,40));
 var clr=document.getElementById('clearBtn');if(clr)clr.addEventListener('click',function(){input.value='';render();input.focus();});
-var fo=document.getElementById('favOnly');if(fo)fo.addEventListener('click',function(){favOnly=!favOnly;var st=document.getElementById('favState');if(st)st.textContent=favOnly?'On':'Off';render();});
+var fo=document.getElementById('favOnly');if(fo)fo.addEventListener('click',function(){favOnly=!favOnly;var st=document.getElementById('favState');if(st)st.textContent=favOnly?ui('on','On'):ui('off','Off');render();});
 
 /* theme */
 var themeBtn=document.getElementById('themeBtn');
-function setTheme(t){document.documentElement.dataset.theme=t;try{localStorage.setItem('fontgen_theme',t);}catch(e){}if(themeBtn)themeBtn.textContent='Theme: '+(t==='dark'?'Dark':'Light')+' ▾';}
+function setTheme(t){document.documentElement.dataset.theme=t;try{localStorage.setItem('fontgen_theme',t);}catch(e){}if(themeBtn)themeBtn.textContent=ui('theme','Theme: ')+(t==='dark'?ui('dark','Dark'):ui('light','Light'))+' ▾';}
 var savedTheme;try{savedTheme=localStorage.getItem('fontgen_theme');}catch(e){}
 setTheme(savedTheme||'light');
 if(themeBtn)themeBtn.addEventListener('click',function(){setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');});
