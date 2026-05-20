@@ -1,0 +1,857 @@
+{
+  "site": {
+    "name": "Fontletr",
+    "tagline": "Generadores de letras sin pop-ups por todos lados.",
+    "baseUrl": "https://fontletr.com",
+    "footerNote": "Hecho limpio a propósito. Un solo anuncio, debajo del pliegue. Sin modal de newsletter, sin pedir notificaciones, sin muro de «seguir leyendo».",
+    "compatNoteShared": "Todo esto son caracteres Unicode reales, no imágenes ni archivos de fuente, así que el estilo viaja con el texto donde lo pegues. El detalle: algunas apps con fuentes restringidas mostrarán ciertos glifos como cuadritos vacíos — es la app que recibe el texto, no el texto, y cambiar de estilo lo soluciona. Negrita (sans), Versalitas y Ancho completo son las que mejor se ven en más lugares. Revisado en mayo de 2026; las plataformas cambian su manejo de fuentes constantemente, así que tómalo como una guía fuerte, no una garantía."
+  },
+  "categories": {
+    "bold": "Peso", "callig": "Caligráfica", "outline": "Contorno",
+    "deco": "Decorativa", "fx": "Efecto", "fun": "Varios"
+  },
+  "pages": [
+    {
+      "slug": "/es/",
+      "alt": "/",
+      "kw": "generador de letras",
+      "secondaryKw": ["letras para nick", "generador de letras para free fire", "convertidor de letras", "letras para copiar y pegar"],
+      "title": "Generador de Letras 🎮 para Nick, Free Fire e Instagram",
+      "metaDescription": "Convierte tu texto en más de 80 estilos de letras para copiar y pegar: cursivas, góticas, negritas, letras para nick de Free Fire y bios de Instagram. Sin registro, sin pop-ups.",
+      "h1": "Generador de Letras",
+      "lede": "Escribe a la izquierda y tu texto se convierte al instante. Toca cualquier estilo de la lista para cargarlo arriba y copiarlo.",
+      "focusStyles": [],
+      "intro": "Pega o escribe lo que quieras y este generador de letras lo transforma en más de 80 estilos distintos: cursivas, góticas, negritas, letras pequeñas, en espejo, zalgo y un montón más. No son imágenes ni fuentes que tengas que descargar — son caracteres Unicode reales, así que los copias y se ven igual donde los pegues: el nick de Free Fire, la bio de Instagram o TikTok, el estado de WhatsApp, un grupo de Discord. Todo funciona mientras escribes, sin botón de «generar» y sin pop-ups molestos. Si buscabas un estilo concreto, abajo tienes una página dedicada para cada uno; y si solo quieres ver todo de un vistazo, esta es la lista completa.",
+      "faqs": [
+        {"q": "¿Cómo uso el generador de letras?", "a": "Escribe en el cuadro de la izquierda y elige un estilo a la derecha; tu texto se convierte solo, sin botón de «generar». Toca Copiar y pégalo donde lo necesites. En esta página también puedes recorrer la lista completa de estilos y tocar cualquiera para cargarlo."},
+        {"q": "¿Sirve para el nick de Free Fire?", "a": "Sí, para eso es de los más usados. Muchos estilos pasan el filtro de nombres del juego (negrita y versalitas son los más seguros). Tenemos una página dedicada a letras para nick si quieres ver las que mejor funcionan en juegos."},
+        {"q": "¿Las letras se pegan bien en Instagram y TikTok?", "a": "En la biografía y en los pies de foto, sí, sin problema. El campo de @usuario es más estricto y a veces las rechaza. Negrita (sans) es la que más veces pasa incluso ahí."},
+        {"q": "¿Tengo que descargar alguna fuente?", "a": "No. Son caracteres Unicode que ya existen en el sistema, así que solo copias y pegas. No instalas nada y el estilo viaja con el texto."},
+        {"q": "¿Por qué algunas letras se ven como cuadritos en otro celular?", "a": "Porque la fuente de esa app o ese dispositivo no incluye ese glifo. No es que tu texto esté roto — es la app que lo recibe. Cambiar a otro estilo (negrita sans suele ser el más compatible) lo arregla."},
+        {"q": "¿Es gratis?", "a": "Totalmente gratis y sin registro. Un solo anuncio debajo del contenido, nada de pop-ups ni de pedirte que te suscribas."}
+      ],
+      "related": ["/es/letras-cursivas/", "/es/letras-en-negrita/", "/es/letras-goticas/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/letras-para-nick/",
+      "kw": "letras para nick",
+      "_note": "ES-only page, no EN counterpart, so no alt (only self-referencing es-419 hreflang).",
+      "secondaryKw": ["letras para free fire", "nick para free fire", "letras para juegos", "símbolos para nick", "nombres con letras raras"],
+      "title": "Letras para Nick 🎮 Free Fire, Roblox y Juegos — Copiar",
+      "metaDescription": "Genera letras para nick de Free Fire, Roblox, PUBG y más: estilos raros, góticos y con símbolos para copiar y pegar en tu nombre de juego. Gratis y sin registro.",
+      "h1": "Letras para Nick",
+      "lede": "Convierte tu nombre en letras de estilo para tu nick. Prueba un estilo, cópialo y pégalo en el juego — si el filtro lo rechaza, cambia a otro.",
+      "focusStyles": [],
+      "intro": "Si quieres un nick que resalte en Free Fire, Roblox, PUBG, Stumble Guys o cualquier juego, aquí conviertes tu nombre en letras de estilo para copiar y pegar. Son caracteres Unicode reales, no una fuente que haya que instalar, así que los pegas directo en el campo del nombre. Un detalle importante de los juegos: cada uno tiene su propio filtro de nombres, y algunos bloquean ciertos caracteres. Por eso conviene probar. Los estilos que más veces pasan son la negrita (sans) y las versalitas, porque son los más compatibles; las góticas y cursivas se ven geniales pero a veces el filtro las rechaza. Si un estilo rebota, no es tu culpa: cambia a otro y vuelve a intentar. Para símbolos sueltos, combínalos con el estilo que elijas.",
+      "where": {
+        "intro": "Los filtros de nombres varían muchísimo entre juegos. Esta tabla es una guía de qué tan seguido pasa cada tipo de estilo; siempre conviene probar el tuyo.",
+        "rows": [
+          {"app": "Free Fire", "fields": "nick / nombre", "status": "partial", "note": "Acepta varios estilos, sobre todo negrita y versalitas. Algunos símbolos y góticas los filtra; si rebota, prueba otro estilo."},
+          {"app": "Roblox", "fields": "display name", "status": "partial", "note": "El display name acepta más estilos que el @usuario. Negrita sans es la apuesta más segura."},
+          {"app": "PUBG / BGMI", "fields": "nick", "status": "partial", "note": "Suele aceptar caracteres de estilo, pero a veces pide símbolos específicos. Prueba antes de gastar una tarjeta de cambio de nombre."},
+          {"app": "Discord", "fields": "nombre, apodo de servidor", "status": "ok", "note": "Acepta casi todos los estilos, incluso en el apodo. De los lugares más flexibles."},
+          {"app": "Stumble Guys / juegos casuales", "fields": "nombre", "status": "partial", "note": "Depende del juego; los más nuevos suelen aceptar Unicode. Negrita y versalitas primero."}
+        ]
+      },
+      "examples": {
+        "intro": "Ideas según el juego:",
+        "items": [
+          {"label": "Nick de Free Fire", "text": "Una negrita o versalita se ve fuerte y casi siempre pasa el filtro. Evita meter demasiados símbolos juntos: muchos los rechaza."},
+          {"label": "Nombre gótico para destacar", "text": "Las <em>letras góticas</em> dan ese aire intenso para un nick; si el juego las filtra, la negrita serif da un peso parecido y pasa más seguido."},
+          {"label": "Clan o squad", "text": "Un estilo consistente para todo el squad (mismo tipo de letra) se ve coordinado y profesional en las listas."},
+          {"label": "Nick con toque cursivo", "text": "Las cursivas se ven elegantes, aunque en juegos pasan menos que en redes. Pruébalas; si no, usa versalitas."},
+          {"label": "Nombre corto y legible", "text": "En pantallas chicas, las versalitas se leen mejor que las cursivas finas. Para un nombre que se entienda de lejos, esa es la opción."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No asumas que todo estilo pasa el filtro", "text": "Cada juego bloquea cosas distintas. Si tu nick rebota, no está roto: cambia de estilo (negrita sans es el más compatible) y reintenta."},
+        {"title": "No abuses de los símbolos", "text": "Llenar el nombre de símbolos raros es lo que más filtros activa. Un estilo limpio con uno o dos detalles luce mejor y pasa más."},
+        {"title": "No esperes números en cursiva o gótica", "text": "Varios estilos no tienen versión de los números 0–9, así que se quedan normales. Si tu nick lleva dígitos, usa negrita, que sí los tiene."},
+        {"title": "No gastes el cambio de nombre sin probar", "text": "Si el juego cobra por cambiar el nick, copia el estilo y verifica que el campo lo acepta antes de confirmar el cambio."}
+      ],
+      "faqs": [
+        {"q": "¿Qué letras sirven para el nick de Free Fire?", "a": "Las que más pasan el filtro son la negrita (sans) y las versalitas. Las góticas y cursivas se ven muy bien pero a veces las rechaza; si pasa eso, cambia a un estilo más simple. Siempre conviene probar antes de confirmar."},
+        {"q": "¿Por qué mi nick aparece con cuadritos o no se guarda?", "a": "O el juego filtra ese carácter, o su fuente no incluye ese glifo. Cambia a negrita sans, que es la más compatible. Si aun así falla, ese juego no acepta ese tipo de caracteres."},
+        {"q": "¿Funciona para Roblox y PUBG además de Free Fire?", "a": "Sí. En Roblox el display name acepta más estilos que el @usuario; en PUBG suele funcionar pero prueba antes de pagar un cambio de nombre. Discord es el más flexible de todos."},
+        {"q": "¿Puedo poner símbolos en mi nick?", "a": "Algunos sí, pero los filtros de juegos son sensibles a los símbolos. Si metes muchos, es probable que el nombre rebote. Mejor un estilo limpio con uno o dos detalles."},
+        {"q": "¿Cuesta algo?", "a": "No, es gratis y sin registro. Copia el estilo que quieras y pégalo en el juego."}
+      ],
+      "related": ["/es/", "/es/letras-goticas/", "/es/letras-cursivas/", "/es/letras-bonitas/", "/es/letras-con-estilo/"]
+    },
+    {
+      "slug": "/es/letras-cursivas/",
+      "alt": "/cursive-text-generator",
+      "kw": "letras cursivas",
+      "secondaryKw": ["generador de letras cursivas", "letra cursiva", "texto en cursiva", "letras cursivas para copiar"],
+      "title": "Letras Cursivas 𝓹𝓪𝓻𝓪 𝓬𝓸𝓹𝓲𝓪𝓻 — Generador de Texto Cursivo",
+      "metaDescription": "Convierte tu texto en letras cursivas (estilo manuscrito) para copiar y pegar en la bio de Instagram, TikTok o tu nick. También cursiva en negrita. Sin registro, sin pop-ups.",
+      "h1": "Letras Cursivas",
+      "lede": "Escribe y la versión cursiva aparece a la derecha. En el menú tienes también la cursiva en negrita y un par de estilos parecidos.",
+      "focusStyles": ["script-cursive", "bold-script", "fraktur"],
+      "intro": "Si quieres tu nombre en letra manuscrita para la bio de Instagram, un pie de foto o tu nick, esta es la página. Convierte tus letras en los caracteres Unicode de tipo «script» — los de trazo con bucles — más la variante en negrita para cuando la versión fina se pierde sobre un fondo cargado. Un aviso útil para que no te confundas: aquí «cursiva» se refiere al estilo manuscrito con bucles, que es lo que casi todo el mundo busca; si lo que quieres es la letra inclinada de toda la vida, esa es la <a href=\"/es/letras-italicas/\">letra itálica</a>. Otro detalle honesto de tanto probar: las cursivas no tienen números, así que los dígitos se quedan normales, y algunos teclados de Android no muestran estos glifos — eso depende del celular, no de la herramienta.",
+      "where": {
+        "intro": "La cursiva es de los estilos decorativos mejor soportados, pero tiene dos puntos débiles concretos: el campo de @usuario en las redes y algunos teclados de Android.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Funciona en la biografía y en los pies de foto. El campo de @usuario la rechaza en muchas cuentas — es el más estricto de Instagram."},
+          {"app": "TikTok", "fields": "bio, pies de foto, comentarios", "status": "ok", "note": "Bien. El campo de usuario es más estricto, igual que en Instagram."},
+          {"app": "Discord", "fields": "mensajes, apodos, Acerca de mí", "status": "ok", "note": "Se ve en todos lados, incluido el apodo del servidor. De las plataformas más confiables para la cursiva."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes, estados, info", "status": "ok", "note": "Funciona. El trazo más adornado puede variar un poco según la fuente del celular."},
+          {"app": "Algunos teclados Android / equipos viejos", "fields": "donde sea", "status": "partial", "note": "Unos teclados de fábrica y Androids antiguos dibujan la cursiva como cuadritos. No es algo que la herramienta pueda arreglar — es la fuente del sistema. La cursiva en negrita a veces aguanta mejor."},
+          {"app": "Juegos (Roblox, Free Fire…)", "fields": "nick", "status": "partial", "note": "Muchos filtros de nombres rechazan la cursiva. Si rebota, prueba negrita (sans) o versalitas."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde luce la cursiva:",
+        "items": [
+          {"label": "Nombre en la bio de Instagram/TikTok", "text": "Un nombre en <em>𝒸𝓊𝓇𝓈𝒾𝓋𝒶</em> se ve personal e intencional; acompáñalo con un solo símbolo a cada lado en vez de amontonar efectos."},
+          {"label": "Detalle en un pie de foto", "text": "Una palabra — <em>𝓼𝓸𝓯𝓽</em>, <em>𝓭𝓻𝓮𝓪𝓶𝔂</em> — al inicio del texto marca el tono sin reescribir nada."},
+          {"label": "Apodo en Discord", "text": "Discord muestra la cursiva en los apodos sin problema, así que un nombre cursivo sí se mantiene (a diferencia de Instagram, donde el @usuario pelea contigo)."},
+          {"label": "Nombre de grupo", "text": "Un título corto en cursiva para un grupo se lee más suave que la fuente normal. Los números se quedan normales, así que evita fechas en el nombre."},
+          {"label": "Cursiva en negrita para fondos cargados", "text": "Sobre una foto o un banner de color, la cursiva fina desaparece. Cambia a <em>cursiva en negrita</em> en el menú — mismo aire, más cuerpo."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No metas números en cursiva", "text": "No existe versión cursiva del 0 al 9 en Unicode, así que los dígitos se quedan normales y el efecto se ve a medias. Deja los números fuera o acepta que saldrán normales."},
+        {"title": "No esperes que funcione en el @usuario de Instagram", "text": "Ese campo rechaza la cursiva en casi todas las cuentas. Estiliza la biografía: esa casi siempre la acepta."},
+        {"title": "No la uses para un logo o algo que se imprima", "text": "Son caracteres de presentación para campos de texto, no una tipografía con licencia. Para un logo o un tatuaje necesitas un archivo de fuente real. Como boceto, está bien."},
+        {"title": "Cursiva no es lo mismo que itálica aquí", "text": "En esta página «cursiva» es el estilo manuscrito con bucles. La letra inclinada normal es la itálica — tiene su propia página."}
+      ],
+      "faqs": [
+        {"q": "¿La cursiva funciona en la bio de Instagram?", "a": "Sí, en la biografía y en los pies de foto. Puede fallar dentro del campo de @usuario en algunas cuentas — es el más estricto de Instagram. Si el usuario no la acepta, la bio casi siempre sí."},
+        {"q": "¿Por qué mis números se quedan normales?", "a": "El rango de cursiva en Unicode solo cubre A–Z y a–z. No hay versión cursiva del 0–9 ni de casi ninguna puntuación, así que la herramienta los deja como están en vez de fingirlos mal."},
+        {"q": "¿Cuál es la diferencia entre letras cursivas e itálicas?", "a": "Aquí «cursivas» son las manuscritas con bucles (𝓼𝓬𝓻𝓲𝓹𝓽), que es lo que casi todos buscan para una bio o un nick. La «itálica» es la letra inclinada normal, y tiene su propia página."},
+        {"q": "¿Puedo usarla para un logo o para imprimir?", "a": "No conviene — son caracteres de presentación para campos de texto en pantalla, no una tipografía. Para un logo necesitas un archivo de fuente real. Para una bio, un pie de foto o un nick, esta es justo la herramienta."},
+        {"q": "¿Por qué la cursiva sale como cuadritos en el celular de un amigo?", "a": "A la fuente de su dispositivo le faltan esos glifos — casi siempre un Android viejo o un teclado de terceros. No está roto de tu lado; su celular no puede dibujar esos caracteres. La cursiva en negrita o las versalitas a veces sí se ven."},
+        {"q": "¿Qué diferencia hay entre la cursiva normal y la cursiva en negrita?", "a": "La cursiva en negrita (𝓫𝓸𝓵𝓭) tiene trazos más gruesos, así que aguanta sobre fondos cargados, banners de color y fotos donde la fina (𝓈𝒸𝓇𝒾𝓅𝓉) se pierde. Elígela en el menú cuando la normal se vea débil."}
+      ],
+      "related": ["/es/", "/es/letras-en-negrita/", "/es/letras-goticas/", "/es/letras-italicas/", "/es/letras-con-estilo/"]
+    },
+    {
+      "slug": "/es/letras-bonitas/",
+      "alt": "/cool-text-generator",
+      "kw": "letras bonitas",
+      "secondaryKw": ["generador de letras bonitas", "letras lindas", "letras chidas", "letras bonitas para copiar"],
+      "title": "Letras Bonitas para Copiar y Pegar — Más de 80 Estilos",
+      "metaDescription": "Genera letras bonitas en decenas de estilos — cursivas, góticas, negritas, burbuja, versalitas y más — para copiar y pegar en tu bio, nick o estados. Gratis, sin pop-ups.",
+      "h1": "Letras Bonitas",
+      "lede": "Escribe tu texto y recorre los estilos. Toca el que más te guste para cargarlo arriba y copiarlo.",
+      "focusStyles": [],
+      "intro": "Cuando buscas «letras bonitas» normalmente quieres ver muchas opciones y quedarte con la que va con tu vibra, y eso es justo lo que hace esta página: pasa tu texto por decenas de estilos a la vez — cursivas, góticas, negritas, burbuja, versalitas, estética y más — para que elijas la que más te guste. Son caracteres Unicode reales, así que los copias y se pegan igual en la bio de Instagram o TikTok, en un estado de WhatsApp o en tu nick de un juego. No descargas nada ni instalas fuentes. Un consejo de quien las usa: para una biografía, una o dos palabras en un estilo bonito lucen más que toda la frase decorada. Menos es más.",
+      "where": {
+        "intro": "Cada estilo se comporta distinto, pero la regla general es esta: las versalitas, la negrita (sans) y el ancho completo son las más compatibles; las cursivas y góticas finas son las que más fallan en campos estrictos.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Casi todos los estilos se ven en la bio y los pies de foto. El @usuario es estricto; ahí la negrita sans es la que más pasa."},
+          {"app": "TikTok", "fields": "bio, pies de foto, comentarios", "status": "ok", "note": "Bien en general. El campo de usuario es más exigente."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, info, mensajes", "status": "ok", "note": "Funciona. Algún glifo muy adornado puede variar según la fuente del celular."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "De los más flexibles: acepta casi todos los estilos, incluso en el apodo."},
+          {"app": "Juegos", "fields": "nick", "status": "partial", "note": "Depende del filtro de cada juego. Negrita y versalitas pasan más seguido; mira la página de letras para nick."}
+        ]
+      },
+      "examples": {
+        "intro": "Ideas para usar letras bonitas:",
+        "items": [
+          {"label": "Bio de Instagram", "text": "Una palabra clave en versalitas o cursiva (<em>𝓭𝓻𝓮𝓪𝓶𝔂</em>) y el resto normal: se ve cuidado y se lee bien."},
+          {"label": "Estado de WhatsApp", "text": "Un estado corto en un estilo bonito destaca entre la lista de contactos sin parecer recargado."},
+          {"label": "Nick de juego", "text": "Elige un estilo que pase el filtro (negrita o versalitas) para que tu nombre se vea distinto y se guarde sin problema."},
+          {"label": "Título de un grupo o lista", "text": "Un nombre de grupo en un estilo limpio se diferencia del resto a simple vista."},
+          {"label": "Comentario o dedicatoria", "text": "Una frase corta en cursiva da un toque personal a un comentario o una dedicatoria."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No decores toda la frase", "text": "Una biografía entera en letras raras cuesta leerla y se ve cargada. Estiliza una o dos palabras y deja el resto normal."},
+        {"title": "No esperes que todo estilo pase en todos lados", "text": "Las cursivas y góticas finas fallan en campos estrictos como el @usuario. Si una no pasa, prueba versalitas o negrita sans."},
+        {"title": "No confundas «bonito» con «legible»", "text": "Algunos estilos se ven hermosos pero se leen mal en pantallas chicas. Si quieres que se entienda de lejos, elige versalitas o negrita."},
+        {"title": "No descargues nada", "text": "Si una página te pide instalar una fuente o una app para «letras bonitas», no hace falta. Son caracteres Unicode: solo copiar y pegar."}
+      ],
+      "faqs": [
+        {"q": "¿Qué son las letras bonitas?", "a": "Son tu texto convertido a caracteres Unicode con estilo — cursivas, góticas, versalitas, burbuja y más — que se ven distintos a la letra normal. No son una fuente: se copian y se pegan en cualquier app."},
+        {"q": "¿Dónde puedo pegar las letras bonitas?", "a": "En la bio de Instagram y TikTok, estados de WhatsApp, Discord, nicks de juegos y casi cualquier campo de texto. Algunos campos estrictos (como el @usuario) aceptan menos estilos."},
+        {"q": "¿Por qué algunas letras se ven como cuadritos?", "a": "Porque la fuente de esa app o dispositivo no incluye ese carácter. No es tu texto: es la app que lo recibe. Cambiar a un estilo más común (negrita sans) lo soluciona."},
+        {"q": "¿Cuál estilo es el más compatible?", "a": "La negrita (sans), las versalitas y el ancho completo son los que se ven en más lugares. Si necesitas que algo funcione sí o sí, empieza por ahí."},
+        {"q": "¿Es gratis y sin registro?", "a": "Sí. Sin registro, sin descargar nada, con un solo anuncio debajo del contenido y cero pop-ups."}
+      ],
+      "related": ["/es/", "/es/letras-cursivas/", "/es/letras-goticas/", "/es/letras-con-estilo/", "/es/letras-esteticas/"]
+    },
+    {
+      "slug": "/es/letras-goticas/",
+      "alt": "/old-english-text-generator",
+      "kw": "letras góticas",
+      "secondaryKw": ["generador de letras góticas", "letra gótica", "texto gótico", "letras góticas para tatuajes"],
+      "title": "Letras Góticas 𝔭𝔞𝔯𝔞 𝔠𝔬𝔭𝔦𝔞𝔯 — Generador de Texto Gótico",
+      "metaDescription": "Convierte tu texto en letras góticas (blackletter / fraktur) para copiar y pegar en nicks, bios y bocetos de tatuajes. Versión normal y en negrita. Sin registro, sin pop-ups.",
+      "h1": "Letras Góticas",
+      "lede": "Escribe y mira la versión gótica a la derecha. En el menú tienes la gótica normal y la gótica en negrita.",
+      "focusStyles": ["fraktur", "bold-fraktur", "bold-script"],
+      "intro": "Las letras góticas — también llamadas blackletter o fraktur — tienen ese aire intenso y antiguo que funciona perfecto para un nick, una bio dramática o el boceto de un tatuaje. Esta página convierte tu texto en los caracteres Unicode góticos para copiar y pegar, con la versión normal (𝔤ó𝔱𝔦𝔠𝔞) y la de negrita para cuando quieres más cuerpo. Ojo con lo del tatuaje: esto sirve genial para ver cómo se vería tu palabra y mandarla al tatuador, pero no es una tipografía con licencia — para el diseño final, el tatuador usará una fuente real. Como con casi todos los estilos decorativos, no hay números góticos, así que los dígitos se quedan normales, y algún campo muy estricto (como el @usuario de Instagram) puede rechazarlas.",
+      "where": {
+        "intro": "Las góticas se ven en la mayoría de redes, pero al ser un estilo decorativo tienen los límites de siempre: campos estrictos y filtros de juegos.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Bien en la biografía y los pies de foto. El @usuario suele rechazarlas."},
+          {"app": "TikTok", "fields": "bio, pies de foto", "status": "ok", "note": "Funciona en bio y pies de foto."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ven en todos lados, incluido el apodo. Muy confiable."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, info", "status": "ok", "note": "Funciona; el trazo grueso puede variar un poco según la fuente del equipo."},
+          {"app": "Juegos (Free Fire, Roblox…)", "fields": "nick", "status": "partial", "note": "Muchos filtros las rechazan. Si rebota, la negrita serif da un peso parecido y pasa más seguido."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde lucen las góticas:",
+        "items": [
+          {"label": "Nick intenso", "text": "Un nombre en <em>𝔤ó𝔱𝔦𝔠𝔞</em> resalta de inmediato. Si el juego la filtra, prueba la negrita serif."},
+          {"label": "Boceto de tatuaje", "text": "Escribe la palabra o frase, cópiala y mándala para ver cómo se vería. Para el diseño final, el tatuador usa una fuente real."},
+          {"label": "Bio dramática", "text": "Una palabra gótica al inicio de la bio marca un tono fuerte sin recargar el resto del texto."},
+          {"label": "Título o portada", "text": "Para la portada de una playlist o un texto de aspecto antiguo, la gótica da ese aire enseguida."},
+          {"label": "Gótica en negrita sobre fondos", "text": "Sobre una imagen o un color fuerte, la gótica normal puede perderse; la versión en negrita aguanta mejor."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No la confundas con una fuente para imprimir", "text": "Son caracteres de presentación para campos de texto, no una tipografía con licencia. Para un logo o un diseño impreso necesitas un archivo de fuente real."},
+        {"title": "No esperes números góticos", "text": "Unicode no tiene dígitos góticos, así que el 0–9 se queda normal. Si tu texto lleva números, se verán mezclados."},
+        {"title": "No cuentes con el @usuario de Instagram", "text": "Ese campo suele rechazar las góticas. Úsalas en la bio, que casi siempre las acepta."},
+        {"title": "No abuses en frases largas", "text": "Una palabra o un nombre en gótica luce; un párrafo entero cuesta leerlo. Resérvalas para lo que quieras destacar."}
+      ],
+      "faqs": [
+        {"q": "¿Las letras góticas sirven para tatuajes?", "a": "Para ver cómo se vería tu palabra y mandarla al tatuador, sí, es perfecto. Pero no es una tipografía con licencia: para el diseño final el tatuador usará una fuente real de blackletter."},
+        {"q": "¿Funcionan en el nick de Free Fire u otros juegos?", "a": "A veces. Muchos filtros de juegos las rechazan. Si tu nick rebota, prueba la negrita serif, que da un peso parecido y pasa más seguido."},
+        {"q": "¿Por qué mis números no se ven góticos?", "a": "Porque Unicode no incluye dígitos góticos. Solo hay letras, así que el 0–9 se queda normal. Es un límite del estándar, no un error."},
+        {"q": "¿Qué diferencia hay entre gótica, blackletter y fraktur?", "a": "Para copiar y pegar son lo mismo: distintos nombres del mismo estilo de letra antigua. Aquí tienes la versión normal y la de negrita en el menú."},
+        {"q": "¿Se pegan bien en Instagram?", "a": "Sí, en la biografía y en los pies de foto. El campo de @usuario es el estricto y normalmente las rechaza."}
+      ],
+      "related": ["/es/", "/es/letras-cursivas/", "/es/letras-con-estilo/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/letras-pequenas/",
+      "alt": "/small-text-generator",
+      "kw": "letras pequeñas",
+      "secondaryKw": ["generador de letras pequeñas", "letras chiquitas", "texto pequeño", "letras pequeñas para copiar", "minúsculas pequeñas"],
+      "title": "Letras Pequeñas para Copiar — Texto Chiquito y Versalitas",
+      "metaDescription": "Genera letras pequeñas: versalitas, texto en superíndice y subíndice, todo en Unicode para copiar y pegar en bios, nicks y comentarios. Sin registro, sin pop-ups.",
+      "h1": "Letras Pequeñas",
+      "lede": "Elige el tipo de «pequeño» a la derecha: versalitas, superíndice (chiquito) o subíndice.",
+      "focusStyles": ["superscript", "small-caps", "subscript"],
+      "intro": "«Letras pequeñas» suele significar una de tres cosas, y son distintas, por eso las tres están en el menú. Están las versalitas (ᴠᴇʀsᴀʟɪᴛᴀs), que son mayúsculas chiquitas a la altura de la minúscula — completas de la A a la Z, las más legibles y las que casi todo el mundo quiere para una bio estética. Está el texto en superíndice, las letras chiquititas de arriba, lo más cercano a mini-letras pero con huecos (a algunas, como la q, les falta forma, y casi no hay mayúsculas). Y está el subíndice, las letras caídas, útil sobre todo para fórmulas o notas. Importante: ninguna achica de verdad el tamaño de la fuente — son caracteres Unicode aparte dibujados pequeños. Si querías encoger el texto literalmente, eso lo controla la app, no se puede copiar y pegar.",
+      "where": {
+        "intro": "Las versalitas son el miembro confiable de la familia — alfabeto completo y muy soportadas. El superíndice se ve genial en teoría pero le faltan letras que vuelven a tamaño normal, su punto débil sin importar la plataforma.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Las versalitas se ven limpias en la bio y los pies de foto. El superíndice también, pero cualquier letra sin forma salta a tamaño normal."},
+          {"app": "TikTok", "fields": "bio, pies de foto, comentarios", "status": "ok", "note": "Igual — las versalitas se leen bien; el superíndice es irregular por diseño."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Las tres se ven, incluido el apodo. Las versalitas son las más legibles a ese tamaño."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, mensajes", "status": "ok", "note": "Funciona. Los subíndices de números (fórmulas) salen bien; los de letras son muy limitados."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "Las versalitas suelen pasar el filtro; el superíndice y el subíndice son irregulares por las letras que faltan."}
+        ]
+      },
+      "examples": {
+        "intro": "Qué «pequeño» para cada cosa:",
+        "items": [
+          {"label": "Bio estética de Instagram", "text": "Versalitas (ᴠᴇʀsᴀʟɪᴛᴀs) — alfabeto completo, se mantiene legible, ninguna letra salta a tamaño normal. Es la que casi todas las búsquedas de «letra pequeña para bio» quieren."},
+          {"label": "Nota o referencia en un comentario", "text": "El superíndice de números — ¹ ² ³ — funciona perfecto, así que una nota al pie se lee limpia aunque no haya opción real de superíndice."},
+          {"label": "Notación tipo química", "text": "El subíndice brilla aquí: H₂O, CO₂, x₁. Los dígitos tienen forma de subíndice, así que las fórmulas salen bien."},
+          {"label": "Un nick discreto", "text": "Las versalitas como nombre se leen tranquilas en vez de gritonas, y pasan más filtros que el superíndice."},
+          {"label": "Una palabra en chiquito", "text": "Puedes pasar una palabra por superíndice, pero espera que una letra o dos (y las mayúsculas) se queden grandes. Para una palabra chica y limpia, usa versalitas."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No asumas que el texto chiquito tiene alfabeto completo", "text": "Unicode nunca terminó las letras de superíndice — faltan varias minúsculas y casi todas las mayúsculas, así que vuelven a tamaño normal y arruinan el efecto. Las versalitas sí están completas; úsalas cuando importe la consistencia."},
+        {"title": "No esperes que achique la fuente de verdad", "text": "Son caracteres aparte dibujados pequeños, no un cambio de tamaño. Nada pegado como texto puede cambiar el tamaño; eso lo controla la app."},
+        {"title": "No mezcles letras y números en superíndice esperando que ambos salgan chicos", "text": "Los dígitos tienen forma de superíndice, las letras no. Una cadena mezclada puede salir con números chiquitos y letras grandes. Las versalitas evitan el desajuste."},
+        {"title": "No uses subíndice como «texto pequeño» general", "text": "El subíndice solo cubre un puñado de letras — está pensado para fórmulas y notas, no para estilizar una bio. Para eso, versalitas."}
+      ],
+      "faqs": [
+        {"q": "¿Qué «letra pequeña» uso para la bio de Instagram?", "a": "Versalitas. Es la única con alfabeto completo, se mantiene legible y Instagram la muestra bien en la bio y los pies de foto. El superíndice (texto chiquito) tiene letras que faltan y saltan a tamaño normal, rompiendo el efecto."},
+        {"q": "¿Por qué algunas letras del texto chiquito salen de otro tamaño?", "a": "Unicode nunca terminó el alfabeto de superíndice. Letras como la q, y casi todas las mayúsculas, no tienen forma de superíndice, así que se quedan grandes. Las versalitas no tienen ese problema."},
+        {"q": "¿Esto es lo mismo que un «generador de letras chiquitas»?", "a": "Sí, «letras chiquitas», «texto pequeño» o «letras pequeñas» son nombres para lo mismo. Aquí hay tres opciones reales: versalitas (la más legible), superíndice (la más chica, con huecos) y subíndice."},
+        {"q": "¿Las letras pequeñas achican el tamaño de la fuente?", "a": "No. Son caracteres Unicode aparte que están dibujados pequeños. El tamaño real del texto lo controla la app donde pegas; ninguna herramienta de copiar y pegar puede cambiarlo."},
+        {"q": "¿Las versalitas cuentan como mayúsculas o minúsculas?", "a": "Visualmente son mayúsculas pequeñas a la altura de la minúscula. Las apps las tratan como caracteres propios, así que suelen pasar campos que aceptan letras. Se leen como una versión más calmada de las MAYÚSCULAS."},
+        {"q": "¿Por qué los números en superíndice funcionan y las letras no?", "a": "Unicode definió un set completo de dígitos en superíndice (para notación matemática) pero solo un set parcial de letras. Por eso ¹²³ sale bien y una palabra puede tener huecos. Lo mismo, peor, con el subíndice de letras."}
+      ],
+      "related": ["/es/", "/es/superindice-y-subindice/", "/es/letras-cursivas/", "/es/letras-esteticas/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/letras-en-negrita/",
+      "alt": "/bold-text-generator",
+      "kw": "letras en negrita",
+      "secondaryKw": ["generador de negritas", "texto en negrita", "letra negrita", "negritas para copiar"],
+      "title": "Letras en Negrita 𝗽𝗮𝗿𝗮 𝗰𝗼𝗽𝗶𝗮𝗿 — Texto en Negrita",
+      "metaDescription": "Convierte tu texto a letras en negrita para copiar y pegar donde normalmente no se puede: bio de Instagram, X, LinkedIn, Discord. Negrita sans y serif. Sin pop-ups.",
+      "h1": "Letras en Negrita",
+      "lede": "La versión en negrita aparece a la derecha — sans y serif. En el menú tienes también la negrita itálica y la cursiva en negrita.",
+      "focusStyles": ["bold-sans", "bold-serif", "bold-italic", "bold-script"],
+      "intro": "La mayoría de lugares que no te dejan poner texto en negrita — un pie de foto de Instagram, tu bio de X, un post de LinkedIn, un mensaje de Discord sin formato — sí muestran 𝗻𝗲𝗴𝗿𝗶𝘁𝗮 𝗨𝗻𝗶𝗰𝗼𝗱𝗲. Eso hace esta página: cambia tus letras por los caracteres en negrita, en la versión sans (𝗮𝘀í) y en la serif, más cuerpo (𝐚𝐬í), con la negrita itálica y la cursiva en negrita también en el menú. La negrita sans es el estilo más compatible de todo el sitio — si algún texto con estilo va a verse en una app, es este — así que es el primero al que recurrir cuando algo es quisquilloso. Además tiene números, a diferencia de casi todos los estilos decorativos. Un detalle: es para frases cortas, no para párrafos enteros.",
+      "where": {
+        "intro": "La negrita es la más confiable de todas. Se ve en más lugares que cualquier otro estilo, aunque un par de campos de perfil la quitan.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto, @usuario (a veces)", "status": "ok", "note": "La negrita sans muchas veces sobrevive incluso en el @usuario — raro para un estilo. La bio y los pies de foto siempre funcionan."},
+          {"app": "TikTok", "fields": "bio, pies de foto, comentarios", "status": "ok", "note": "Bien. El campo de usuario es más estricto, pero la negrita sans es tu mejor opción ahí."},
+          {"app": "Discord", "fields": "mensajes, apodos, estado", "status": "ok", "note": "Funciona en todos lados. Usa el **markdown** de Discord dentro de los mensajes; usa esto para apodos, estados y bots que ignoran el markdown."},
+          {"app": "X (Twitter)", "fields": "posts, bio, nombre", "status": "ok", "note": "Todo bien. El @ del handle sigue siendo solo texto normal."},
+          {"app": "LinkedIn", "fields": "posts, titular", "status": "partial", "note": "Posts y titular suelen conservar la negrita (la sans más que la serif). Algunos campos del perfil la quitan; revisa después de pegar."},
+          {"app": "Juegos (Free Fire, Roblox…)", "fields": "nick", "status": "ok", "note": "La negrita sans es el estilo con más chance de pasar el filtro de nombres. Si hasta la negrita rebota, el filtro rechaza todo lo que no sea ASCII."}
+        ]
+      },
+      "examples": {
+        "intro": "La negrita es para resaltar, no para textos largos. Donde sí cumple:",
+        "items": [
+          {"label": "Una palabra clave en un post", "text": "Poner en negrita una sola palabra — <em>𝗴𝗿𝗮𝘁𝗶𝘀</em>, <em>𝗮𝗵𝗼𝗿𝗮</em> — atrae la vista sin reescribir toda la frase."},
+          {"label": "Título en un editor sin formato", "text": "<em>𝗦𝗲𝗰𝗰𝗶ó𝗻 𝗨𝗻𝗼</em> resalta en apps que no muestran encabezados reales: listas de tareas, notas simples."},
+          {"label": "Usuario de Instagram (sí, en serio)", "text": "La negrita sans es el raro estilo que muchas veces pasa el filtro del @usuario. Vale la pena probar antes de quedarte con el normal."},
+          {"label": "Nick de juego o Discord", "text": "Limpia, legible en tamaño chico y la más amigable con los filtros. <em>𝗷𝘂𝗴𝗮𝗱𝗼𝗿_𝟬𝟭</em> — los números también funcionan."},
+          {"label": "Negrita + itálica juntas", "text": "Elige Negrita itálica en el menú para <em>𝙡𝙖𝙨 𝙙𝙤𝙨 𝙖 𝙡𝙖 𝙫𝙚𝙯</em>, o cursiva en negrita si quieres negrita y manuscrita en una."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No pongas un párrafo entero en negrita", "text": "Cansa de leer y algunos lectores de pantalla deletrean cada carácter. Pon en negrita un título, un nombre o una palabra, no un bloque de texto."},
+        {"title": "No confundas la sans con la serif", "text": "La negrita sans (𝗯𝗼𝗹𝗱) es más limpia y se ve en más apps; la serif (𝐛𝐨𝐥𝐝) es más pesada y anticuada. Ante la duda, sans."},
+        {"title": "No la uses para dar énfasis en tu web", "text": "Los buscadores y los lectores de pantalla ven caracteres matemáticos, no negrita. Ahí usa HTML real (<strong>). Esto es para apps que no te dan ningún formato."},
+        {"title": "No esperes que el markdown de Discord funcione en un apodo", "text": "<code>**esto**</code> funciona en mensajes, no en apodos, estados ni muchos bots. Justo ahí es útil pegar una negrita Unicode."}
+      ],
+      "faqs": [
+        {"q": "¿La negrita funciona en LinkedIn?", "a": "En los posts y el titular, normalmente sí. LinkedIn a veces la quita de ciertos campos del perfil, así que revisa después de pegar. La negrita sans sobrevive más seguido que la serif."},
+        {"q": "¿Negrita sans o serif, cuál elijo?", "a": "La sans (𝗯𝗼𝗹𝗱) es más limpia y compatible con más apps. La serif (𝐛𝐨𝐥𝐝) es más pesada y clásica. Ante la duda, sans."},
+        {"q": "¿Los números funcionan en negrita?", "a": "Sí — la negrita tiene set completo de dígitos (𝟬–𝟵 sans, 𝟎–𝟗 serif), a diferencia de la cursiva, la itálica y casi todos los decorativos. Así que un nick en negrita con números funciona."},
+        {"q": "¿Puedo poner negrita e itálica a la vez?", "a": "Sí — el estilo Negrita itálica del menú hace las dos. También hay cursiva en negrita si quieres negrita y manuscrita juntas."},
+        {"q": "¿Por qué la negrita es el estilo más seguro?", "a": "Los caracteres en negrita son de los más implementados fuera del ASCII básico — casi toda fuente moderna los incluye. Si algún estilo va a verse en una app, la negrita sans es ese. Es el plan B cuando todo lo demás sale en cuadritos."}
+      ],
+      "related": ["/es/", "/es/letras-italicas/", "/es/letras-cursivas/", "/es/texto-subrayado/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/letras-italicas/",
+      "alt": "/italic-text-generator",
+      "kw": "letras itálicas",
+      "secondaryKw": ["texto en itálica", "letra inclinada", "cursiva inclinada", "itálicas para copiar"],
+      "title": "Letras Itálicas 𝘱𝘢𝘳𝘢 𝘤𝘰𝘱𝘪𝘢𝘳 — Texto Inclinado",
+      "metaDescription": "Convierte tu texto a letras itálicas (inclinadas) para copiar y pegar donde la app no deja poner cursiva: Instagram, X, Discord. Itálica y negrita itálica. Sin pop-ups.",
+      "h1": "Letras Itálicas",
+      "lede": "La itálica a la derecha, más la negrita itálica y la variante sans en el menú.",
+      "focusStyles": ["italic", "bold-italic", "sans-italic"],
+      "intro": "Cuando una app no te deja inclinar el texto — un pie de foto de Instagram, una bio de X, el nombre de un canal de Discord — puedes lograrlo con los caracteres itálicos de Unicode, 𝘢𝘴í. Ojo con un detalle de idioma: aquí «itálica» es la letra inclinada normal; si lo que buscas es el estilo manuscrito con bucles, esa es la <a href=\"/es/letras-cursivas/\">letra cursiva</a>. Esta página te da la itálica normal, la negrita itálica para cuando necesitas las dos, y la variante sans que se inclina un poco menos. Misma regla que la negrita: es para textos cortos. Un título, una cita, una palabra que quieras recalcar — bien. Un párrafo entero en itálica Unicode cuesta leerlo. Además, la itálica solo cubre letras, así que los números y la puntuación se quedan derechos.",
+      "where": {
+        "intro": "La itálica está en la misma familia que la negrita y se ve casi igual de bien. Recuerda dos cosas: no hay dígitos en itálica, y unas pocas apps quisquillosas la muestran en cuadritos.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto, comentarios", "status": "ok", "note": "Confiable en bio y pies de foto. El @usuario es más estricto; ahí la negrita sans pasa más que la itálica."},
+          {"app": "TikTok", "fields": "bio, pies de foto, comentarios", "status": "ok", "note": "Bien. Campo de usuario más estricto, como Instagram."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Funciona en todos lados. Usa el *italic* propio de Discord en mensajes; esto para apodos y bots que ignoran el markdown."},
+          {"app": "X (Twitter)", "fields": "posts, bio, nombre", "status": "ok", "note": "Todo bien. El @ del handle queda normal."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes, estados, info", "status": "ok", "note": "Funciona. WhatsApp también tiene su _itálica_ con guiones bajos en mensajes; esto cubre los lugares que esa no alcanza."},
+          {"app": "Algunas apps con fuentes limitadas", "fields": "donde sea", "status": "partial", "note": "Fuentes viejas o restringidas dibujan la itálica como cuadritos. Si pasa, cae a negrita sans, que se ve en todos lados."}
+        ]
+      },
+      "examples": {
+        "intro": "La itálica es una herramienta sutil — una inclinación, no un grito:",
+        "items": [
+          {"label": "Una cita en un pie de foto", "text": "Envolver una cita en <em>𝘪𝘵á𝘭𝘪𝘤𝘢</em> la separa de tus propias palabras sin un salto visual fuerte."},
+          {"label": "Énfasis suave en una palabra", "text": "<em>𝘢𝘤𝘵𝘶𝘢𝘭𝘮𝘦𝘯𝘵𝘦</em>, <em>𝘱𝘰𝘳 𝘧𝘢𝘷𝘰𝘳</em> — un acento gentil que la negrita exageraría."},
+          {"label": "Un título o nombre de sección", "text": "Un título en itálica en un editor sin opciones de formato se lee como algo intencional, no plano."},
+          {"label": "Negrita + itálica para algo que debe resaltar e inclinarse", "text": "Elige Negrita itálica en el menú — <em>𝙣𝙚𝙜𝙧𝙞𝙩𝙖 𝙞𝙩á𝙡𝙞𝙘𝙖</em> — para un titular o aviso que necesita ambas."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No pongas toda la bio en itálica", "text": "Una bio corta está bien; una larga cansa de leer y la accesibilidad sufre. Una línea en itálica para dar tono vence a cinco."},
+        {"title": "No esperes que los números se inclinen", "text": "La itálica Unicode es solo letras — no hay 0–9 en itálica, así que los dígitos quedan derechos. Una cadena mezclada puede verse rara."},
+        {"title": "No la uses en una página web real", "text": "Buscadores y lectores de pantalla ven caracteres matemáticos, no texto con estilo. Ahí usa HTML real (<em>/<i>). Esto es para apps sin opciones de formato."},
+        {"title": "Itálica no es lo mismo que cursiva aquí", "text": "La itálica es la letra inclinada normal. El estilo manuscrito con bucles es la cursiva, y tiene su propia página."}
+      ],
+      "faqs": [
+        {"q": "¿Por qué mis números no se ponen en itálica?", "a": "El rango de itálica de Unicode es solo letras. No hay 0–9 en itálica, así que la herramienta deja los dígitos como están en vez de sustituirlos por algo que se vea mal."},
+        {"q": "¿Cuál es la diferencia entre letras itálicas y cursivas?", "a": "La itálica es la letra inclinada normal (𝘢𝘴í). La cursiva es el estilo manuscrito con bucles (𝓪𝓼í) que la gente usa para bios y nicks. Cada una tiene su página."},
+        {"q": "Itálica vs negrita itálica, ¿cuándo uso cada una?", "a": "Itálica normal para una inclinación sutil — una cita, un título, un énfasis suave. Negrita itálica cuando de verdad debe resaltar. La sans itálica si la normal se ve demasiado inclinada."},
+        {"q": "¿La itálica Unicode daña el SEO si la uso en una web?", "a": "Sí, evítala en contenido web real. Los buscadores ven una cadena de caracteres matemáticos, no texto con estilo. Para una web usa itálicas de HTML/CSS. Para una bio sin formato, esto es el truco."},
+        {"q": "¿Por qué mi itálica sale en cuadritos en una app?", "a": "Esa app no incluye los caracteres itálicos en su fuente. Es la app, no tu texto. La negrita sans es la más compatible — cámbiate a ella si la itálica sale en cuadritos."}
+      ],
+      "related": ["/es/", "/es/letras-en-negrita/", "/es/letras-cursivas/", "/es/texto-subrayado/"]
+    },
+    {
+      "slug": "/es/texto-al-reves/",
+      "alt": "/upside-down-text-generator",
+      "kw": "texto al revés",
+      "secondaryKw": ["letras al revés", "voltear texto", "poner texto boca abajo", "texto de cabeza"],
+      "title": "Texto al Revés — Voltear Texto y Ponerlo Boca Abajo",
+      "metaDescription": "Pon tu texto al revés (boca abajo) para copiar y pegar en bios, comentarios y bromas. Voltea las letras de cabeza al instante. Gratis, sin registro, sin pop-ups.",
+      "h1": "Texto al Revés",
+      "lede": "Escribe y la versión boca abajo aparece a la derecha. Si lo que querías era el efecto espejo, está en el menú.",
+      "focusStyles": ["upside-down", "reversed"],
+      "intro": "Esta página voltea tu texto boca abajo: rota cada letra 180° (ǝ por e, p por d, etc.) y las pone en orden inverso, así que se lee de cabeza — el clásico para una bio graciosa o un comentario que hace girar el celular. Si lo que buscabas era el efecto <a href=\"/es/texto-en-espejo/\">texto en espejo</a> (mismas letras, derechas, en orden inverso), eso está en el menú o en su propia página. El texto boca abajo es un poquito frágil: no toda letra tiene su versión rotada en Unicode, así que algunas (sobre todo mayúsculas) se quedan normales y el efecto sale a medias. Es un detalle del estándar, no un error. Para juegos y nombres, prueba — algunos filtros aceptan los caracteres volteados y otros no.",
+      "where": {
+        "intro": "El texto boca abajo es bastante portable, con la salvedad de siempre: su alfabeto rotado no está completo.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Funciona en bio y pies de foto. El @usuario es más estricto; la bio es el lugar seguro."},
+          {"app": "TikTok", "fields": "bio, pies de foto", "status": "ok", "note": "Bien."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve en todos lados, incluido el apodo."},
+          {"app": "X (Twitter)", "fields": "posts, bio", "status": "ok", "note": "Posts y bio bien; el nombre suele aceptarlo; el @ del handle no."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "Algunos filtros aceptan los caracteres volteados, otros no. El texto en espejo (solo caracteres normales) pasa más seguido si el boca abajo rebota."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde funciona el texto al revés:",
+        "items": [
+          {"label": "Bio que hace girar el celular", "text": "Boca abajo: ʇnq ɐɹoɥɐ sǝǝl ol — molesto a propósito, que es justo el chiste."},
+          {"label": "Comentario gracioso", "text": "Una respuesta corta boca abajo destaca entre los demás comentarios y saca una sonrisa."},
+          {"label": "Mensaje oculto a medias", "text": "Boca abajo no es un secreto real — se lee girando la pantalla — pero sirve para un acertijo o una broma."},
+          {"label": "Nombre llamativo", "text": "Un nombre boca abajo llama la atención; si el juego lo filtra, prueba el texto en espejo, que usa letras normales."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No confundas boca abajo con espejo", "text": "Boca abajo = rotado 180° y en orden inverso, se lee de cabeza. Espejo = mismas letras, derechas, en orden inverso. La gente quiere una y agarra la otra. Prueba ambas."},
+        {"title": "No esperes un alfabeto completo", "text": "Algunas letras (sobre todo mayúsculas) no tienen forma rotada en Unicode, así que se quedan normales y el texto se ve medio volteado."},
+        {"title": "No lo uses como secreto real", "text": "Se lee girando el celular o pegándolo en otro volteador. Divertido para una broma; inútil para algo que de verdad quieras esconder."},
+        {"title": "No pongas un párrafo entero", "text": "Una línea es un chiste; un párrafo boca abajo es una tortura de leer. Mantenlo corto."}
+      ],
+      "faqs": [
+        {"q": "¿Cómo pongo el texto al revés?", "a": "Escribe en el cuadro y copia el resultado boca abajo. Pégalo en tu bio, un comentario o donde quieras. Si una letra se queda normal, es porque Unicode no tiene su versión rotada — no es un error."},
+        {"q": "¿Cuál es la diferencia entre texto al revés y texto en espejo?", "a": "«Al revés» (boca abajo) rota las letras 180° y se lee de cabeza. «En espejo» deja las letras derechas pero en orden inverso, como en un reflejo. Cada efecto tiene su uso; ambos están disponibles."},
+        {"q": "¿Por qué algunas letras no se voltean?", "a": "Porque el alfabeto rotado de Unicode no está completo — varias letras, sobre todo mayúsculas, no tienen forma boca abajo, así que se quedan como están."},
+        {"q": "¿Funciona en el nick de un juego?", "a": "A veces. Algunos filtros aceptan los caracteres volteados y otros no. Si rebota, prueba el texto en espejo, que usa caracteres normales y pasa más seguido."},
+        {"q": "¿Sirve para una bio de Instagram?", "a": "Sí, en la bio y los pies de foto. El campo de @usuario es el estricto y suele rechazarlo."}
+      ],
+      "related": ["/es/", "/es/texto-en-espejo/", "/es/texto-zalgo/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/texto-en-espejo/",
+      "alt": "/mirror-text-generator",
+      "kw": "texto en espejo",
+      "secondaryKw": ["texto invertido", "escribir al revés", "letras invertidas", "texto reflejado"],
+      "title": "Texto en Espejo — Letras Invertidas y al Revés para Copiar",
+      "metaDescription": "Invierte o refleja tu texto: letras en espejo para copiar y pegar, más el volteo boca abajo. Ideal para acertijos, bromas y reflejos. Gratis y sin pop-ups.",
+      "h1": "Texto en Espejo",
+      "lede": "La versión invertida (en orden inverso) a la derecha — y el volteo boca abajo en el menú si era eso lo que querías.",
+      "focusStyles": ["reversed", "upside-down"],
+      "intro": "Hay dos cosas que la gente llama «texto en espejo» y son distintas, por eso ambas están en el menú. La invertida simplemente pone tus caracteres en orden inverso — otxet — mismas letras, derechas, de la última a la primera. Eso es lo que quieres para un acertijo, un mensaje oculto o un texto que se lea bien en el reflejo de un espejo. La otra es <a href=\"/es/texto-al-reves/\">boca abajo</a>, que rota las letras 180°. El texto invertido es simplísimo y funciona literalmente en todos lados, porque son tus caracteres normales reordenados — ningún glifo puede salir en cuadritos porque no hay glifos especiales. Si probaste uno y no era el efecto que imaginabas, cambia al otro: nueve de cada diez veces ese es el arreglo.",
+      "where": {
+        "intro": "El texto invertido es lo más portable de todo el sitio — no usa ningún carácter especial, solo tus letras en otro orden.",
+        "rows": [
+          {"app": "Donde sea — invertido", "fields": "cualquier campo de texto", "status": "ok", "note": "El invertido son tus caracteres normales reordenados, así que cualquier cosa que acepte texto lo acepta. No hay glifos que puedan fallar."},
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "El boca abajo funciona en bio y pies de foto. El @usuario es más estricto; la bio es el lugar seguro."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Ambos efectos se ven en todos lados, incluido el apodo."},
+          {"app": "X (Twitter)", "fields": "posts, bio", "status": "ok", "note": "Posts y bio bien; el nombre suele aceptarlo; el @ del handle no."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "El invertido casi siempre pasa (son caracteres normales). El boca abajo a veces lo filtra el juego."}
+        ]
+      },
+      "examples": {
+        "intro": "Dos efectos, dos usos:",
+        "items": [
+          {"label": "Texto que se lee bien en un espejo", "text": "Invertido: escríbelo al revés, ponlo frente a un espejo y se lee normal. Clásico para un cartel o una actividad."},
+          {"label": "Mensaje oculto a medias", "text": "El invertido se lee si sabes leerlo de derecha a izquierda o lo pegas en otro volteador — un acertijo ligero, no un secreto real."},
+          {"label": "Nombre invertido", "text": "Como el invertido usa caracteres normales, suele pasar filtros que bloquean estilos más raros. naroJ en vez de Jorona, ese tipo de cosa."},
+          {"label": "Invertido y volteado a la vez", "text": "Si lo quieres al revés y boca abajo, esa es la opción de boca abajo: hace la rotación y el reordenamiento juntos."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No confundas invertido con boca abajo", "text": "Invertido = mismas letras, orden inverso, derechas. Boca abajo = rotado 180° y reordenado, se lee de cabeza. Prueba ambos; la diferencia es obvia al verla."},
+        {"title": "No trates el invertido como secreto real", "text": "Es facilísimo de leer de vuelta — de derecha a izquierda o pegándolo en un volteador. Divertido para un acertijo; inútil para algo que de verdad necesites esconder."},
+        {"title": "No esperes que el boca abajo tenga alfabeto completo", "text": "Algunas letras no tienen forma rotada, así que se quedan normales. El invertido no tiene ese problema porque no sustituye nada."},
+        {"title": "No pegues un párrafo invertido esperando que lo lean", "text": "Una línea es un acertijo divertido; un párrafo es una lata. Mantenlo corto."}
+      ],
+      "faqs": [
+        {"q": "¿Invertido, espejo o boca abajo, cuál es cuál?", "a": "Invertido: caracteres en orden inverso, derechos (aloh). Boca abajo: rotado 180°, se lee de cabeza. «Espejo» suele significar invertido — texto que se ve bien en un reflejo. Ambos están en el menú; prueba los dos."},
+        {"q": "¿El texto invertido funciona en todos lados?", "a": "Sí — son tus letras normales en otro orden, así que cualquier app que acepte texto lo acepta. No hay caracteres especiales que puedan fallar. El boca abajo es el que a veces tiene letras que se quedan normales."},
+        {"q": "¿Puedo escribir un mensaje secreto con esto?", "a": "Más o menos — el invertido es facilísimo de leer de vuelta (de derecha a izquierda o en otro volteador), así que es más «acertijo» que «secreto». Bueno para una adivinanza, no para algo que necesites esconder de verdad."},
+        {"q": "¿Por qué el texto boca abajo se ve a medio voltear?", "a": "Porque el alfabeto rotado no está completo — algunas letras, sobre todo mayúsculas, no tienen carácter boca abajo en Unicode, así que se quedan como están. Es un límite conocido, no un fallo."},
+        {"q": "¿Un nombre invertido se rechaza en juegos?", "a": "Menos seguido que los estilos más raros — el invertido son caracteres normales, así que suele pasar filtros. Si el boca abajo rebota, cámbiate al invertido."}
+      ],
+      "related": ["/es/", "/es/texto-al-reves/", "/es/texto-zalgo/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/letras-esteticas/",
+      "alt": "/aesthetic-text-generator",
+      "kw": "letras estéticas",
+      "secondaryKw": ["texto aesthetic", "letras aesthetic", "texto estético", "letras estéticas para copiar"],
+      "title": "Letras Estéticas Ａｅｓｔｈｅｔｉｃ para Copiar — Texto Vaporwave",
+      "metaDescription": "Genera letras estéticas / aesthetic: texto de ancho completo y espaciado, estilo vaporwave para copiar y pegar en bios y pies de foto. Más versalitas. Sin pop-ups.",
+      "h1": "Letras Estéticas",
+      "lede": "Ancho completo a la derecha — el look vaporwave — más el espaciado y las versalitas en el menú.",
+      "focusStyles": ["full-width", "spaced", "small-caps"],
+      "intro": "Las «letras estéticas» o aesthetic son ese texto ancho y espaciado con vibra vaporwave que se ve genial en una bio o un pie de foto. Esta página convierte tu texto a los caracteres de ancho completo (ｃｏｍｏ ｅｓｔｅ), que originalmente venían de la tipografía japonesa y por eso ocupan más espacio, más una versión espaciada con separación extra entre letras y las versalitas para un look más calmado. Son caracteres Unicode reales, así que se copian y pegan en Instagram, TikTok, WhatsApp o Discord sin instalar nada. Un consejo: el ancho completo se ve increíble en frases cortas, pero en textos largos se vuelve difícil de leer, así que úsalo para una palabra o una línea, no para todo el párrafo.",
+      "where": {
+        "intro": "El ancho completo y el espaciado son de los estilos más portables, porque usan caracteres muy soportados. El detalle es la legibilidad, no la compatibilidad.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Se ve limpio en bio y pies de foto. Ideal para una línea estética; en el @usuario es más estricto."},
+          {"app": "TikTok", "fields": "bio, pies de foto", "status": "ok", "note": "Funciona bien para ese look espaciado en la bio."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve en todos lados. El ancho completo destaca en un apodo."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, info", "status": "ok", "note": "Funciona. El ancho completo ocupa más espacio, tenlo en cuenta en campos cortos."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "El ancho completo a veces pasa; las versalitas son más seguras si el filtro lo rechaza."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde luce el look estético:",
+        "items": [
+          {"label": "Bio aesthetic", "text": "Una palabra en ａｎｃｈｏ ｃｏｍｐｌｅｔｏ marca el tono vaporwave sin recargar el resto."},
+          {"label": "Pie de foto espaciado", "text": "El espaciado (l e t r a s  a s í) da un aire suave y minimalista a una frase corta."},
+          {"label": "Portada de playlist o destacado", "text": "El ancho completo se ve bien como título de una portada o un destacado de Instagram."},
+          {"label": "Versalitas para algo legible", "text": "Si el ancho completo se ve demasiado, las versalitas dan un look estético pero más fácil de leer."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No pongas un párrafo en ancho completo", "text": "Ocupa mucho y cansa de leer. Úsalo para una palabra o una línea, no para todo el texto."},
+        {"title": "No esperes que cambie el tamaño real", "text": "El ancho completo se ve más grande porque los caracteres son más anchos, pero no cambia el tamaño de fuente real; eso lo controla la app."},
+        {"title": "No mezcles números esperando que se vean igual", "text": "El ancho completo sí tiene dígitos, pero si combinas estilos revisa que todo quede coherente."},
+        {"title": "No abuses del espaciado en campos cortos", "text": "Las letras separadas se comen el espacio rápido. En una bio con límite de caracteres, se llena enseguida."}
+      ],
+      "faqs": [
+        {"q": "¿Qué son las letras estéticas o aesthetic?", "a": "Es tu texto en caracteres de ancho completo y espaciado, con esa vibra vaporwave. Son caracteres Unicode reales que se copian y pegan; no es una fuente que haya que instalar."},
+        {"q": "¿Por qué el texto se ve más ancho?", "a": "Porque usa los caracteres de ancho completo, que vienen de la tipografía japonesa y ocupan el espacio de un carácter ancho. No es un cambio de tamaño de fuente, solo caracteres más anchos."},
+        {"q": "¿Dónde puedo usarlo?", "a": "En bios y pies de foto de Instagram y TikTok, estados de WhatsApp, Discord y más. Se ve mejor en frases cortas; en textos largos cuesta leerlo."},
+        {"q": "¿Funciona en nicks de juegos?", "a": "El ancho completo a veces pasa el filtro; si lo rechaza, las versalitas son una opción estética más segura."},
+        {"q": "¿Es lo mismo que las letras japonesas?", "a": "Comparten los caracteres de ancho completo, pero las letras japonesas se enfocan en ese estilo concreto. Aquí el foco es el look estético/vaporwave en general."}
+      ],
+      "related": ["/es/", "/es/letras-bonitas/", "/es/letras-pequenas/", "/es/letras-japonesas/", "/es/letras-cursivas/"]
+    },
+    {
+      "slug": "/es/letras-grandes/",
+      "alt": "/big-text-generator",
+      "kw": "letras grandes",
+      "secondaryKw": ["texto grande", "letras grandes para copiar", "agrandar texto", "letras anchas"],
+      "title": "Letras Grandes para Copiar — Texto Ancho y Grande",
+      "metaDescription": "Haz que tu texto se vea más grande: letras de ancho completo y texto espaciado para copiar y pegar, más una negrita con más cuerpo. Gratis, sin registro, sin pop-ups.",
+      "h1": "Letras Grandes",
+      "lede": "Letras de ancho completo a la derecha — más espaciado y una opción de negrita con cuerpo en el menú.",
+      "focusStyles": ["full-width", "spaced", "bold-sans"],
+      "intro": "Si quieres que tu texto se vea más grande sin poder cambiar el tamaño de fuente, esta página usa los caracteres de ancho completo (ｇｒａｎｄｅｓ) y el texto espaciado para dar esa sensación de tamaño, más una negrita con cuerpo para algo que pese visualmente. Es importante saberlo: ningún truco de copiar y pegar agranda de verdad la fuente — eso lo controla la app donde pegas. Lo que hacen estos caracteres es ocupar más espacio y verse más grandes, lo cual basta para destacar en una bio, un título o un apodo. Como son caracteres Unicode reales, viajan con el texto donde los pegues, sin descargar nada. Para una palabra o una línea quedan perfectos; para un párrafo entero, mejor algo más legible.",
+      "where": {
+        "intro": "El ancho completo y el espaciado son muy portables. La única consideración real es la legibilidad y el espacio que ocupan.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Se ve bien en bio y pies de foto. Ocupa más espacio, así que cuida el límite de caracteres."},
+          {"app": "TikTok", "fields": "bio, pies de foto", "status": "ok", "note": "Funciona para destacar una línea."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "El ancho completo resalta en un apodo o un mensaje corto."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, mensajes", "status": "ok", "note": "Funciona. Un estado en ancho completo se ve más grande en la lista."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "A veces pasa el filtro; si no, prueba la negrita, que es más compatible."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde funcionan las letras grandes:",
+        "items": [
+          {"label": "Título que destaca", "text": "Una palabra en ａｎｃｈｏ ｃｏｍｐｌｅｔｏ se ve grande y llama la atención en una bio o un destacado."},
+          {"label": "Estado de WhatsApp", "text": "Un estado en letras grandes resalta entre la lista de contactos sin parecer recargado."},
+          {"label": "Apodo llamativo", "text": "Un apodo de Discord en ancho completo se ve más grande que el resto en la lista de miembros."},
+          {"label": "Negrita con cuerpo para algo importante", "text": "Si el ancho completo no es lo tuyo, la negrita da peso visual y pasa más filtros."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes que cambie el tamaño de fuente", "text": "Son caracteres más anchos, no un cambio de tamaño. El tamaño real lo controla la app donde pegas; nada copiado puede cambiarlo."},
+        {"title": "No pongas un párrafo entero", "text": "El ancho completo en bloques largos cuesta leerlo y ocupa muchísimo. Úsalo para una palabra o una línea."},
+        {"title": "No olvides el límite de caracteres", "text": "El ancho completo y el espaciado se comen el espacio rápido. En una bio con límite, se llena enseguida."},
+        {"title": "No cuentes con que pase todos los filtros de juegos", "text": "Algunos lo rechazan. Si tu nick rebota, la negrita sans es más compatible."}
+      ],
+      "faqs": [
+        {"q": "¿Estas letras agrandan de verdad el texto?", "a": "No cambian el tamaño de fuente — eso lo controla la app. Lo que hacen es usar caracteres más anchos que se ven más grandes y ocupan más espacio, suficiente para destacar."},
+        {"q": "¿Dónde puedo pegar las letras grandes?", "a": "En bios y pies de foto de Instagram y TikTok, estados de WhatsApp, Discord y más. Se ven mejor en frases cortas."},
+        {"q": "¿Por qué ocupan tanto espacio?", "a": "Porque el ancho completo y el espaciado usan más ancho por carácter. En campos con límite de caracteres se llenan rápido, tenlo en cuenta."},
+        {"q": "¿Funcionan en juegos?", "a": "A veces el ancho completo pasa el filtro; si no, la negrita es más compatible para un nick."},
+        {"q": "¿Necesito instalar algo?", "a": "No. Son caracteres Unicode: solo copiar y pegar, sin descargar fuentes ni apps."}
+      ],
+      "related": ["/es/", "/es/letras-esteticas/", "/es/letras-en-negrita/", "/es/letras-japonesas/"]
+    },
+    {
+      "slug": "/es/letras-con-estilo/",
+      "alt": "/stylish-text-generator",
+      "kw": "letras con estilo",
+      "secondaryKw": ["letras estilosas", "generador de letras con estilo", "nombres con estilo", "letras de estilo para copiar"],
+      "title": "Letras con Estilo para Copiar — Nombres y Texto Estiloso",
+      "metaDescription": "Genera letras con estilo y nombres estilosos — cursiva, negrita, versalitas, decorativas y más — para copiar y pegar en bios, nicks y estados. Gratis, sin pop-ups.",
+      "h1": "Letras con Estilo",
+      "lede": "Escribe tu texto y recorre los estilos. Toca el que te guste para cargarlo arriba y copiarlo.",
+      "focusStyles": [],
+      "intro": "«Letras con estilo» es la búsqueda de quien quiere que su nombre o su texto se vea distinto, sin tener un estilo concreto en mente. Por eso esta página te muestra muchos a la vez — cursivas, negritas, versalitas, góticas, decorativas y más — para que pruebes y te quedes con el que va con tu vibra. Son caracteres Unicode reales, así que los copias y se pegan igual en el nick de un juego, la bio de Instagram o TikTok, un estado de WhatsApp o un grupo de Discord, sin instalar fuentes. Un consejo de uso: para un nombre o una bio, un estilo limpio con un detalle se ve mejor que amontonar efectos. Si necesitas que funcione sí o sí en un campo estricto, la negrita sans y las versalitas son las más compatibles.",
+      "where": {
+        "intro": "Cada estilo se comporta distinto, pero la regla general es la misma: versalitas, negrita sans y ancho completo son las más compatibles; cursivas y góticas finas fallan más en campos estrictos.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Casi todos los estilos se ven en la bio y los pies de foto. El @usuario es estricto; ahí la negrita sans pasa más."},
+          {"app": "TikTok", "fields": "bio, pies de foto", "status": "ok", "note": "Bien. El campo de usuario es más exigente."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "De los más flexibles: acepta casi todos los estilos, incluso en el apodo."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, info", "status": "ok", "note": "Funciona. Algún glifo muy adornado puede variar según la fuente del celular."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "Depende del filtro de cada juego. Negrita y versalitas pasan más seguido; mira la página de letras para nick."}
+        ]
+      },
+      "examples": {
+        "intro": "Ideas para usar letras con estilo:",
+        "items": [
+          {"label": "Nombre estiloso en una bio", "text": "Un nombre en un estilo limpio (cursiva o versalitas) con un símbolo a cada lado se ve cuidado y se lee bien."},
+          {"label": "Nick de juego", "text": "Elige un estilo que pase el filtro (negrita o versalitas) para que tu nombre se vea distinto y se guarde sin problema."},
+          {"label": "Estado de WhatsApp", "text": "Un estado corto en un estilo con onda destaca entre los contactos."},
+          {"label": "Título de grupo o lista", "text": "Un nombre de grupo con estilo se diferencia del resto a simple vista."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No amontones efectos", "text": "Mezclar muchos estilos y símbolos se ve recargado y cuesta leerlo. Un estilo limpio con un detalle luce más."},
+        {"title": "No esperes que todo pase en todos lados", "text": "Las cursivas y góticas finas fallan en campos estrictos como el @usuario. Si una no pasa, prueba versalitas o negrita sans."},
+        {"title": "No confundas estilo con legibilidad", "text": "Algunos estilos se ven geniales pero se leen mal en pantalla chica. Si quieres que se entienda, versalitas o negrita."},
+        {"title": "No descargues nada", "text": "Si una página te pide instalar una fuente o app para «letras con estilo», no hace falta. Son caracteres Unicode: copiar y pegar."}
+      ],
+      "faqs": [
+        {"q": "¿Qué son las letras con estilo?", "a": "Es tu texto convertido a caracteres Unicode con onda — cursivas, negritas, versalitas, góticas y más — que se ven distintos a la letra normal. No es una fuente: se copian y se pegan en cualquier app."},
+        {"q": "¿Cuál estilo es el más compatible?", "a": "La negrita sans, las versalitas y el ancho completo son los que se ven en más lugares. Si necesitas que algo funcione sí o sí, empieza por ahí."},
+        {"q": "¿Funcionan para el nick de un juego?", "a": "Sí, aunque cada juego filtra distinto. Negrita y versalitas pasan más seguido. Tenemos una página dedicada a letras para nick con las que mejor funcionan."},
+        {"q": "¿Por qué algunas letras salen en cuadritos?", "a": "Porque la fuente de esa app o dispositivo no incluye ese carácter. Es la app que recibe el texto, no tu texto. Cambiar a un estilo más común lo arregla."},
+        {"q": "¿Es gratis?", "a": "Sí, gratis y sin registro. Un solo anuncio debajo del contenido y cero pop-ups."}
+      ],
+      "related": ["/es/", "/es/letras-cursivas/", "/es/letras-bonitas/", "/es/letras-goticas/", "/es/letras-esteticas/"]
+    },
+    {
+      "slug": "/es/texto-zalgo/",
+      "alt": "/zalgo-text-generator",
+      "kw": "texto zalgo",
+      "secondaryKw": ["letras zalgo", "texto glitch", "texto raro", "texto corrupto"],
+      "title": "Texto Zalgo — Generador de Texto Glitch y Corrupto",
+      "metaDescription": "Genera texto zalgo / glitch / corrupto — ese estilo con marcas apiladas que se ve fallado. Intensidad ajustable, listo para copiar y pegar. Sin registro, sin pop-ups.",
+      "h1": "Texto Zalgo",
+      "lede": "Escribe y mira la versión zalgo a la derecha. Es el efecto de texto corrupto y glitcheado.",
+      "focusStyles": ["zalgo"],
+      "intro": "El texto zalgo es ese estilo que se ve corrupto o glitcheado, con marcas apiladas arriba y abajo de cada letra, como si el texto estuviera fallando. Es perfecto para una vibra creepy, una broma de Halloween o un comentario que llame la atención. Esta página apila caracteres combinantes de Unicode sobre tu texto para lograr el efecto, listo para copiar y pegar. Un par de avisos honestos: el zalgo se ve genial pero a veces se desborda sobre las líneas de alrededor, y algunas apps lo limpian o lo recortan al pegarlo. Además, cuanto más intenso, más probable que el campo lo rechace o se vea raro. Para un nick o una bio, una intensidad moderada suele verse mejor que el máximo.",
+      "where": {
+        "intro": "El zalgo es más frágil que otros estilos porque apila muchos caracteres. Funciona en lugares con texto libre, pero algunos campos lo limpian.",
+        "rows": [
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Donde mejor se ve el zalgo. Renderiza las marcas apiladas sin problema, incluso en apodos."},
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "partial", "note": "Suele verse, pero las marcas pueden desbordarse o recortarse según la app. Prueba con intensidad media."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "partial", "note": "Funciona a veces; la app puede limpiar parte del apilado."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes", "status": "partial", "note": "Suele verse en mensajes; el desbordamiento depende del cliente."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "no", "note": "La mayoría de filtros de nombres rechazan los caracteres combinantes del zalgo."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde luce el zalgo:",
+        "items": [
+          {"label": "Vibra creepy o Halloween", "text": "Una palabra en zalgo da ese aire corrupto y perturbador ideal para una publicación de terror."},
+          {"label": "Apodo glitch en Discord", "text": "Discord es el mejor lugar para un nombre zalgo — renderiza el efecto completo sin recortarlo."},
+          {"label": "Comentario que llama la atención", "text": "Un comentario corto en zalgo destaca entre el resto por lo raro que se ve."},
+          {"label": "Intensidad moderada para que se lea", "text": "Si exageras la intensidad, el texto se vuelve ilegible. Una dosis media mantiene el efecto y aún se entiende."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes que funcione en nicks de juegos", "text": "Casi todos los filtros de nombres rechazan los caracteres combinantes del zalgo. Para juegos, usa góticas o negrita."},
+        {"title": "No abuses de la intensidad", "text": "Demasiadas marcas apiladas vuelven el texto ilegible y más probable de que la app lo recorte. Una intensidad media suele verse mejor."},
+        {"title": "No te sorprendas si una app lo limpia", "text": "Algunas apps quitan los caracteres combinantes al pegar, así que el efecto puede desaparecer. Discord es el más fiable."},
+        {"title": "No lo uses en texto que deba leerse claro", "text": "El zalgo es un efecto, no para información importante. Para algo legible, elige otro estilo."}
+      ],
+      "faqs": [
+        {"q": "¿Qué es el texto zalgo?", "a": "Es texto con caracteres combinantes apilados arriba y abajo, lo que le da un aspecto corrupto o glitcheado. Se usa para vibras creepy, bromas o llamar la atención."},
+        {"q": "¿Dónde funciona mejor el zalgo?", "a": "En Discord se ve completo. En Instagram y TikTok suele funcionar pero las marcas pueden recortarse. En nicks de juegos casi nunca pasa el filtro."},
+        {"q": "¿Por qué el zalgo a veces se ve cortado?", "a": "Porque la app limita o limpia los caracteres combinantes, o recorta lo que se desborda de la línea. No es tu texto: es cómo esa app maneja el apilado."},
+        {"q": "¿Puedo ajustar qué tan intenso se ve?", "a": "Sí, puedes controlar la intensidad. Una dosis media suele verse mejor que el máximo, que vuelve el texto ilegible y más fácil de recortar."},
+        {"q": "¿Sirve para el nick de un juego?", "a": "Casi nunca — los filtros de nombres rechazan los caracteres combinantes. Para un nick, las letras góticas o la negrita son mejores opciones."}
+      ],
+      "related": ["/es/", "/es/texto-en-espejo/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/texto-subrayado/",
+      "alt": "/underline-text-generator",
+      "kw": "texto subrayado",
+      "secondaryKw": ["subrayar texto", "letras subrayadas", "texto con subrayado para copiar"],
+      "title": "Texto Subrayado para Copiar — Subrayar Letras en Línea",
+      "metaDescription": "Agrega subrayado a tu texto para copiar y pegar — subrayado simple, doble y también tachado. Funciona donde la app no te deja subrayar. Sin registro, sin pop-ups.",
+      "h1": "Texto Subrayado",
+      "lede": "El subrayado a la derecha — simple, doble y también el tachado en el menú.",
+      "focusStyles": ["underline", "double-underline", "strikethrough"],
+      "intro": "Cuando una app no te deja subrayar — un pie de foto, una bio, un mensaje sin formato — puedes agregar el subrayado con caracteres combinantes de Unicode, a̲s̲í̲. Esta página te da el subrayado simple, el doble y, en el mismo menú, el tachado, todos listos para copiar y pegar. Como son marcas que se apilan bajo cada letra, viajan con el texto donde lo pegues. Un detalle honesto: igual que otros estilos con caracteres combinantes, algunas apps los limpian al pegar o el subrayado se ve un poco irregular según la fuente. Funciona mejor en frases cortas; en bloques largos puede verse desigual. Si necesitas un énfasis que funcione en todos lados, la negrita sans es la más compatible.",
+      "where": {
+        "intro": "El subrayado usa caracteres combinantes, así que su soporte es parecido al del tachado: funciona en texto libre, pero algunas apps lo limpian.",
+        "rows": [
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve bien. Discord también tiene su propio __subrayado__ con guiones bajos en mensajes; esto sirve para apodos y bots."},
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "partial", "note": "Suele verse, aunque el subrayado puede quedar irregular según la fuente del dispositivo."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "partial", "note": "Funciona a veces; la app puede limpiar las marcas combinantes."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes, estados", "status": "partial", "note": "Suele verse en mensajes; el resultado depende del cliente."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "no", "note": "Casi todos los filtros rechazan los caracteres combinantes del subrayado."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde funciona el subrayado:",
+        "items": [
+          {"label": "Resaltar una palabra", "text": "Subrayar una palabra clave la destaca en un texto sin opciones de formato."},
+          {"label": "Apodo o estado", "text": "Un apodo de Discord o un estado con subrayado se ve distinto al resto."},
+          {"label": "Subrayado doble para más énfasis", "text": "El doble subrayado marca aún más; úsalo con moderación para que no se vea recargado."},
+          {"label": "Combinar con tachado", "text": "El tachado está en el mismo menú si quieres ese efecto de corrección en vez del subrayado."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes que funcione en nicks de juegos", "text": "Los filtros de nombres rechazan los caracteres combinantes del subrayado. Para un nick, usa negrita o versalitas."},
+        {"title": "No te sorprendas si una app lo limpia", "text": "Algunas apps quitan las marcas combinantes al pegar, así que el subrayado puede desaparecer. Discord es de los más fiables."},
+        {"title": "No lo uses en bloques largos", "text": "En textos largos el subrayado puede verse irregular según la fuente. Funciona mejor en una palabra o una línea."},
+        {"title": "No lo uses en tu web para SEO", "text": "Ahí usa HTML real. Los buscadores ven caracteres combinantes, no un subrayado de verdad."}
+      ],
+      "faqs": [
+        {"q": "¿Cómo subrayo texto para copiar y pegar?", "a": "Escribe en el cuadro y copia la versión subrayada. La herramienta agrega una marca de subrayado bajo cada carácter, así que el efecto viaja con el texto donde lo pegues."},
+        {"q": "¿Dónde funciona el texto subrayado?", "a": "En Discord se ve bien; en Instagram, TikTok y WhatsApp suele funcionar aunque a veces queda irregular o la app lo limpia. En nicks de juegos casi nunca pasa."},
+        {"q": "¿Puedo poner subrayado doble?", "a": "Sí, el doble subrayado está en el menú, además del simple y el tachado. Úsalo con moderación para no recargar."},
+        {"q": "¿Por qué el subrayado se ve disparejo?", "a": "Porque depende de cómo la fuente del dispositivo dibuja las marcas combinantes. En frases cortas se ve mejor que en bloques largos."},
+        {"q": "¿Sirve para mi web?", "a": "No conviene — ahí usa HTML/CSS real. Esto es para apps que no te dan opción de subrayar."}
+      ],
+      "related": ["/es/", "/es/texto-tachado/", "/es/letras-en-negrita/"]
+    },
+    {
+      "slug": "/es/texto-tachado/",
+      "alt": "/strikethrough-text-generator",
+      "kw": "texto tachado",
+      "secondaryKw": ["tachar texto", "letras tachadas", "texto con línea en medio", "tachado para copiar"],
+      "title": "Texto Tachado para Copiar — Tachar Letras en Línea",
+      "metaDescription": "Tacha tu texto — tachado para copiar y pegar en Instagram, Discord, X y donde sea. Tachado simple, barrado y subrayado. Sin registro, sin pop-ups.",
+      "h1": "Texto Tachado",
+      "lede": "El tachado a la derecha — más una variante barrada y el subrayado en el menú.",
+      "focusStyles": ["strikethrough", "slashed", "underline"],
+      "intro": "Tachar texto — ponerle una línea en medio, c̶o̶m̶o̶ ̶e̶s̶t̶e̶ — sirve para ese efecto de «corrección» o de precio rebajado, o simplemente para llamar la atención de forma distinta. Esta página agrega la línea de tachado con caracteres combinantes de Unicode, listo para copiar y pegar en Instagram, Discord, X o donde quieras, además de una variante barrada (con diagonal) y el subrayado en el mismo menú. Como son marcas que se apilan sobre cada letra, el efecto viaja con el texto. Aviso honesto: algunas apps limpian los caracteres combinantes al pegar, así que el tachado puede desaparecer en ciertos lugares; Discord es de los más fiables. Funciona mejor en frases cortas.",
+      "where": {
+        "intro": "El tachado usa caracteres combinantes; funciona en texto libre pero algunas apps lo limpian, y los filtros de juegos lo rechazan.",
+        "rows": [
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve bien. Discord también tiene su propio ~~tachado~~ con virgulillas en mensajes; esto sirve para apodos y bots."},
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "partial", "note": "Suele verse, aunque la línea puede quedar irregular según la fuente."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "partial", "note": "Funciona a veces; la app puede limpiar las marcas combinantes."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes", "status": "partial", "note": "WhatsApp tiene su ~tachado~ con virgulillas; esto cubre los lugares que esa opción no alcanza."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "no", "note": "Los filtros de nombres rechazan los caracteres combinantes del tachado."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde funciona el tachado:",
+        "items": [
+          {"label": "Efecto de corrección", "text": "Tachar una palabra y poner otra al lado da ese efecto de «me corrijo» con humor."},
+          {"label": "Precio rebajado", "text": "Para un anuncio informal, tachar el precio viejo junto al nuevo se entiende al instante."},
+          {"label": "Apodo o comentario distinto", "text": "Un apodo o comentario con tachado se ve diferente y llama la atención."},
+          {"label": "Variante barrada", "text": "Si quieres una diagonal en vez de la línea horizontal, la versión barrada está en el menú."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes que funcione en nicks de juegos", "text": "Los filtros de nombres rechazan los caracteres combinantes del tachado. Para un nick, usa negrita o versalitas."},
+        {"title": "No te sorprendas si una app lo limpia", "text": "Algunas apps quitan las marcas combinantes al pegar y el tachado desaparece. Discord es de los más fiables."},
+        {"title": "No lo uses en bloques largos", "text": "En textos largos la línea puede verse despareja según la fuente. Funciona mejor en una palabra o frase corta."},
+        {"title": "No lo uses en tu web para SEO", "text": "Ahí usa HTML real (<s> o <del>). Los buscadores ven caracteres combinantes, no un tachado real."}
+      ],
+      "faqs": [
+        {"q": "¿Cómo tacho texto para copiar y pegar?", "a": "Escribe en el cuadro y copia la versión tachada. La herramienta agrega una línea sobre cada carácter, así que el efecto viaja con el texto donde lo pegues."},
+        {"q": "¿Dónde funciona el texto tachado?", "a": "En Discord se ve bien; en Instagram, TikTok y WhatsApp suele funcionar aunque a veces la app lo limpia. En nicks de juegos casi nunca pasa el filtro."},
+        {"q": "¿Hay variantes además del tachado simple?", "a": "Sí: una variante barrada (con diagonal) y el subrayado, ambas en el mismo menú."},
+        {"q": "¿Por qué la línea se ve despareja?", "a": "Porque depende de cómo la fuente del dispositivo dibuja la marca combinante. En frases cortas se ve mejor que en bloques largos."},
+        {"q": "¿Sirve para mi web o tienda online?", "a": "Para una web usa HTML real (<s>/<del>). Esto es para apps que no te dejan tachar, como bios y mensajes."}
+      ],
+      "related": ["/es/", "/es/texto-subrayado/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/letras-en-circulo/",
+      "alt": "/bubble-text-generator",
+      "kw": "letras en círculo",
+      "secondaryKw": ["letras burbuja", "letras circulares", "letras en círculos para copiar", "texto burbuja"],
+      "title": "Letras en Círculo Ⓒⓞⓟⓘⓐⓡ — Letras Burbuja para Pegar",
+      "metaDescription": "Convierte tu texto en letras dentro de círculos (letras burbuja) para copiar y pegar, más la versión rellena y una en cuadro. Gratis, sin registro, sin pop-ups.",
+      "h1": "Letras en Círculo",
+      "lede": "La versión en círculo a la derecha — más la rellena (negativa) y la de cuadro en el menú.",
+      "focusStyles": ["circled", "circled-negative", "squared"],
+      "intro": "Las letras en círculo, también llamadas letras burbuja, ponen cada letra dentro de un círculo (ⓒⓞⓜⓞ ⓔⓢⓣⓔ) para un look divertido y llamativo. Esta página te da la versión en círculo, la rellena o negativa (con el círculo en sólido y la letra en blanco) y una variante en cuadro, todas listas para copiar y pegar. Son caracteres Unicode reales, así que se pegan en bios, comentarios, nicks y estados sin instalar nada. Un detalle: el alfabeto en círculo está bastante completo, pero algunos símbolos y números pueden faltar o verse distintos, y en pantallas muy chicas las letras dentro del círculo se leen un poco apretadas. Para una palabra o un nombre quedan geniales; para textos largos cuesta leerlas.",
+      "where": {
+        "intro": "Las letras en círculo usan caracteres bien soportados, así que son bastante portables. El detalle es la legibilidad en tamaño chico.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Se ven bien en bio y pies de foto. Llaman la atención en una palabra."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "ok", "note": "Funcionan para un nombre o una palabra llamativa."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ven en todos lados, incluido el apodo."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, info", "status": "ok", "note": "Funcionan. En tamaño chico se leen un poco apretadas."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "A veces pasan el filtro; si no, prueba negrita o versalitas."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde lucen las letras en círculo:",
+        "items": [
+          {"label": "Nombre llamativo", "text": "Un nombre en ⓛⓔⓣⓡⓐⓢ ⓑⓤⓡⓑⓤⓙⓐ se ve divertido y distinto en una bio."},
+          {"label": "Versión rellena para más impacto", "text": "La variante negativa (círculo sólido, letra en blanco) resalta más sobre fondos claros."},
+          {"label": "Detalle en un pie de foto", "text": "Una palabra en círculo al inicio de un pie de foto le da un toque juguetón."},
+          {"label": "Variante en cuadro", "text": "Si prefieres cuadros en vez de círculos, esa opción está en el menú."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No las uses en textos largos", "text": "Las letras dentro de círculos cuestan leerlas en bloques largos. Quedan mejor en una palabra o un nombre."},
+        {"title": "No esperes que todos los símbolos existan", "text": "El alfabeto en círculo está casi completo, pero algunos símbolos o números pueden faltar o verse distintos."},
+        {"title": "No abuses en pantallas chicas", "text": "En tamaño pequeño las letras dentro del círculo se ven apretadas. Para algo legible de lejos, usa versalitas o negrita."},
+        {"title": "No cuentes con que pasen todos los filtros de juegos", "text": "Algunos las rechazan. Si tu nick rebota, prueba negrita o versalitas."}
+      ],
+      "faqs": [
+        {"q": "¿Qué son las letras en círculo o burbuja?", "a": "Son tu texto con cada letra dentro de un círculo (ⓐⓢⓘ). Son caracteres Unicode reales que se copian y pegan; no es una fuente que haya que instalar."},
+        {"q": "¿Hay versión rellena?", "a": "Sí, la variante negativa pone el círculo en sólido con la letra en blanco, y resalta más sobre fondos claros. También hay una versión en cuadro."},
+        {"q": "¿Dónde puedo usarlas?", "a": "En bios y pies de foto de Instagram y TikTok, estados de WhatsApp, Discord y más. Se ven mejor en una palabra o un nombre que en textos largos."},
+        {"q": "¿Por qué algunas letras o números no salen en círculo?", "a": "Porque el alfabeto en círculo de Unicode no cubre todos los símbolos. Las letras están casi completas, pero algunos números o signos pueden faltar."},
+        {"q": "¿Funcionan en nicks de juegos?", "a": "A veces. Algunos filtros las aceptan y otros no. Si tu nick rebota, la negrita o las versalitas son más compatibles."}
+      ],
+      "related": ["/es/", "/es/letras-bonitas/", "/es/letras-esteticas/"]
+    },
+    {
+      "slug": "/es/letras-japonesas/",
+      "alt": "/japanese-font-generator",
+      "kw": "letras japonesas",
+      "secondaryKw": ["letras estilo japonés", "texto japonés", "letras chinas", "letras estilo japonés para copiar"],
+      "title": "Letras Japonesas (Estilo) para Copiar — Texto Estilo Japonés",
+      "metaDescription": "Genera letras de estilo japonés — texto de ancho completo, espaciado y versalitas para copiar y pegar en bios y nicks. No es japonés real: es un efecto de estilo. Sin pop-ups.",
+      "h1": "Letras Estilo Japonés",
+      "lede": "El estilo de ancho completo a la derecha — el look tipo japonés — más el espaciado y las versalitas en el menú.",
+      "focusStyles": ["full-width", "spaced", "small-caps"],
+      "intro": "Las «letras japonesas» que busca la gente para nicks y bios suelen ser este efecto de ancho completo (ｃｏｍｏ ｅｓｔｅ), que usa los caracteres anchos de la tipografía japonesa para dar ese aire estético. Seamos honestos: no convierte tu texto a japonés real ni a kanji — es un efecto de estilo sobre las letras latinas, parecido a lo que algunos llaman «letras chinas» en los generadores de nicks. Esta página te da el ancho completo, una versión espaciada y las versalitas, todo listo para copiar y pegar. Son caracteres Unicode reales, así que se pegan en Instagram, TikTok, Discord o tu nick sin instalar nada. Si de verdad necesitas escribir en japonés, esto no es lo tuyo; si quieres el look estético, es justo esto.",
+      "where": {
+        "intro": "El ancho completo usa caracteres muy soportados, así que es de los estilos más portables. El detalle es la legibilidad y el espacio.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Se ve limpio en bio y pies de foto. Ideal para una línea con estilo."},
+          {"app": "TikTok", "fields": "bio, pies de foto", "status": "ok", "note": "Funciona bien para ese look ancho en la bio."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve en todos lados. El ancho completo destaca en un apodo."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, info", "status": "ok", "note": "Funciona. Ocupa más espacio, tenlo en cuenta en campos cortos."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "El ancho completo a veces pasa; las versalitas son más seguras si el filtro lo rechaza."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde luce el estilo japonés:",
+        "items": [
+          {"label": "Nick con estética japonesa", "text": "Un nombre en ａｎｃｈｏ ｃｏｍｐｌｅｔｏ da ese aire estético tipo japonés que muchos buscan para su nick."},
+          {"label": "Bio aesthetic", "text": "Una palabra en este estilo marca el tono sin recargar el resto de la bio."},
+          {"label": "Portada o destacado", "text": "El ancho completo se ve bien como título de una portada de playlist o un destacado."},
+          {"label": "Versalitas si quieres algo más legible", "text": "Si el ancho completo se ve demasiado, las versalitas dan un look limpio y fácil de leer."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No es japonés real", "text": "No convierte tu texto a kanji ni a japonés de verdad — es un efecto de estilo sobre letras latinas. Si necesitas escribir japonés, esto no sirve."},
+        {"title": "No lo uses en textos largos", "text": "El ancho completo ocupa mucho y cuesta leerlo en bloques. Úsalo para una palabra o una línea."},
+        {"title": "No esperes que cambie el tamaño real", "text": "Se ve más grande porque los caracteres son más anchos, pero no cambia el tamaño de fuente; eso lo controla la app."},
+        {"title": "No cuentes con que pase todos los filtros", "text": "El ancho completo a veces lo rechazan en juegos. Si tu nick rebota, prueba las versalitas."}
+      ],
+      "faqs": [
+        {"q": "¿Esto escribe en japonés real?", "a": "No. Es un efecto de estilo de ancho completo sobre letras latinas, que da un aire estético tipo japonés. No convierte tu texto a kanji ni a japonés de verdad."},
+        {"q": "¿Es lo mismo que las letras chinas?", "a": "Es parecido a lo que muchos generadores de nicks llaman «letras chinas»: un efecto de estilo, no idioma real. Aquí el foco es el look de ancho completo estilo japonés."},
+        {"q": "¿Dónde puedo usarlo?", "a": "En bios y nicks de Instagram, TikTok, Discord y más. Se ve mejor en frases cortas; en textos largos cuesta leerlo."},
+        {"q": "¿Por qué el texto se ve más ancho?", "a": "Porque usa los caracteres de ancho completo, que ocupan el espacio de un carácter ancho. No es un cambio de tamaño de fuente, solo caracteres más anchos."},
+        {"q": "¿Funciona en nicks de juegos?", "a": "A veces el ancho completo pasa el filtro; si lo rechaza, las versalitas son una opción más segura."}
+      ],
+      "related": ["/es/", "/es/letras-esteticas/", "/es/letras-grandes/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/superindice-y-subindice/",
+      "alt": "/superscript-generator",
+      "kw": "superíndice",
+      "secondaryKw": ["subíndice", "generador de superíndices", "letras pequeñas arriba", "texto en superíndice para copiar"],
+      "title": "Superíndice y Subíndice para Copiar — Texto Pequeño Arriba",
+      "metaDescription": "Genera texto en superíndice y subíndice para copiar y pegar — caracteres pequeños elevados o bajados, para notas, fórmulas y bios. Gratis, sin registro, sin pop-ups.",
+      "h1": "Superíndice y Subíndice",
+      "lede": "El superíndice a la derecha — los caracteres pequeños elevados — más el subíndice y las versalitas en el menú.",
+      "focusStyles": ["superscript", "subscript", "small-caps"],
+      "intro": "El superíndice son esos caracteres pequeños y elevados (ᶜᵒᵐᵒ ᵉˢᵗᵉ), útiles para notas al pie, una vibra estética en una bio o notación tipo matemática. El subíndice es lo contrario: caracteres pequeños y bajados (como en H₂O o x₁), perfectos para fórmulas químicas. Esta página te da ambos, más las versalitas, listos para copiar y pegar. Un detalle importante de Unicode: los números tienen set completo en superíndice y subíndice, así que ¹²³ y ₁₂₃ salen perfectos; pero las letras solo están parciales, sobre todo en subíndice, así que una palabra puede salir con huecos donde una letra se queda en tamaño normal. Para texto pequeño en general (una bio), las versalitas son más completas y legibles.",
+      "where": {
+        "intro": "Los dígitos en superíndice y subíndice están muy soportados; las letras tienen huecos, ese es su punto débil en cualquier plataforma.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Los números se ven bien; en palabras, alguna letra puede saltar a tamaño normal por las que faltan."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "ok", "note": "Igual — números bien, letras irregulares por diseño."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve. Útil para notas o un detalle pequeño."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes", "status": "ok", "note": "Los subíndices de números en fórmulas salen bien; los de letras son muy limitados."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "Irregular por las letras que faltan. Para un nick pequeño, las versalitas son más fiables."}
+        ]
+      },
+      "examples": {
+        "intro": "Para qué sirve cada uno:",
+        "items": [
+          {"label": "Nota al pie en un comentario", "text": "El superíndice de números — ¹ ² ³ — funciona perfecto para una referencia, aunque la app no tenga opción de superíndice."},
+          {"label": "Fórmula química", "text": "El subíndice brilla aquí: H₂O, CO₂, x₁. Los dígitos tienen forma de subíndice, así que las fórmulas salen bien."},
+          {"label": "Detalle estético en una bio", "text": "Unas letras en superíndice dan un toque pequeño y distinto, recordando que algunas pueden quedar en tamaño normal."},
+          {"label": "Notación matemática", "text": "Exponentes como x² o n⁰ se escriben con el superíndice de números sin necesidad de un editor de fórmulas."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes alfabeto completo en superíndice", "text": "Unicode no terminó las letras de superíndice, y el subíndice de letras está aún más incompleto. Una palabra puede salir con huecos. Para texto pequeño general, usa versalitas."},
+        {"title": "No esperes que achique el tamaño real", "text": "Son caracteres aparte dibujados pequeños, no un cambio de tamaño de fuente. Eso lo controla la app."},
+        {"title": "No uses el subíndice para una bio entera", "text": "El subíndice cubre pocas letras — está pensado para fórmulas y notas, no para estilizar texto. Para eso, versalitas."},
+        {"title": "No mezcles letras y números esperando que ambos salgan chicos", "text": "Los dígitos tienen forma; muchas letras no. Una cadena mezclada puede salir con números chiquitos y letras grandes."}
+      ],
+      "faqs": [
+        {"q": "¿Qué es el superíndice y el subíndice?", "a": "El superíndice son caracteres pequeños elevados (¹ ² ³, ᵃ ᵇ ᶜ), para notas y notación. El subíndice son caracteres pequeños bajados (₁ ₂ ₃, como en H₂O), para fórmulas. Ambos se copian y pegan."},
+        {"q": "¿Por qué algunas letras no salen en superíndice?", "a": "Porque Unicode definió un set completo de dígitos pero solo parcial de letras. Así que ¹²³ sale bien y una palabra puede tener huecos. En subíndice, las letras están aún más limitadas."},
+        {"q": "¿Sirve para fórmulas químicas?", "a": "Sí, el subíndice es ideal: H₂O, CO₂, x₁ salen perfectos porque los dígitos tienen forma de subíndice. Cópialo y pégalo donde lo necesites."},
+        {"q": "¿Achica el tamaño de la fuente?", "a": "No. Son caracteres Unicode aparte dibujados pequeños. El tamaño real lo controla la app donde pegas."},
+        {"q": "¿Qué uso para texto pequeño en una bio?", "a": "Para una bio, las versalitas son más completas y legibles que el superíndice. El super y subíndice son mejores para números, notas y fórmulas."}
+      ],
+      "related": ["/es/", "/es/letras-pequenas/", "/es/letras-esteticas/"]
+    }
+  ]
+}
