@@ -145,7 +145,7 @@ def alternates_for(slug, loc):
     """Return [(hreflang, abs_url), ...] incl. self + counterpart + x-default(EN)."""
     out = []
     def absu(s):
-        return BASE + ("/" if s in ("/", "/es/") else (s if s.endswith("/") else s + "/"))
+        return BASE + (s if s.endswith("/") else s + "/")
     if loc == "en":
         en_slug, es_slug = slug, EN2ES.get(slug)
     else:
@@ -392,7 +392,7 @@ def build_generator(page, loc="en"):
     s = STR[loc]
     slug = page["slug"]
     home = "/" if loc == "en" else "/es/"
-    url = BASE + ("/" if slug in ("/", "/es/") else (slug if slug.endswith("/") else slug + "/"))
+    url = BASE + (slug if slug.endswith("/") else slug + "/")
     all_tools_url = loc_url("/all-tools", loc)
     if slug in ("/", "/es/"):
         trail = [(None, s["crumb_home"])]
@@ -481,7 +481,7 @@ def build_404():
 def build_sitemap(items):
     urls = []
     for loc_code, s in items:
-        loc_path = "/" if s in ("/", "/es/") else (s if s.endswith("/") else s + "/")
+        loc_path = s if s.endswith("/") else s + "/"
         loc_url_abs = BASE + loc_path
         prio = "1.0" if s in ("/", "/es/") else "0.7"
         urls.append(f"<url><loc>{esc(loc_url_abs)}</loc><changefreq>monthly</changefreq><priority>{prio}</priority></url>")
@@ -515,15 +515,20 @@ def main():
     for entry in os.listdir(ASSETS_SRC):
         shutil.copy2(os.path.join(ASSETS_SRC, entry), os.path.join(dst_assets, entry))
 
-    # Load ES data if available
+    # Load ES data if available. Each locale file is independent: generators build
+    # from pages-es.json even before support-pages-es.json exists.
     es_json_path = os.path.join(ROOT, "pages-es.json")
     support_es_json_path = os.path.join(ROOT, "support-pages-es.json")
-    if os.path.exists(es_json_path) and os.path.exists(support_es_json_path):
+    DATA_ES = None
+    SUPPORT_ES = []
+    if os.path.exists(es_json_path):
         with open(es_json_path, encoding="utf-8") as f:
             DATA_ES = json.load(f)
+        ES_PAGES = DATA_ES["pages"]
+    if os.path.exists(support_es_json_path):
         with open(support_es_json_path, encoding="utf-8") as f:
             SUPPORT_ES = json.load(f)["pages"]
-        ES_PAGES = DATA_ES["pages"]
+    if DATA_ES is not None:
         SITE_ES = DATA_ES["site"]
         SITE_FOR = {"en": SITE, "es": SITE_ES}
         H1_FOR = {
@@ -536,8 +541,6 @@ def main():
         EN2ES_SUPPORT = {p["alt"]: p["slug"] for p in SUPPORT_ES if p.get("alt")}
         EN2ES.update(EN2ES_SUPPORT)
         ES2EN = {v: k for k, v in EN2ES.items()}
-    else:
-        SUPPORT_ES = []
 
     all_slugs = []
     for p in GEN_PAGES:
