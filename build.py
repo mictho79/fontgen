@@ -23,6 +23,90 @@ BASE = SITE["baseUrl"].rstrip("/")
 ADSENSE_CLIENT = (SITE.get("adsenseClient") or "").strip()  # e.g. "ca-pub-1234567890123456"
 CONTACT_EMAIL = (SITE.get("contactEmail") or "").strip() or "hello@" + BASE.split("//")[-1].lstrip("www.")
 
+# ---- UI strings per locale. EN values mirror the literals previously hardcoded. ----
+STR = {
+  "en": {
+    "lang": "en", "og_locale": "en_US", "hreflang": "en",
+    "nav_generator": "Generator", "nav_all_tools": "All tools", "nav_how": "How it works",
+    "footer_h_generators": "Generators", "footer_h_learn": "Learn", "footer_h_site": "Site",
+    "learn_how": "How Unicode text works",
+    "learn_where": "Where it works (Instagram, TikTok, Discord...)",
+    "site_about": "About", "site_all_tools": "All tools", "site_privacy": "Privacy", "site_contact": "Contact",
+    "crumb_home": "Fontletr", "crumb_tools": "Tools",
+    "tool_your_text": "Your text", "tool_placeholder": "Type or paste something…",
+    "tool_result": "Result", "tool_copy": "Copy", "tool_clear": "Clear",
+    "tool_browse": "Browse all styles", "tool_count_suffix": "styles",
+    "tool_fav_only": "favorites only:", "tool_fav_off": "Off",
+    "tool_focus_blurb_pre": "Pick the look you want above, then hit Copy. Want every option? ",
+    "tool_focus_link": "Browse all 80+ text styles in the fancy text generator",
+    "tool_focus_blurb_post": " — or see related ones below.",
+    "ad_slot": "One ad unit lives here — below the fold. No popup, no interstitial, no notification prompt. Ever.",
+    "content_how_h": "How to use it",
+    "content_how_p": "Type in the box on the left. The style you’ve picked on the right updates as you type — no “generate” button. Click <strong>Copy</strong> and paste it wherever you need. On the home page you can also browse every style in the list below and click any row to load it into the panel.",
+    "where_h": "Where it renders, and where it breaks",
+    "where_th_app": "App / platform", "where_th_where": "Where", "where_th_status": "Status", "where_th_notes": "Notes",
+    "st_ok": "Works", "st_partial": "Partial", "st_no": "Won't render",
+    "where_full_pre": "The full ", "where_full_link": "cross-app compatibility page", "where_full_post": " goes wider.",
+    "examples_h": "Examples & use cases", "pitfalls_h": "Common mistakes",
+    "faq_h": "FAQ", "related_h": "Related generators", "related_all": "all 80+ styles in one place",
+    "home_h1": "Fancy Text Generator",
+    "theme_btn": "Theme: Light ▾",
+    "counter_zero": "0 characters",
+  },
+  "es": {
+    "lang": "es", "og_locale": "es_MX", "hreflang": "es-419",
+    "nav_generator": "Generador", "nav_all_tools": "Todas las herramientas", "nav_how": "Cómo funciona",
+    "footer_h_generators": "Generadores", "footer_h_learn": "Aprende", "footer_h_site": "Sitio",
+    "learn_how": "Cómo funciona el texto Unicode",
+    "learn_where": "Dónde funciona (Instagram, TikTok, Discord...)",
+    "site_about": "Acerca de", "site_all_tools": "Todas las herramientas", "site_privacy": "Privacidad", "site_contact": "Contacto",
+    "crumb_home": "Fontletr", "crumb_tools": "Herramientas",
+    "tool_your_text": "Tu texto", "tool_placeholder": "Escribe o pega algo…",
+    "tool_result": "Resultado", "tool_copy": "Copiar", "tool_clear": "Borrar",
+    "tool_browse": "Explorar todos los estilos", "tool_count_suffix": "estilos",
+    "tool_fav_only": "solo favoritos:", "tool_fav_off": "No",
+    "tool_focus_blurb_pre": "Elige el estilo que quieras arriba y toca Copiar. ¿Quieres todas las opciones? ",
+    "tool_focus_link": "Explora los más de 80 estilos en el generador de letras",
+    "tool_focus_blurb_post": " — o mira los relacionados abajo.",
+    "ad_slot": "Aquí va una sola unidad de anuncio, debajo del pliegue. Sin pop-ups, sin intersticiales, sin pedir notificaciones. Nunca.",
+    "content_how_h": "Cómo usarlo",
+    "content_how_p": "Escribe en el cuadro de la izquierda. El estilo que elegiste a la derecha se actualiza mientras escribes — sin botón de «generar». Toca <strong>Copiar</strong> y pégalo donde lo necesites. En la página de inicio también puedes explorar todos los estilos de la lista y tocar cualquier fila para cargarlo en el panel.",
+    "where_h": "Dónde funciona y dónde falla",
+    "where_th_app": "App / plataforma", "where_th_where": "Dónde", "where_th_status": "Estado", "where_th_notes": "Notas",
+    "st_ok": "Funciona", "st_partial": "Parcial", "st_no": "No se ve",
+    "where_full_pre": "La ", "where_full_link": "página de compatibilidad entre apps", "where_full_post": " entra en más detalle.",
+    "examples_h": "Ejemplos y usos", "pitfalls_h": "Errores comunes",
+    "faq_h": "Preguntas frecuentes", "related_h": "Generadores relacionados", "related_all": "los más de 80 estilos en un solo lugar",
+    "home_h1": "Generador de Letras",
+    "theme_btn": "Tema: Claro ▾",
+    "counter_zero": "0 caracteres",
+  },
+}
+
+# engine.js label/UI overrides injected into PAGE_CONFIG for non-EN locales
+ENGINE_ES = {
+  "labels": {
+    "bold-sans": "Negrita (sans)", "bold-serif": "Negrita (serif)", "italic": "Itálica",
+    "bold-italic": "Itálica negrita", "sans-italic": "Itálica sans", "sans-serif": "Sans-serif",
+    "script-cursive": "Cursiva · script", "bold-script": "Cursiva negrita",
+    "fraktur": "Gótica (Old English)", "bold-fraktur": "Gótica negrita", "small-caps": "Versalitas",
+    "double-struck": "Doble trazo", "monospace": "Monoespaciada", "full-width": "Ancho completo",
+    "circled": "En círculo (burbuja)", "circled-negative": "En círculo (relleno)", "squared": "En cuadro",
+    "parenthesized": "Entre paréntesis", "bracketed": "Entre corchetes ⟦x⟧",
+    "superscript": "Superíndice", "subscript": "Subíndice", "spaced": "Espaciada", "dotted": "Con puntos",
+    "upside-down": "Al revés", "reversed": "En espejo", "strikethrough": "Tachada",
+    "underline": "Subrayada", "double-underline": "Doble subrayado", "slashed": "Barrada", "zalgo": "Zalgo (glitch)",
+  },
+  "groups": {"bold": "Peso", "callig": "Caligráfica", "outline": "Contorno", "deco": "Decorativa", "fx": "Efecto", "fun": "Varios"},
+  "ui": {
+    "charOne": "carácter", "charMany": "caracteres", "sample": "letras bonitas",
+    "pinned": "★ Fijados", "allStyles": "Todos los estilos", "pinTitle": "Fijar arriba",
+    "copy": "Copiar", "copied": "✓ Copiado",
+    "noFavs": "Aún no hay favoritos — toca la estrella junto a cualquier estilo para fijarlo aquí.",
+    "styles": "estilos", "theme": "Tema: ", "dark": "Oscuro", "light": "Claro", "on": "Sí", "off": "No",
+  },
+}
+
 # AdSense: when a client ID is configured, inject the loader in <head> and a real
 # <ins class="adsbygoogle"> where the placeholder used to be. Until then, the slot
 # stays a visible placeholder so dev/preview looks honest.
