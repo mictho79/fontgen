@@ -582,6 +582,276 @@
         {"q": "¿Es gratis?", "a": "Sí, gratis y sin registro. Un solo anuncio debajo del contenido y cero pop-ups."}
       ],
       "related": ["/es/", "/es/letras-cursivas/", "/es/letras-bonitas/", "/es/letras-goticas/", "/es/letras-esteticas/"]
+    },
+    {
+      "slug": "/es/texto-zalgo/",
+      "alt": "/zalgo-text-generator",
+      "kw": "texto zalgo",
+      "secondaryKw": ["letras zalgo", "texto glitch", "texto raro", "texto corrupto"],
+      "title": "Texto Zalgo — Generador de Texto Glitch y Corrupto",
+      "metaDescription": "Genera texto zalgo / glitch / corrupto — ese estilo con marcas apiladas que se ve fallado. Intensidad ajustable, listo para copiar y pegar. Sin registro, sin pop-ups.",
+      "h1": "Texto Zalgo",
+      "lede": "Escribe y mira la versión zalgo a la derecha. Es el efecto de texto corrupto y glitcheado.",
+      "focusStyles": ["zalgo"],
+      "intro": "El texto zalgo es ese estilo que se ve corrupto o glitcheado, con marcas apiladas arriba y abajo de cada letra, como si el texto estuviera fallando. Es perfecto para una vibra creepy, una broma de Halloween o un comentario que llame la atención. Esta página apila caracteres combinantes de Unicode sobre tu texto para lograr el efecto, listo para copiar y pegar. Un par de avisos honestos: el zalgo se ve genial pero a veces se desborda sobre las líneas de alrededor, y algunas apps lo limpian o lo recortan al pegarlo. Además, cuanto más intenso, más probable que el campo lo rechace o se vea raro. Para un nick o una bio, una intensidad moderada suele verse mejor que el máximo.",
+      "where": {
+        "intro": "El zalgo es más frágil que otros estilos porque apila muchos caracteres. Funciona en lugares con texto libre, pero algunos campos lo limpian.",
+        "rows": [
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Donde mejor se ve el zalgo. Renderiza las marcas apiladas sin problema, incluso en apodos."},
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "partial", "note": "Suele verse, pero las marcas pueden desbordarse o recortarse según la app. Prueba con intensidad media."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "partial", "note": "Funciona a veces; la app puede limpiar parte del apilado."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes", "status": "partial", "note": "Suele verse en mensajes; el desbordamiento depende del cliente."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "no", "note": "La mayoría de filtros de nombres rechazan los caracteres combinantes del zalgo."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde luce el zalgo:",
+        "items": [
+          {"label": "Vibra creepy o Halloween", "text": "Una palabra en zalgo da ese aire corrupto y perturbador ideal para una publicación de terror."},
+          {"label": "Apodo glitch en Discord", "text": "Discord es el mejor lugar para un nombre zalgo — renderiza el efecto completo sin recortarlo."},
+          {"label": "Comentario que llama la atención", "text": "Un comentario corto en zalgo destaca entre el resto por lo raro que se ve."},
+          {"label": "Intensidad moderada para que se lea", "text": "Si exageras la intensidad, el texto se vuelve ilegible. Una dosis media mantiene el efecto y aún se entiende."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes que funcione en nicks de juegos", "text": "Casi todos los filtros de nombres rechazan los caracteres combinantes del zalgo. Para juegos, usa góticas o negrita."},
+        {"title": "No abuses de la intensidad", "text": "Demasiadas marcas apiladas vuelven el texto ilegible y más probable de que la app lo recorte. Una intensidad media suele verse mejor."},
+        {"title": "No te sorprendas si una app lo limpia", "text": "Algunas apps quitan los caracteres combinantes al pegar, así que el efecto puede desaparecer. Discord es el más fiable."},
+        {"title": "No lo uses en texto que deba leerse claro", "text": "El zalgo es un efecto, no para información importante. Para algo legible, elige otro estilo."}
+      ],
+      "faqs": [
+        {"q": "¿Qué es el texto zalgo?", "a": "Es texto con caracteres combinantes apilados arriba y abajo, lo que le da un aspecto corrupto o glitcheado. Se usa para vibras creepy, bromas o llamar la atención."},
+        {"q": "¿Dónde funciona mejor el zalgo?", "a": "En Discord se ve completo. En Instagram y TikTok suele funcionar pero las marcas pueden recortarse. En nicks de juegos casi nunca pasa el filtro."},
+        {"q": "¿Por qué el zalgo a veces se ve cortado?", "a": "Porque la app limita o limpia los caracteres combinantes, o recorta lo que se desborda de la línea. No es tu texto: es cómo esa app maneja el apilado."},
+        {"q": "¿Puedo ajustar qué tan intenso se ve?", "a": "Sí, puedes controlar la intensidad. Una dosis media suele verse mejor que el máximo, que vuelve el texto ilegible y más fácil de recortar."},
+        {"q": "¿Sirve para el nick de un juego?", "a": "Casi nunca — los filtros de nombres rechazan los caracteres combinantes. Para un nick, las letras góticas o la negrita son mejores opciones."}
+      ],
+      "related": ["/es/", "/es/texto-en-espejo/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/texto-subrayado/",
+      "alt": "/underline-text-generator",
+      "kw": "texto subrayado",
+      "secondaryKw": ["subrayar texto", "letras subrayadas", "texto con subrayado para copiar"],
+      "title": "Texto Subrayado para Copiar — Subrayar Letras en Línea",
+      "metaDescription": "Agrega subrayado a tu texto para copiar y pegar — subrayado simple, doble y también tachado. Funciona donde la app no te deja subrayar. Sin registro, sin pop-ups.",
+      "h1": "Texto Subrayado",
+      "lede": "El subrayado a la derecha — simple, doble y también el tachado en el menú.",
+      "focusStyles": ["underline", "double-underline", "strikethrough"],
+      "intro": "Cuando una app no te deja subrayar — un pie de foto, una bio, un mensaje sin formato — puedes agregar el subrayado con caracteres combinantes de Unicode, a̲s̲í̲. Esta página te da el subrayado simple, el doble y, en el mismo menú, el tachado, todos listos para copiar y pegar. Como son marcas que se apilan bajo cada letra, viajan con el texto donde lo pegues. Un detalle honesto: igual que otros estilos con caracteres combinantes, algunas apps los limpian al pegar o el subrayado se ve un poco irregular según la fuente. Funciona mejor en frases cortas; en bloques largos puede verse desigual. Si necesitas un énfasis que funcione en todos lados, la negrita sans es la más compatible.",
+      "where": {
+        "intro": "El subrayado usa caracteres combinantes, así que su soporte es parecido al del tachado: funciona en texto libre, pero algunas apps lo limpian.",
+        "rows": [
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve bien. Discord también tiene su propio __subrayado__ con guiones bajos en mensajes; esto sirve para apodos y bots."},
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "partial", "note": "Suele verse, aunque el subrayado puede quedar irregular según la fuente del dispositivo."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "partial", "note": "Funciona a veces; la app puede limpiar las marcas combinantes."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes, estados", "status": "partial", "note": "Suele verse en mensajes; el resultado depende del cliente."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "no", "note": "Casi todos los filtros rechazan los caracteres combinantes del subrayado."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde funciona el subrayado:",
+        "items": [
+          {"label": "Resaltar una palabra", "text": "Subrayar una palabra clave la destaca en un texto sin opciones de formato."},
+          {"label": "Apodo o estado", "text": "Un apodo de Discord o un estado con subrayado se ve distinto al resto."},
+          {"label": "Subrayado doble para más énfasis", "text": "El doble subrayado marca aún más; úsalo con moderación para que no se vea recargado."},
+          {"label": "Combinar con tachado", "text": "El tachado está en el mismo menú si quieres ese efecto de corrección en vez del subrayado."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes que funcione en nicks de juegos", "text": "Los filtros de nombres rechazan los caracteres combinantes del subrayado. Para un nick, usa negrita o versalitas."},
+        {"title": "No te sorprendas si una app lo limpia", "text": "Algunas apps quitan las marcas combinantes al pegar, así que el subrayado puede desaparecer. Discord es de los más fiables."},
+        {"title": "No lo uses en bloques largos", "text": "En textos largos el subrayado puede verse irregular según la fuente. Funciona mejor en una palabra o una línea."},
+        {"title": "No lo uses en tu web para SEO", "text": "Ahí usa HTML real. Los buscadores ven caracteres combinantes, no un subrayado de verdad."}
+      ],
+      "faqs": [
+        {"q": "¿Cómo subrayo texto para copiar y pegar?", "a": "Escribe en el cuadro y copia la versión subrayada. La herramienta agrega una marca de subrayado bajo cada carácter, así que el efecto viaja con el texto donde lo pegues."},
+        {"q": "¿Dónde funciona el texto subrayado?", "a": "En Discord se ve bien; en Instagram, TikTok y WhatsApp suele funcionar aunque a veces queda irregular o la app lo limpia. En nicks de juegos casi nunca pasa."},
+        {"q": "¿Puedo poner subrayado doble?", "a": "Sí, el doble subrayado está en el menú, además del simple y el tachado. Úsalo con moderación para no recargar."},
+        {"q": "¿Por qué el subrayado se ve disparejo?", "a": "Porque depende de cómo la fuente del dispositivo dibuja las marcas combinantes. En frases cortas se ve mejor que en bloques largos."},
+        {"q": "¿Sirve para mi web?", "a": "No conviene — ahí usa HTML/CSS real. Esto es para apps que no te dan opción de subrayar."}
+      ],
+      "related": ["/es/", "/es/texto-tachado/", "/es/letras-en-negrita/"]
+    },
+    {
+      "slug": "/es/texto-tachado/",
+      "alt": "/strikethrough-text-generator",
+      "kw": "texto tachado",
+      "secondaryKw": ["tachar texto", "letras tachadas", "texto con línea en medio", "tachado para copiar"],
+      "title": "Texto Tachado para Copiar — Tachar Letras en Línea",
+      "metaDescription": "Tacha tu texto — tachado para copiar y pegar en Instagram, Discord, X y donde sea. Tachado simple, barrado y subrayado. Sin registro, sin pop-ups.",
+      "h1": "Texto Tachado",
+      "lede": "El tachado a la derecha — más una variante barrada y el subrayado en el menú.",
+      "focusStyles": ["strikethrough", "slashed", "underline"],
+      "intro": "Tachar texto — ponerle una línea en medio, c̶o̶m̶o̶ ̶e̶s̶t̶e̶ — sirve para ese efecto de «corrección» o de precio rebajado, o simplemente para llamar la atención de forma distinta. Esta página agrega la línea de tachado con caracteres combinantes de Unicode, listo para copiar y pegar en Instagram, Discord, X o donde quieras, además de una variante barrada (con diagonal) y el subrayado en el mismo menú. Como son marcas que se apilan sobre cada letra, el efecto viaja con el texto. Aviso honesto: algunas apps limpian los caracteres combinantes al pegar, así que el tachado puede desaparecer en ciertos lugares; Discord es de los más fiables. Funciona mejor en frases cortas.",
+      "where": {
+        "intro": "El tachado usa caracteres combinantes; funciona en texto libre pero algunas apps lo limpian, y los filtros de juegos lo rechazan.",
+        "rows": [
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve bien. Discord también tiene su propio ~~tachado~~ con virgulillas en mensajes; esto sirve para apodos y bots."},
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "partial", "note": "Suele verse, aunque la línea puede quedar irregular según la fuente."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "partial", "note": "Funciona a veces; la app puede limpiar las marcas combinantes."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes", "status": "partial", "note": "WhatsApp tiene su ~tachado~ con virgulillas; esto cubre los lugares que esa opción no alcanza."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "no", "note": "Los filtros de nombres rechazan los caracteres combinantes del tachado."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde funciona el tachado:",
+        "items": [
+          {"label": "Efecto de corrección", "text": "Tachar una palabra y poner otra al lado da ese efecto de «me corrijo» con humor."},
+          {"label": "Precio rebajado", "text": "Para un anuncio informal, tachar el precio viejo junto al nuevo se entiende al instante."},
+          {"label": "Apodo o comentario distinto", "text": "Un apodo o comentario con tachado se ve diferente y llama la atención."},
+          {"label": "Variante barrada", "text": "Si quieres una diagonal en vez de la línea horizontal, la versión barrada está en el menú."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes que funcione en nicks de juegos", "text": "Los filtros de nombres rechazan los caracteres combinantes del tachado. Para un nick, usa negrita o versalitas."},
+        {"title": "No te sorprendas si una app lo limpia", "text": "Algunas apps quitan las marcas combinantes al pegar y el tachado desaparece. Discord es de los más fiables."},
+        {"title": "No lo uses en bloques largos", "text": "En textos largos la línea puede verse despareja según la fuente. Funciona mejor en una palabra o frase corta."},
+        {"title": "No lo uses en tu web para SEO", "text": "Ahí usa HTML real (<s> o <del>). Los buscadores ven caracteres combinantes, no un tachado real."}
+      ],
+      "faqs": [
+        {"q": "¿Cómo tacho texto para copiar y pegar?", "a": "Escribe en el cuadro y copia la versión tachada. La herramienta agrega una línea sobre cada carácter, así que el efecto viaja con el texto donde lo pegues."},
+        {"q": "¿Dónde funciona el texto tachado?", "a": "En Discord se ve bien; en Instagram, TikTok y WhatsApp suele funcionar aunque a veces la app lo limpia. En nicks de juegos casi nunca pasa el filtro."},
+        {"q": "¿Hay variantes además del tachado simple?", "a": "Sí: una variante barrada (con diagonal) y el subrayado, ambas en el mismo menú."},
+        {"q": "¿Por qué la línea se ve despareja?", "a": "Porque depende de cómo la fuente del dispositivo dibuja la marca combinante. En frases cortas se ve mejor que en bloques largos."},
+        {"q": "¿Sirve para mi web o tienda online?", "a": "Para una web usa HTML real (<s>/<del>). Esto es para apps que no te dejan tachar, como bios y mensajes."}
+      ],
+      "related": ["/es/", "/es/texto-subrayado/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/letras-en-circulo/",
+      "alt": "/bubble-text-generator",
+      "kw": "letras en círculo",
+      "secondaryKw": ["letras burbuja", "letras circulares", "letras en círculos para copiar", "texto burbuja"],
+      "title": "Letras en Círculo Ⓒⓞⓟⓘⓐⓡ — Letras Burbuja para Pegar",
+      "metaDescription": "Convierte tu texto en letras dentro de círculos (letras burbuja) para copiar y pegar, más la versión rellena y una en cuadro. Gratis, sin registro, sin pop-ups.",
+      "h1": "Letras en Círculo",
+      "lede": "La versión en círculo a la derecha — más la rellena (negativa) y la de cuadro en el menú.",
+      "focusStyles": ["circled", "circled-negative", "squared"],
+      "intro": "Las letras en círculo, también llamadas letras burbuja, ponen cada letra dentro de un círculo (ⓒⓞⓜⓞ ⓔⓢⓣⓔ) para un look divertido y llamativo. Esta página te da la versión en círculo, la rellena o negativa (con el círculo en sólido y la letra en blanco) y una variante en cuadro, todas listas para copiar y pegar. Son caracteres Unicode reales, así que se pegan en bios, comentarios, nicks y estados sin instalar nada. Un detalle: el alfabeto en círculo está bastante completo, pero algunos símbolos y números pueden faltar o verse distintos, y en pantallas muy chicas las letras dentro del círculo se leen un poco apretadas. Para una palabra o un nombre quedan geniales; para textos largos cuesta leerlas.",
+      "where": {
+        "intro": "Las letras en círculo usan caracteres bien soportados, así que son bastante portables. El detalle es la legibilidad en tamaño chico.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Se ven bien en bio y pies de foto. Llaman la atención en una palabra."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "ok", "note": "Funcionan para un nombre o una palabra llamativa."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ven en todos lados, incluido el apodo."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, info", "status": "ok", "note": "Funcionan. En tamaño chico se leen un poco apretadas."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "A veces pasan el filtro; si no, prueba negrita o versalitas."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde lucen las letras en círculo:",
+        "items": [
+          {"label": "Nombre llamativo", "text": "Un nombre en ⓛⓔⓣⓡⓐⓢ ⓑⓤⓡⓑⓤⓙⓐ se ve divertido y distinto en una bio."},
+          {"label": "Versión rellena para más impacto", "text": "La variante negativa (círculo sólido, letra en blanco) resalta más sobre fondos claros."},
+          {"label": "Detalle en un pie de foto", "text": "Una palabra en círculo al inicio de un pie de foto le da un toque juguetón."},
+          {"label": "Variante en cuadro", "text": "Si prefieres cuadros en vez de círculos, esa opción está en el menú."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No las uses en textos largos", "text": "Las letras dentro de círculos cuestan leerlas en bloques largos. Quedan mejor en una palabra o un nombre."},
+        {"title": "No esperes que todos los símbolos existan", "text": "El alfabeto en círculo está casi completo, pero algunos símbolos o números pueden faltar o verse distintos."},
+        {"title": "No abuses en pantallas chicas", "text": "En tamaño pequeño las letras dentro del círculo se ven apretadas. Para algo legible de lejos, usa versalitas o negrita."},
+        {"title": "No cuentes con que pasen todos los filtros de juegos", "text": "Algunos las rechazan. Si tu nick rebota, prueba negrita o versalitas."}
+      ],
+      "faqs": [
+        {"q": "¿Qué son las letras en círculo o burbuja?", "a": "Son tu texto con cada letra dentro de un círculo (ⓐⓢⓘ). Son caracteres Unicode reales que se copian y pegan; no es una fuente que haya que instalar."},
+        {"q": "¿Hay versión rellena?", "a": "Sí, la variante negativa pone el círculo en sólido con la letra en blanco, y resalta más sobre fondos claros. También hay una versión en cuadro."},
+        {"q": "¿Dónde puedo usarlas?", "a": "En bios y pies de foto de Instagram y TikTok, estados de WhatsApp, Discord y más. Se ven mejor en una palabra o un nombre que en textos largos."},
+        {"q": "¿Por qué algunas letras o números no salen en círculo?", "a": "Porque el alfabeto en círculo de Unicode no cubre todos los símbolos. Las letras están casi completas, pero algunos números o signos pueden faltar."},
+        {"q": "¿Funcionan en nicks de juegos?", "a": "A veces. Algunos filtros las aceptan y otros no. Si tu nick rebota, la negrita o las versalitas son más compatibles."}
+      ],
+      "related": ["/es/", "/es/letras-bonitas/", "/es/letras-esteticas/"]
+    },
+    {
+      "slug": "/es/letras-japonesas/",
+      "alt": "/japanese-font-generator",
+      "kw": "letras japonesas",
+      "secondaryKw": ["letras estilo japonés", "texto japonés", "letras chinas", "letras estilo japonés para copiar"],
+      "title": "Letras Japonesas (Estilo) para Copiar — Texto Estilo Japonés",
+      "metaDescription": "Genera letras de estilo japonés — texto de ancho completo, espaciado y versalitas para copiar y pegar en bios y nicks. No es japonés real: es un efecto de estilo. Sin pop-ups.",
+      "h1": "Letras Estilo Japonés",
+      "lede": "El estilo de ancho completo a la derecha — el look tipo japonés — más el espaciado y las versalitas en el menú.",
+      "focusStyles": ["full-width", "spaced", "small-caps"],
+      "intro": "Las «letras japonesas» que busca la gente para nicks y bios suelen ser este efecto de ancho completo (ｃｏｍｏ ｅｓｔｅ), que usa los caracteres anchos de la tipografía japonesa para dar ese aire estético. Seamos honestos: no convierte tu texto a japonés real ni a kanji — es un efecto de estilo sobre las letras latinas, parecido a lo que algunos llaman «letras chinas» en los generadores de nicks. Esta página te da el ancho completo, una versión espaciada y las versalitas, todo listo para copiar y pegar. Son caracteres Unicode reales, así que se pegan en Instagram, TikTok, Discord o tu nick sin instalar nada. Si de verdad necesitas escribir en japonés, esto no es lo tuyo; si quieres el look estético, es justo esto.",
+      "where": {
+        "intro": "El ancho completo usa caracteres muy soportados, así que es de los estilos más portables. El detalle es la legibilidad y el espacio.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Se ve limpio en bio y pies de foto. Ideal para una línea con estilo."},
+          {"app": "TikTok", "fields": "bio, pies de foto", "status": "ok", "note": "Funciona bien para ese look ancho en la bio."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve en todos lados. El ancho completo destaca en un apodo."},
+          {"app": "WhatsApp / Telegram", "fields": "estados, info", "status": "ok", "note": "Funciona. Ocupa más espacio, tenlo en cuenta en campos cortos."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "El ancho completo a veces pasa; las versalitas son más seguras si el filtro lo rechaza."}
+        ]
+      },
+      "examples": {
+        "intro": "Dónde luce el estilo japonés:",
+        "items": [
+          {"label": "Nick con estética japonesa", "text": "Un nombre en ａｎｃｈｏ ｃｏｍｐｌｅｔｏ da ese aire estético tipo japonés que muchos buscan para su nick."},
+          {"label": "Bio aesthetic", "text": "Una palabra en este estilo marca el tono sin recargar el resto de la bio."},
+          {"label": "Portada o destacado", "text": "El ancho completo se ve bien como título de una portada de playlist o un destacado."},
+          {"label": "Versalitas si quieres algo más legible", "text": "Si el ancho completo se ve demasiado, las versalitas dan un look limpio y fácil de leer."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No es japonés real", "text": "No convierte tu texto a kanji ni a japonés de verdad — es un efecto de estilo sobre letras latinas. Si necesitas escribir japonés, esto no sirve."},
+        {"title": "No lo uses en textos largos", "text": "El ancho completo ocupa mucho y cuesta leerlo en bloques. Úsalo para una palabra o una línea."},
+        {"title": "No esperes que cambie el tamaño real", "text": "Se ve más grande porque los caracteres son más anchos, pero no cambia el tamaño de fuente; eso lo controla la app."},
+        {"title": "No cuentes con que pase todos los filtros", "text": "El ancho completo a veces lo rechazan en juegos. Si tu nick rebota, prueba las versalitas."}
+      ],
+      "faqs": [
+        {"q": "¿Esto escribe en japonés real?", "a": "No. Es un efecto de estilo de ancho completo sobre letras latinas, que da un aire estético tipo japonés. No convierte tu texto a kanji ni a japonés de verdad."},
+        {"q": "¿Es lo mismo que las letras chinas?", "a": "Es parecido a lo que muchos generadores de nicks llaman «letras chinas»: un efecto de estilo, no idioma real. Aquí el foco es el look de ancho completo estilo japonés."},
+        {"q": "¿Dónde puedo usarlo?", "a": "En bios y nicks de Instagram, TikTok, Discord y más. Se ve mejor en frases cortas; en textos largos cuesta leerlo."},
+        {"q": "¿Por qué el texto se ve más ancho?", "a": "Porque usa los caracteres de ancho completo, que ocupan el espacio de un carácter ancho. No es un cambio de tamaño de fuente, solo caracteres más anchos."},
+        {"q": "¿Funciona en nicks de juegos?", "a": "A veces el ancho completo pasa el filtro; si lo rechaza, las versalitas son una opción más segura."}
+      ],
+      "related": ["/es/", "/es/letras-esteticas/", "/es/letras-grandes/", "/es/letras-bonitas/"]
+    },
+    {
+      "slug": "/es/superindice-y-subindice/",
+      "alt": "/superscript-generator",
+      "kw": "superíndice",
+      "secondaryKw": ["subíndice", "generador de superíndices", "letras pequeñas arriba", "texto en superíndice para copiar"],
+      "title": "Superíndice y Subíndice para Copiar — Texto Pequeño Arriba",
+      "metaDescription": "Genera texto en superíndice y subíndice para copiar y pegar — caracteres pequeños elevados o bajados, para notas, fórmulas y bios. Gratis, sin registro, sin pop-ups.",
+      "h1": "Superíndice y Subíndice",
+      "lede": "El superíndice a la derecha — los caracteres pequeños elevados — más el subíndice y las versalitas en el menú.",
+      "focusStyles": ["superscript", "subscript", "small-caps"],
+      "intro": "El superíndice son esos caracteres pequeños y elevados (ᶜᵒᵐᵒ ᵉˢᵗᵉ), útiles para notas al pie, una vibra estética en una bio o notación tipo matemática. El subíndice es lo contrario: caracteres pequeños y bajados (como en H₂O o x₁), perfectos para fórmulas químicas. Esta página te da ambos, más las versalitas, listos para copiar y pegar. Un detalle importante de Unicode: los números tienen set completo en superíndice y subíndice, así que ¹²³ y ₁₂₃ salen perfectos; pero las letras solo están parciales, sobre todo en subíndice, así que una palabra puede salir con huecos donde una letra se queda en tamaño normal. Para texto pequeño en general (una bio), las versalitas son más completas y legibles.",
+      "where": {
+        "intro": "Los dígitos en superíndice y subíndice están muy soportados; las letras tienen huecos, ese es su punto débil en cualquier plataforma.",
+        "rows": [
+          {"app": "Instagram", "fields": "bio, pies de foto", "status": "ok", "note": "Los números se ven bien; en palabras, alguna letra puede saltar a tamaño normal por las que faltan."},
+          {"app": "TikTok", "fields": "bio, comentarios", "status": "ok", "note": "Igual — números bien, letras irregulares por diseño."},
+          {"app": "Discord", "fields": "mensajes, apodos", "status": "ok", "note": "Se ve. Útil para notas o un detalle pequeño."},
+          {"app": "WhatsApp / Telegram", "fields": "mensajes", "status": "ok", "note": "Los subíndices de números en fórmulas salen bien; los de letras son muy limitados."},
+          {"app": "Juegos / nicks", "fields": "nombre", "status": "partial", "note": "Irregular por las letras que faltan. Para un nick pequeño, las versalitas son más fiables."}
+        ]
+      },
+      "examples": {
+        "intro": "Para qué sirve cada uno:",
+        "items": [
+          {"label": "Nota al pie en un comentario", "text": "El superíndice de números — ¹ ² ³ — funciona perfecto para una referencia, aunque la app no tenga opción de superíndice."},
+          {"label": "Fórmula química", "text": "El subíndice brilla aquí: H₂O, CO₂, x₁. Los dígitos tienen forma de subíndice, así que las fórmulas salen bien."},
+          {"label": "Detalle estético en una bio", "text": "Unas letras en superíndice dan un toque pequeño y distinto, recordando que algunas pueden quedar en tamaño normal."},
+          {"label": "Notación matemática", "text": "Exponentes como x² o n⁰ se escriben con el superíndice de números sin necesidad de un editor de fórmulas."}
+        ]
+      },
+      "pitfalls": [
+        {"title": "No esperes alfabeto completo en superíndice", "text": "Unicode no terminó las letras de superíndice, y el subíndice de letras está aún más incompleto. Una palabra puede salir con huecos. Para texto pequeño general, usa versalitas."},
+        {"title": "No esperes que achique el tamaño real", "text": "Son caracteres aparte dibujados pequeños, no un cambio de tamaño de fuente. Eso lo controla la app."},
+        {"title": "No uses el subíndice para una bio entera", "text": "El subíndice cubre pocas letras — está pensado para fórmulas y notas, no para estilizar texto. Para eso, versalitas."},
+        {"title": "No mezcles letras y números esperando que ambos salgan chicos", "text": "Los dígitos tienen forma; muchas letras no. Una cadena mezclada puede salir con números chiquitos y letras grandes."}
+      ],
+      "faqs": [
+        {"q": "¿Qué es el superíndice y el subíndice?", "a": "El superíndice son caracteres pequeños elevados (¹ ² ³, ᵃ ᵇ ᶜ), para notas y notación. El subíndice son caracteres pequeños bajados (₁ ₂ ₃, como en H₂O), para fórmulas. Ambos se copian y pegan."},
+        {"q": "¿Por qué algunas letras no salen en superíndice?", "a": "Porque Unicode definió un set completo de dígitos pero solo parcial de letras. Así que ¹²³ sale bien y una palabra puede tener huecos. En subíndice, las letras están aún más limitadas."},
+        {"q": "¿Sirve para fórmulas químicas?", "a": "Sí, el subíndice es ideal: H₂O, CO₂, x₁ salen perfectos porque los dígitos tienen forma de subíndice. Cópialo y pégalo donde lo necesites."},
+        {"q": "¿Achica el tamaño de la fuente?", "a": "No. Son caracteres Unicode aparte dibujados pequeños. El tamaño real lo controla la app donde pegas."},
+        {"q": "¿Qué uso para texto pequeño en una bio?", "a": "Para una bio, las versalitas son más completas y legibles que el superíndice. El super y subíndice son mejores para números, notas y fórmulas."}
+      ],
+      "related": ["/es/", "/es/letras-pequenas/", "/es/letras-esteticas/"]
     }
   ]
 }
