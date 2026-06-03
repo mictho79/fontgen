@@ -168,6 +168,15 @@ var savedTheme;try{savedTheme=localStorage.getItem('fontgen_theme');}catch(e){}
 setTheme(savedTheme||'light');
 if(themeBtn)themeBtn.addEventListener('click',function(){setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');});
 
+/* generic copy-to-clipboard for any [data-copy] button (kaomoji library, etc.) */
+document.addEventListener('click',function(e){
+  var b=e.target.closest('[data-copy]');if(!b)return;
+  var txt=b.getAttribute('data-copy');
+  function flash(){b.classList.add('copied');setTimeout(function(){b.classList.remove('copied');},900);}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(flash,function(){fallbackCopy(txt);flash();});}
+  else{fallbackCopy(txt);flash();}
+});
+
 populateSelect();
 render();
 })();

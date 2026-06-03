@@ -780,14 +780,15 @@
     },
     {
       "slug": "/japanese-font-generator",
-      "kw": "japanese font generator",
-      "secondaryKw": ["japanese style text generator", "japanese letters generator", "kawaii text generator", "japanese font copy paste"],
-      "title": "Japanese-Style Font Generator — ｱｲｳ-Style Text to Copy and Paste",
-      "metaDescription": "Generate Japanese-style text — full-width letters, wide-spaced text, and small caps you can copy and paste. Not real Japanese — a styling effect. No sign-up, no popups.",
-      "h1": "Japanese-Style Font Generator",
-      "lede": "The Japanese-style look on the right: full-width letters. Wide-spaced and small caps in the dropdown.",
+      "kw": "kaomoji",
+      "secondaryKw": ["japanese emoticons", "japanese smileys", "japanese font generator", "cute text faces", "kaomoji copy and paste"],
+      "title": "Kaomoji ¯\\_(ツ)_/¯ — Japanese Emoticons & Style Text to Copy",
+      "metaDescription": "Tap to copy kaomoji — the Japanese text smileys: ¯\\_(ツ)_/¯, (≧◡≦), (◕‿◕). Curated library plus a Japanese-style full-width text converter. No popups.",
+      "h1": "Kaomoji & Japanese-Style Text",
+      "lede": "Tap any smiley below to copy. Or use the box above to convert your text into the wide, Japanese-style look.",
       "focusStyles": ["full-width", "spaced", "small-caps"],
-      "intro": "Quick honesty up front: this is a Japanese-style font generator, not a translator and not a way to write actual Japanese. What people usually want here is the visual flavor — the wide, evenly-spaced, slightly-retro look you get from full-width Latin characters, which exist in Unicode precisely because Japanese text mixes Latin letters at the same width as kana. So this page leans on the full-width style (Ｊａｐａｎｅｓｅ-ｓｔｙｌｅ) and a wide-spaced variant, plus small caps for a calmer typeset feel. It's used for aesthetic bios, vaporwave-adjacent posts, anime-fan profiles, that kind of thing. If you actually need Japanese script — hiragana, katakana, kanji — that's a keyboard or translation job, not this tool. And the usual caveat: full-width letters render fine in bios and captions; the strictest username fields reject them.",
+      "showKaomoji": true,
+      "intro": "Most people landing here typing 'japanese font' or 'japanese text' actually want one of two things — and both are below. First: kaomoji, the Japanese-style text emoticons made out of regular characters like ¯\\_(ツ)_/¯, (≧◡≦), (◕‿◕✿), the little faces that real emoji can't quite replace. Tap any one in the library below to copy it. Second: the visual look of Japanese typesetting — wide, evenly-spaced Latin letters (Ｊａｐａｎｅｓｅ-ｓｔｙｌｅ) from Unicode's full-width range. The box at the top of the page does that conversion. Quick honesty: this is NOT a translator and won't write actual Japanese script (kanji/kana). For real Japanese you need a Japanese keyboard or a translator. For the smileys and the aesthetic look, you're in the right place.",
       "where": {
         "intro": "It's the same full-width characters as the aesthetic page, so the compatibility is the same: solid in bios and captions, weak in username fields, and watch for apps that squish the wide space.",
         "rows": [
@@ -801,28 +802,28 @@
         ]
       },
       "examples": {
-        "intro": "The Japanese-style flavor, used as the styling effect it is:",
+        "intro": "Where each piece earns its keep:",
         "items": [
-          {"label": "Anime-fan Instagram bio", "text": "ｗｅｅｂ ｔｒａｓｈ ｆｏｒｅｖｅｒ in full-width gives the spaced-out, slightly-nostalgic look people associate with Japanese typesetting — without claiming to be Japanese."},
-          {"label": "Vaporwave / retro post", "text": "Ｊ Ａ Ｐ Ａ Ｎ as a full-width header line is half the aesthetic right there."},
-          {"label": "Profile name with a Japanese vibe", "text": "Full-width letters in a display name read \"styled\" in that specific way. Discord renders it cleanly in nicknames."},
-          {"label": "Real kana around styled Latin text", "text": "Want actual katakana? Type it from a Japanese keyboard or copy it from a translator, then paste it around text styled here. The two work together fine — this tool just doesn't generate the kana."},
-          {"label": "Wide-spaced or small caps as alternatives", "text": "If full-width looks too much, Wide spaced (regular letters, big gaps) or ꜱᴍᴀʟʟ ᴄᴀᴘꜱ both give a calmer typeset feel — both in the dropdown."}
+          {"label": "Reaction in a chat", "text": "Pasting <em>¯\\_(ツ)_/¯</em>, <em>(≧◡≦)</em> or <em>(╯°□°)╯︵ ┻━┻</em> hits a tone real emoji don't reach. Kaomoji are pure characters, so they survive everywhere — Discord, WhatsApp, X, even plain SMS."},
+          {"label": "Bio emoticon", "text": "A single <em>(◕‿◕✿)</em> or <em>(｡♥‿♥｡)</em> at the start of a bio reads cute without needing an image."},
+          {"label": "Username flair (carefully)", "text": "Short kaomoji like <em>ʕ•ᴥ•ʔ</em> sometimes pass username filters; the long ones with combining marks usually don't. If a name bounces, drop to the simpler shapes."},
+          {"label": "Aesthetic bio in full-width", "text": "<em>ｗｅｅｂ ｔｒａｓｈ ｆｏｒｅｖｅｒ</em> in full-width gives the spaced-out, slightly-nostalgic look people associate with Japanese typesetting — without claiming to be Japanese."},
+          {"label": "Mixing the two", "text": "A line in full-width with a kaomoji at the end (<em>Ｊ Ａ Ｐ Ａ Ｎ (´• ω •`)ﾉ</em>) is half the aesthetic right there."}
         ]
       },
       "pitfalls": [
-        {"title": "Don't expect this to translate anything", "text": "It restyles your Latin letters into the wide look associated with Japanese typesetting — the words stay in whatever language you typed. For real translation, use a translator. For the aesthetic, this is it."},
-        {"title": "Don't expect to write kana or kanji here", "text": "This tool doesn't generate Japanese script. Type hiragana/katakana/kanji from a Japanese keyboard or copy them from a translator, then paste them in alongside text styled here."},
-        {"title": "Don't put full-width letters in a username", "text": "That field rejects them. Bold sans is the fallback that usually passes and still reads bold."},
-        {"title": "Don't be surprised if the spacing collapses", "text": "Some apps normalize the full-width space back to a regular space, tightening the look. Use Wide spaced (regular spaces) for guaranteed gaps."}
+        {"title": "Don't confuse kaomoji with real emoji", "text": "Kaomoji are made of regular characters — they render as text everywhere. Real emoji are dedicated glyphs that sometimes look wildly different across platforms. For a tone real emoji can't hit, kaomoji is the answer."},
+        {"title": "Don't expect this to write Japanese", "text": "This page doesn't generate kanji, hiragana or katakana. For real Japanese, use a Japanese keyboard or a translator. For the aesthetic or the smileys, you're set."},
+        {"title": "Don't put a long kaomoji in a username", "text": "The shorter ones (ʕ•ᴥ•ʔ, ^_^) sometimes pass. The long ones with stacked combining marks almost never. If a name bounces, simplify."},
+        {"title": "Don't paste full-width into a @username field", "text": "It rejects them. Bold sans is the fallback that usually passes."}
       ],
       "faqs": [
-        {"q": "Does this translate my text into Japanese?", "a": "No — it restyles your Latin letters into the wide, evenly-spaced look associated with Japanese typesetting. The words stay in whatever language you typed. For real translation you want a translator; for the aesthetic, this is it."},
-        {"q": "What makes text look 'Japanese-style' if it's still English letters?", "a": "Full-width characters. In Japanese text, Latin letters are often drawn at the same width as kana, which is wider than usual. Pasting that effect onto English gives the recognizable spaced-out, slightly nostalgic look."},
-        {"q": "Can I mix in actual katakana or kanji?", "a": "Not from this tool — it doesn't generate Japanese script. You'd type those from a Japanese keyboard or copy them from a translator. You can absolutely paste real kana around text styled here, though."},
-        {"q": "Where does Japanese-style text work?", "a": "Bios and captions on Instagram, TikTok, Discord and X all handle full-width text fine. Username fields are the strict ones — if a name won't take it, fall back to bold sans, which renders almost everywhere."},
-        {"q": "Is this the same as the aesthetic / vaporwave text generator?", "a": "Largely, yes — it uses the same full-width characters. The framing is different (Japanese-style vs. vaporwave), but the underlying trick and the compatibility are identical. Wide-spaced and small caps are also in the dropdown on both."},
-        {"q": "Why does my full-width text look tighter on one app?", "a": "That app normalized the extra-wide full-width space into a regular space. The letters stay wide; the gaps shrink. If you need the spacing, use the Wide spaced option, which uses ordinary spaces between regular letters."}
+        {"q": "What is a kaomoji?", "a": "A Japanese-style emoticon built from regular characters — like ¯\\_(ツ)_/¯ or (≧◡≦). Unlike emoji (which are dedicated picture glyphs), kaomoji are pure text, so they paste and render reliably in any app: Discord, WhatsApp, X, Instagram, games, even plain SMS."},
+        {"q": "How do I copy a kaomoji from this page?", "a": "Tap any of the smileys in the library above — it copies straight to your clipboard. You can also click and select if your device prefers that."},
+        {"q": "Does this generate real Japanese (kanji or kana)?", "a": "No — it doesn't generate Japanese script. For real Japanese, use a Japanese keyboard or a translator. What you can do here: copy the kaomoji smileys, and restyle Latin letters into the wide 'Japanese-style' full-width look."},
+        {"q": "What's the difference between kaomoji and emoji?", "a": "Emoji are dedicated picture glyphs added to Unicode — they look different on different platforms (Apple's 😄 vs Google's). Kaomoji are made from regular characters that already exist in any font, so they look essentially the same everywhere and never get 'replaced' by an emoji renderer."},
+        {"q": "Where do kaomoji work?", "a": "Everywhere text works — Discord, WhatsApp, Telegram, X, Instagram, TikTok, comments, in-game chats, even SMS. The only thing to watch is username fields, where the long kaomoji with combining marks often get rejected; the short ones (ʕ•ᴥ•ʔ, ^_^) usually pass."},
+        {"q": "And the 'japanese font' / full-width style above?", "a": "That uses Unicode's full-width Latin characters (Ｊａｐａｎｅｓｅ-ｓｔｙｌｅ) — the wide, evenly-spaced look you see in Japanese text where Latin letters sit at the same width as kana. It renders fine in bios and captions; the strict @username fields reject it."}
       ],
       "related": ["/", "/aesthetic-text-generator", "/cool-text-generator", "/cursive-text-generator", "/small-text-generator"]
     },

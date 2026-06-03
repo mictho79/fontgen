@@ -168,3 +168,14 @@ footer{background:var(--card);border-top:1px solid var(--border);margin-top:8px}
   .topbar nav{gap:12px}
   .topbar{padding:0 12px;gap:14px}
 }
+
+/* ---- kaomoji library: clickable grid of copy-to-clipboard text buttons ---- */
+.kaomoji-lib .kao-group{margin-top:14px}
+.kaomoji-lib .kao-group:first-of-type{margin-top:6px}
+.kaomoji-lib .kao-group h3{font-size:.95rem;font-weight:600;color:var(--text-2);margin:0 0 6px;letter-spacing:.02em}
+.kao-grid{display:flex;flex-wrap:wrap;gap:6px}
+.kao{font:inherit;font-size:.98rem;line-height:1.2;padding:7px 11px;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);cursor:pointer;white-space:nowrap;transition:background .12s,border-color .12s,transform .08s}
+.kao:hover{border-color:var(--border-strong);background:var(--accent-soft)}
+.kao:active{transform:translateY(1px)}
+.kao.copied{background:#cff0c8;border-color:#4caf50;color:#1a3d1a}
+[data-theme="dark"] .kao.copied{background:#1f3d1a;border-color:#4caf50;color:#c8f0c0}

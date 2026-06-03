@@ -52,6 +52,7 @@ STR = {
     "home_h1": "Fancy Text Generator",
     "theme_btn": "Theme: Light ▾",
     "counter_zero": "0 characters",
+    "kaomoji_h": "Kaomoji library — tap any to copy",
   },
   "es": {
     "lang": "es", "og_locale": "es_MX", "hreflang": "es-419",
@@ -80,6 +81,7 @@ STR = {
     "home_h1": "Generador de Letras",
     "theme_btn": "Tema: Claro ▾",
     "counter_zero": "0 caracteres",
+    "kaomoji_h": "Biblioteca de kaomoji — toca cualquiera para copiar",
   },
 }
 
@@ -106,6 +108,53 @@ ENGINE_ES = {
     "styles": "estilos", "theme": "Tema: ", "dark": "Oscuro", "light": "Claro", "on": "Sí", "off": "No",
   },
 }
+
+# Kaomoji library — same dataset across locales, labels per locale.
+KAOMOJI = {
+  "happy":    ["( ＾◡＾ )", "(≧◡≦)", "(◕‿◕)", "(◠‿◠✿)", "(｡◕‿◕｡)", "ヽ(´▽`)/", "(ノ´ヮ`)ノ*: ･ﾟ", "(★ω★)/"],
+  "cute":     ["(｡♥‿♥｡)", "(◕‿◕✿)", "(●ˇ∀ˇ●)", "( ´ ▽ ` )ﾉ", "ʕ•ᴥ•ʔ", "(=^･ω･^=)", "(◍•ᴗ•◍)❤"],
+  "love":     ["(♥ω♥)", "(♡˙︶˙♡)", "(◕‿◕)♡", "(´∀｀)♡", "(´｡• ᵕ •｡`) ♡", "( ˘ ³˘)❤"],
+  "shrug":    [r"¯\_(ツ)_/¯", r"¯\_(°_o)_/¯", "ʅ（◞‿◟）ʃ", "(￣▽￣)ノ", "(・_・;)"],
+  "surprised":["(⊙_⊙)", "(°ロ°)", "Σ(°△°)", "(￣o￣) ｡oO", "Σ(￣□￣;)"],
+  "sad":      ["(╥﹏╥)", "(T_T)", "ಥ_ಥ", "(｡•́︿•̀｡)", "(；︵；)", "(ಥ﹏ಥ)"],
+  "angry":    ["(╬ Ò﹏Ó)", "(≧Д≦)", "ლ(ಠ益ಠლ)", "(¬_¬)", "(╯°□°)╯︵ ┻━┻", "(ノಠ益ಠ)ノ彡┻━┻"],
+  "animals":  ["ʕ•ᴥ•ʔ", "(=^･ω･^=)", "ฅ^•ﻌ•^ฅ", "ʕノ•ᴥ•ʔノ ︵ ┻━┻", "ฅ(^•ﻌ•^)ฅ"],
+  "wave":     ["(^_^)/", "ヾ(＾∇＾)", "(｡◕‿◕｡)ﾉ", "(✿◠‿◠)ﾉ", "(´• ω •`)ﾉ", "ヾ(•ω•`)o"],
+  "iconic":   ["┬─┬ノ( º _ ºノ)", "(ノ°益°)ノ彡", "(งಠ_ಠ)ง", "(ง •̀_•́)ง", "(b ᵔ▽ᵔ)b"],
+}
+KAOMOJI_LABELS = {
+  "en": {"happy": "Happy", "cute": "Cute", "love": "Love", "shrug": "Shrug & confused",
+         "surprised": "Surprised", "sad": "Sad / crying", "angry": "Angry",
+         "animals": "Animals", "wave": "Greetings / wave", "iconic": "Iconic / actions"},
+  "es": {"happy": "Felices", "cute": "Tiernos", "love": "Amor", "shrug": "Sin idea",
+         "surprised": "Sorpresa", "sad": "Tristes / llorando", "angry": "Enojados",
+         "animals": "Animales", "wave": "Saludos", "iconic": "Icónicos / acciones"},
+}
+KAOMOJI_ORDER = ["happy", "cute", "love", "shrug", "surprised", "sad", "angry", "animals", "wave", "iconic"]
+
+def kaomoji_block(page, loc="en"):
+    if not page.get("showKaomoji"):
+        return ""
+    s = STR[loc]
+    labels = KAOMOJI_LABELS.get(loc, KAOMOJI_LABELS["en"])
+    groups = []
+    for key in KAOMOJI_ORDER:
+        items = KAOMOJI.get(key, [])
+        if not items:
+            continue
+        btns = "".join(
+            f'<button class="kao" type="button" data-copy="{esc(it)}" aria-label="Copy {esc(it)}">{esc(it)}</button>'
+            for it in items
+        )
+        groups.append(
+            f'<div class="kao-group"><h3>{esc(labels[key])}</h3><div class="kao-grid">{btns}</div></div>'
+        )
+    return (
+        '<div class="card content kaomoji-lib">'
+        f'<h2>{esc(s["kaomoji_h"])}</h2>'
+        + "".join(groups)
+        + '</div>'
+    )
 
 # AdSense: when a client ID is configured, inject the loader in <head> and a real
 # <ins class="adsbygoogle"> where the placeholder used to be. Until then, the slot
@@ -417,6 +466,7 @@ def build_generator(page, loc="en"):
             + '</div>'
             + tool_block(page, loc=loc)
             + content_block(page, loc=loc)
+            + kaomoji_block(page, loc=loc)
             + where_block(page, loc=loc)
             + examples_block(page, loc=loc)
             + pitfalls_block(page, loc=loc)

@@ -766,14 +766,15 @@
     {
       "slug": "/es/letras-japonesas/",
       "alt": "/japanese-font-generator",
-      "kw": "letras japonesas",
-      "secondaryKw": ["letras estilo japonés", "texto japonés", "letras chinas", "letras estilo japonés para copiar"],
-      "title": "Letras Japonesas (Estilo) para Copiar — Texto Estilo Japonés",
-      "metaDescription": "Genera letras de estilo japonés — texto de ancho completo, espaciado y versalitas para copiar y pegar en bios y nicks. No es japonés real: es un efecto de estilo. Sin pop-ups.",
-      "h1": "Letras Estilo Japonés",
-      "lede": "El estilo de ancho completo a la derecha — el look tipo japonés — más el espaciado y las versalitas en el menú.",
+      "kw": "kaomoji",
+      "secondaryKw": ["emoticonos japoneses", "letras japonesas", "caritas en texto", "emojis japoneses", "kaomoji para copiar"],
+      "title": "Kaomoji ¯\\_(ツ)_/¯ — Emoticonos Japoneses y Letras Japonesas",
+      "metaDescription": "Toca para copiar kaomoji — los emoticonos japoneses ¯\\_(ツ)_/¯, (≧◡≦), (◕‿◕). Biblioteca curada más letras de estilo japonés (ancho completo). Sin pop-ups.",
+      "h1": "Kaomoji y Letras Estilo Japonés",
+      "lede": "Toca cualquier carita de abajo para copiarla. O usa el cuadro de arriba para convertir tu texto al look ancho estilo japonés.",
       "focusStyles": ["full-width", "spaced", "small-caps"],
-      "intro": "Las «letras japonesas» que busca la gente para nicks y bios suelen ser este efecto de ancho completo (ｃｏｍｏ ｅｓｔｅ), que usa los caracteres anchos de la tipografía japonesa para dar ese aire estético. Seamos honestos: no convierte tu texto a japonés real ni a kanji — es un efecto de estilo sobre las letras latinas, parecido a lo que algunos llaman «letras chinas» en los generadores de nicks. Esta página te da el ancho completo, una versión espaciada y las versalitas, todo listo para copiar y pegar. Son caracteres Unicode reales, así que se pegan en Instagram, TikTok, Discord o tu nick sin instalar nada. Si de verdad necesitas escribir en japonés, esto no es lo tuyo; si quieres el look estético, es justo esto.",
+      "showKaomoji": true,
+      "intro": "La mayoría de quienes buscan «letras japonesas» o «emoticonos japoneses» quiere una de dos cosas — y las dos están aquí. Primero: los kaomoji, las caritas japonesas hechas con caracteres normales como ¯\\_(ツ)_/¯, (≧◡≦), (◕‿◕✿). Son pequeños rostros que los emojis comunes no logran replicar — toca cualquiera de la biblioteca de abajo para copiarlo al portapapeles. Segundo: el look visual de la tipografía japonesa — letras latinas anchas y separadas (Ｊａｐａｎｅｓｅ-ｓｔｙｌｅ) gracias al rango de ancho completo de Unicode. El cuadro de arriba hace esa conversión. Aviso honesto: esto NO traduce nada ni escribe japonés real (kanji ni kana). Para japonés real necesitas un teclado japonés o un traductor. Para las caritas y el look estético, estás en el lugar correcto.",
       "where": {
         "intro": "El ancho completo usa caracteres muy soportados, así que es de los estilos más portables. El detalle es la legibilidad y el espacio.",
         "rows": [
@@ -785,26 +786,28 @@
         ]
       },
       "examples": {
-        "intro": "Dónde luce el estilo japonés:",
+        "intro": "Dónde gana terreno cada parte:",
         "items": [
-          {"label": "Nick con estética japonesa", "text": "Un nombre en ａｎｃｈｏ ｃｏｍｐｌｅｔｏ da ese aire estético tipo japonés que muchos buscan para su nick."},
-          {"label": "Bio aesthetic", "text": "Una palabra en este estilo marca el tono sin recargar el resto de la bio."},
-          {"label": "Portada o destacado", "text": "El ancho completo se ve bien como título de una portada de playlist o un destacado."},
-          {"label": "Versalitas si quieres algo más legible", "text": "Si el ancho completo se ve demasiado, las versalitas dan un look limpio y fácil de leer."}
+          {"label": "Reacción en un chat", "text": "Pegar <em>¯\\_(ツ)_/¯</em>, <em>(≧◡≦)</em> o <em>(╯°□°)╯︵ ┻━┻</em> da un tono que los emojis no alcanzan. Los kaomoji son caracteres puros, así que sobreviven donde sea — Discord, WhatsApp, X, hasta SMS."},
+          {"label": "Carita en la bio", "text": "Un <em>(◕‿◕✿)</em> o <em>(｡♥‿♥｡)</em> al inicio de la bio se ve tierno sin necesitar una imagen."},
+          {"label": "Toque en el nick (con cuidado)", "text": "Los kaomoji cortos como <em>ʕ•ᴥ•ʔ</em> a veces pasan filtros de nombres; los largos con marcas combinantes casi nunca. Si tu nick rebota, usa los simples."},
+          {"label": "Bio aesthetic en ancho completo", "text": "<em>ａｅｓｔｈｅｔｉｃ ｐｏｓｔ</em> en ancho completo da ese aire espaciado y nostálgico que muchos asocian con la tipografía japonesa — sin pretender ser japonés."},
+          {"label": "Mezclar los dos", "text": "Una línea en ancho completo con un kaomoji al final (<em>Ｊ Ａ Ｐ Ａ Ｎ (´• ω •`)ﾉ</em>) ya es media estética puesta."}
         ]
       },
       "pitfalls": [
-        {"title": "No es japonés real", "text": "No convierte tu texto a kanji ni a japonés de verdad — es un efecto de estilo sobre letras latinas. Si necesitas escribir japonés, esto no sirve."},
-        {"title": "No lo uses en textos largos", "text": "El ancho completo ocupa mucho y cuesta leerlo en bloques. Úsalo para una palabra o una línea."},
-        {"title": "No esperes que cambie el tamaño real", "text": "Se ve más grande porque los caracteres son más anchos, pero no cambia el tamaño de fuente; eso lo controla la app."},
-        {"title": "No cuentes con que pase todos los filtros", "text": "El ancho completo a veces lo rechazan en juegos. Si tu nick rebota, prueba las versalitas."}
+        {"title": "No confundas kaomoji con emojis", "text": "Los kaomoji están hechos con caracteres normales — se ven como texto en todos lados. Los emojis son glifos dedicados que cambian mucho entre plataformas. Para un tono que los emojis no logran, los kaomoji son la respuesta."},
+        {"title": "Esto no escribe japonés", "text": "Esta página no genera kanji, hiragana ni katakana. Para japonés real necesitas un teclado japonés o un traductor. Para lo estético o las caritas, estás listo."},
+        {"title": "No pongas un kaomoji largo en el nick", "text": "Los cortos (ʕ•ᴥ•ʔ, ^_^) a veces pasan. Los largos con marcas apiladas casi nunca. Si rebota, simplifica."},
+        {"title": "No pegues ancho completo en el @usuario", "text": "Lo rechaza. La negrita sans es el plan B que suele pasar."}
       ],
       "faqs": [
-        {"q": "¿Esto escribe en japonés real?", "a": "No. Es un efecto de estilo de ancho completo sobre letras latinas, que da un aire estético tipo japonés. No convierte tu texto a kanji ni a japonés de verdad."},
-        {"q": "¿Es lo mismo que las letras chinas?", "a": "Es parecido a lo que muchos generadores de nicks llaman «letras chinas»: un efecto de estilo, no idioma real. Aquí el foco es el look de ancho completo estilo japonés."},
-        {"q": "¿Dónde puedo usarlo?", "a": "En bios y nicks de Instagram, TikTok, Discord y más. Se ve mejor en frases cortas; en textos largos cuesta leerlo."},
-        {"q": "¿Por qué el texto se ve más ancho?", "a": "Porque usa los caracteres de ancho completo, que ocupan el espacio de un carácter ancho. No es un cambio de tamaño de fuente, solo caracteres más anchos."},
-        {"q": "¿Funciona en nicks de juegos?", "a": "A veces el ancho completo pasa el filtro; si lo rechaza, las versalitas son una opción más segura."}
+        {"q": "¿Qué es un kaomoji?", "a": "Un emoticono japonés hecho con caracteres normales — como ¯\\_(ツ)_/¯ o (≧◡≦). A diferencia de los emojis (que son glifos dedicados), los kaomoji son texto puro, así que se pegan y se ven igual en cualquier app: Discord, WhatsApp, X, Instagram, juegos, hasta SMS."},
+        {"q": "¿Cómo copio un kaomoji de esta página?", "a": "Toca cualquiera de las caritas de la biblioteca de arriba — se copia directo al portapapeles. También puedes seleccionar con el dedo si tu dispositivo lo prefiere."},
+        {"q": "¿Esto escribe japonés real (kanji o kana)?", "a": "No — no genera escritura japonesa. Para japonés real, usa un teclado japonés o un traductor. Lo que sí puedes hacer aquí: copiar los kaomoji, y convertir letras latinas al look ancho «estilo japonés»."},
+        {"q": "¿Cuál es la diferencia entre kaomoji y emoji?", "a": "Los emojis son glifos dedicados (la 😄 de Apple se ve distinta a la de Google). Los kaomoji son caracteres normales que ya existen en cualquier fuente, así que se ven esencialmente igual en todos lados y ningún render los reemplaza."},
+        {"q": "¿Dónde funcionan los kaomoji?", "a": "Donde funciona el texto — Discord, WhatsApp, Telegram, X, Instagram, TikTok, comentarios, chats de juegos, hasta SMS. Lo único a vigilar son los campos de usuario, donde los largos con marcas combinantes suelen ser rechazados; los cortos (ʕ•ᴥ•ʔ, ^_^) casi siempre pasan."},
+        {"q": "¿Y las «letras japonesas» / ancho completo de arriba?", "a": "Usa los caracteres de ancho completo de Unicode (Ｌｅｔｒａｓ ａｓí) — el look ancho y espaciado de la tipografía japonesa donde las letras latinas ocupan el mismo ancho que los kana. Se ve bien en bios y pies de foto; los campos estrictos de @usuario lo rechazan."}
       ],
       "related": ["/es/", "/es/letras-esteticas/", "/es/letras-grandes/", "/es/letras-bonitas/"]
     },
